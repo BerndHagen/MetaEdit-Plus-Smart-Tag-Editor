@@ -16,6 +16,6 @@ MetaEdit Plus is a software program created by me and is protected by copyright 
 # Screenshots
 If you'd like to preview the appearance of MetaEdit Plus Software before downloading the Setup folder, you can explore the screenshots provided below. Each screenshot showcases the various functions and features of the application. Keep in mind that future updates may introduce additional functionalities to enhance user experience.
 
-| Application - Startup        | Application - Editing        | Application - Processing     |
+| Startup Screen               | Editing Screen               | Processing Screen            |
 |------------------------------|------------------------------|------------------------------|
 | <img src="https://github.com/BerndHagen/MetaEdit-Tag-Editor/raw/main/images/v1.0.0-metaedit_startup.png" width="300px"> | <img src="https://github.com/BerndHagen/MetaEdit-Tag-Editor/raw/main/images/v1.0.0-metaedit_inputs.png" width="300px"> | <img src="https://github.com/BerndHagen/MetaEdit-Tag-Editor/raw/main/images/v1.0.0-metaedit_generate.png" width="300px"> |
