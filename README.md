@@ -2,8 +2,8 @@
 ![Last Commit](https://img.shields.io/github/last-commit/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor)
 ![License](https://img.shields.io/badge/license-MetaEdit%20EULA-important)
 ![Version](https://img.shields.io/github/v/tag/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor)
-![Issues](https://img.shields.io/github/issues/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor)
+![Issues](https://img.shields.io/github/issues/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor)
 ![.NET Framework 4.7.2](https://img.shields.io/badge/.NET%20Framework-4.7.2-red)
 
 # MetaEdit Plus - Smart Tag Editor
