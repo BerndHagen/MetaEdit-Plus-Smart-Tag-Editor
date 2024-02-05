@@ -1,11 +1,9 @@
-![Platforms](https://img.shields.io/badge/platforms-Windows%20|%20Linux-lightgrey)
-![License](https://img.shields.io/badge/license-MetaEdit%20Plus%20EULA-blue)
-![.NET Framework 4.7.2](https://img.shields.io/badge/.NET%20Framework-4.7.2-red)
-
 # MetaEdit Plus - Smart Tag Editor
 MetaEdit Plus is an advanced software of a previous project designed to streamline the organization and update of metadata within digital files. Metadata, which refers to the information that describes the content of a file, like its title, artist, author, and creation date, can be efficiently managed across various file types. With MetaEdit Plus, users have the ability to insert, revise, or eliminate metadata from audio and visual files altering details like the artist or album in music files, modifying camera data in photos, or updating authorship in documents. This capability is important for the effective organization of digital collections, simplifying the processes of sorting, searching, and maintaining extensive file libraries. The software is equipped to handle batch editing, which means multiple files can be updated simultaneously.
 
 MetaEdit Plus supports a diverse range of file formats in its Audio Library, including MP3, WAV, WMA, OGG, FLAC, AAC, M4A, and OPUS, as well as in its Video Library, with formats like MP4, AVI, MKV, MOV, WMV, FLV, WEBM, and MPG. Its design, inspired by Medio, a software I developed for downloading YouTube videos and extracting audio, ensures a user-friendly experience, making it accessible to users of all technical backgrounds. The interface of MetaEdit Plus stands out for its intuitive design, ensuring users can easily navigate and utilize its features. The layout is clean and straightforward, allowing for quick access to functionalities and smooth operation.
+
+Developed with Visual Studio 2022, MetaEdit Plus is versatile software compatible with both `Windows` and `Linux` systems. For operation, it necessitates the `.NET Framework 4.7.2` or higher to ensure a smooth and efficient user experience across diverse platforms.
 
 # Getting Started
 
