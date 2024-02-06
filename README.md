@@ -46,7 +46,7 @@ This software program, **MetaEdit Plus**, is an intellectual creation of me, Ber
 By downloading, installing, or using MetaEdit Plus, you acknowledge that you have read and understood this copyright notice and agree to abide by its terms and conditions. Failure to comply with these terms may result in legal action and the revocation of your rights to use MetaEdit Plus.
 
 # Screenshots
-If you'd like to preview the appearance of MetaEdit Plus Software before downloading the Setup folder, you can explore the screenshots provided below. Each screenshot showcases the various functions and features of the application. Keep in mind that future updates may introduce additional functionalities to enhance user experience.
+If you'd like to preview the appearance of MetaEdit Plus Software before downloading the Setup folder, you can explore the screenshots provided below. Each screenshot showcases the various functions and features of the application. Keep in mind that future updates may introduce additional functionalities.
 
 | Startup Screen               | Editing Screen               | Processing Screen            |
 |------------------------------|------------------------------|------------------------------|
