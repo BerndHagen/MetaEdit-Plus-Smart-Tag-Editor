@@ -13,7 +13,7 @@ To start tagging your audio and video files, simply follow these steps:
 
 1. **Select File Type**: At the top dropdown menu, choose between `Video Library` or `Audio Library` to specify the type of files you are working with.
 2. **Choose Format**: From the next dropdown, select the exact format of your files to ensure they are correctly catalogued.
-3. **Browse for Files**: Click the `Browse` button to navigate to and select the folder containing your media files. Once loaded, your files will be displayed in the Directory, and the console will show a message confirming the number of files detected.
+3. **Browse for Files**: Click the `Browse` button to navigate to and select the folder containing your media files. Once loaded, your files will be displayed in the Directory and the console will show a message confirming the number of files detected.
 
 ### Metadata Management
 
@@ -26,7 +26,7 @@ To start tagging your audio and video files, simply follow these steps:
 - **Remove Tags**: To strip all metadata from your files, click `Remove Tags`.
 - **Archive Inputs**: Use `Archive Inputs` to clear and temorary back up your current inputs.
 - **Retrieve Inputs**: Click `Retrieve Inputs` to restore your saved information into the fields.
-- **Clear Console**: Press the `Clear Console` button to remove all entries from the console, ensuring a cleaner view.
+- **Clear Console**: Press the `Clear Console` button to remove all entries from the console.
 
 ## Updating Software
 
