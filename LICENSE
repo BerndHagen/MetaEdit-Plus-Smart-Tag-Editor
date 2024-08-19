@@ -1,42 +1,60 @@
-METAEDIT PLUS SOFTWARE COPYRIGHT NOTICE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+|                 METAEDIT PLUS - SMART TAG EDITOR                |
+|                         COPYRIGHT NOTICE                        |
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 This document constitutes the full and exclusive copyright notice for 
-MetaEdit Plus, a software program developed and authored by Bernd Hagen 
-("Author"). MetaEdit Plus, including its source code, documentation, 
-executable binaries, and associated materials (collectively, 
-"Software"), is protected under international copyright laws and 
-treaties. The Author reserves all rights not expressly granted 
-through this notice.
+MetaEdit Plus - Smart Tag Editor, a software program developed and 
+authored by Bernd Hagen ("Author"). MetaEdit Plus - Smart Tag Editor, 
+including its source code, documentation, executable binaries, and 
+associated materials (collectively, "Software"), is protected under 
+international copyright laws and treaties. The Author reserves all 
+rights not expressly granted herein.
 
-LICENSE GRANT
-
+>> LICENSE GRANT
+------------------------------
 Subject to the terms of this Copyright Notice, the Author grants you 
 a revocable, non-exclusive, non-transferable, limited license to 
 download, install, and use the Software for personal, non-commercial 
-purposes. This License does not allow for distribution, public 
-performance, or public display of the Software, except as expressly 
-permitted by the Author.
+purposes. This License permits sharing the Software for promotional 
+purposes but does not allow modification, sale, or distribution of the 
+Software to others.
 
-RESTRICTIONS
+>> ATTRIBUTION
+------------------------------
+When using or redistributing MetaEdit Plus - Smart Tag Editor, you must 
+provide appropriate credit to the Author, Bernd Hagen. This includes, 
+but is not limited to, including the Author's name in any documentation, 
+promotional materials, or credits associated with the Software, and providing 
+a link to the original source when possible.
 
+>> THIRD-PARTY LIBRARIES
+------------------------------
+MetaEdit Plus - Smart Tag Editor utilizes the Taglib library to handle metadata 
+operations. Taglib is an open-source library licensed under the GNU Lesser 
+General Public License (LGPL). Any use of Taglib within MetaEdit Plus is subject 
+to its respective license, and users are encouraged to review and comply with the 
+terms of the Taglib license.
+
+>> RESTRICTIONS
+------------------------------
 Modification: You are prohibited from altering, modifying, adapting, 
-translating, or creating derivative works of the Software without 
-prior written consent from the Author. Prohibited modifications 
-include, but are not limited to, decompiling, reverse-engineering, 
-disassembling, or otherwise attempting to discover the source code 
-of the Software.
+translating, or creating derivative works of the Software without prior 
+written consent from the Author. Prohibited modifications include, but 
+are not limited to, decompiling, reverse-engineering, disassembling, or 
+otherwise attempting to discover the source code of the Software.
 
-Distribution: Redistribution of the Software, in whole or in part, 
-without explicit written permission from the Author is strictly 
-forbidden. This includes, but is not limited to, sharing the Software 
-over the Internet, on physical media, or within other software.
+Distribution: Redistribution of the Software is permitted only for 
+promotional purposes and not for commercial use. Any other distribution, 
+including the sale of the Software, is strictly forbidden unless 
+explicitly authorized in writing by the Author.
 
 Commercial Use: Any use of the Software in a commercial context is 
 strictly prohibited under this License, unless a separate agreement 
 is made with the Author.
 
-DISCLAIMER OF WARRANTIES
-
+>> DISCLAIMER OF WARRANTIES
+------------------------------
 The Software is provided "AS IS," without warranty of any kind, 
 express or implied, including but not limited to the warranties of 
 merchantability, fitness for a particular purpose, and 
@@ -45,8 +63,8 @@ claim, damages, or other liability, whether in an action of contract,
 tort, or otherwise, arising from, out of, or in connection with the 
 Software or the use or other dealings in the Software.
 
-LIMITATION OF LIABILITY
-
+>> LIMITATION OF LIABILITY
+------------------------------
 To the maximum extent permitted by applicable law, in no event shall 
 the Author be liable for any special, incidental, indirect, or 
 consequential damages whatsoever (including, without limitation, 
@@ -55,8 +73,17 @@ business information, or any other pecuniary loss) arising out of the
 use of or inability to use the Software, even if the Author has been 
 advised of the possibility of such damages.
 
-GENERAL TERMS
+>> USER DATA AND PRIVACY
+------------------------------
+MetaEdit Plus - Smart Tag Editor does not collect, store, or transmit 
+any personal information from its users. However, if users voluntarily
+provide personal data during the support process, this information will 
+be handled in accordance with the Author's privacy policy. The Author 
+is committed to protecting the privacy of users and ensuring that any 
+shared data is managed securely and responsibly.
 
+>> GENERAL TERMS
+------------------------------
 By downloading, installing, or using the Software, you acknowledge 
 that you have read, understood, and agree to be bound by the terms 
 of this Copyright Notice. Violation of any terms of this Notice may 
@@ -64,19 +91,19 @@ result in immediate termination of your license, legal action, and/or
 penalties as deemed appropriate by the Author and under applicable 
 law.
 
-GOVERNING LAW
-
+>> GOVERNING LAW
+------------------------------
 This Copyright Notice shall be governed by and construed in 
 accordance with the laws of the jurisdiction in which the Author 
 resides, without regard to its conflict of law provisions.
 
-AMENDMENTS
-
+>> AMENDMENTS
+------------------------------
 The Author reserves the right to amend or update these terms at any 
 time without notice. Your continued use of the Software after any 
 such changes indicates your acceptance of the new terms.
 
 This Copyright Notice constitutes the entire agreement between you 
 and the Author regarding the Software and supersedes all prior 
-agreements and understandings, whether written or oral, about its 
+agreements and understandings, whether written or oral, regarding its 
 subject matter.
