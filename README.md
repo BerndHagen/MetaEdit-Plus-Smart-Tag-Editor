@@ -70,6 +70,6 @@ By downloading, installing, or using MetaEdit Plus, you acknowledge that you hav
 # Screenshots
 If you want to see how MetaEdit Plus looks before downloading, check out the screenshots below. The images illustrate the tagging process in step by step. From the initial startup screen to adding tags for your files, these screenshots guide you through the entire process.
 
-| Startup Interface          | Customizing Tags             | Processing Files           |
+| MetaEdit - Opening Screen | MetaEdit - Select Directory    | MetaEdit - Generating Tags  |
 |------------------------------|------------------------------|------------------------------|
 | <img src="https://github.com/BerndHagen/MetaEdit-Tag-Editor/raw/main/img/v1.0.3-metaedit_startup.png" width="300px"> | <img src="https://github.com/BerndHagen/MetaEdit-Tag-Editor/raw/main/img/v1.0.3-metaedit_inputs.png" width="300px"> | <img src="https://github.com/BerndHagen/MetaEdit-Tag-Editor/raw/main/img/v1.0.3-metaedit_generate.png" width="300px"> |
