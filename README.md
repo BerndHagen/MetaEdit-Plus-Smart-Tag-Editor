@@ -57,13 +57,17 @@ If you have any questions or issues regarding the use of TagLib with MetaEdit, f
 # Copyright 
 This software program, **MetaEdit Plus**, is an intellectual creation of me, Bernd Hagen, the author and copyright holder, and is protected by copyright law. This comprehensive copyright notice outlines the terms and conditions governing the use, distribution, and modification of MetaEdit Plus:
 
-1. **License**:  MetaEdit Plus is made available for free download and use without requiring a license. You are granted a limited, non-exclusive, and non-transferable right to use the software in accordance with the terms set forth herein.
+1. **License**: MetaEdit Plus is made available for free download and personal, non-commercial use. You are granted a limited, non-exclusive, and non-transferable right to use the software in accordance with the terms set forth herein.
 
 2. **Prohibited Modifications**: You are expressly prohibited from modifying, decompiling, disassembling, reverse engineering, or otherwise manipulating MetaEdit Plus in any manner. Any attempts to do so will be deemed a clear violation of this copyright.
 
 3. **Warranty Disclaimer**: MetaEdit Plus is provided *"as is,"* without any warranty of any kind, whether express or implied. This includes, but is not limited to, warranties of merchantability, fitness for a particular purpose, and noninfringement. The author and copyright holder make no guarantees regarding the accuracy, reliability, or performance of the software.
 
 4. **Limitation of Liability**: In no event shall the author or copyright holder be held liable for any claims, damages, or other liabilities, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use thereof. You expressly understand and agree that you assume all risks associated with the use of MetaEdit Plus.
+
+5. **Third-Party Libraries**: MetaEdit Plus utilizes the Taglib library for handling metadata operations. Use of Taglib is subject to its respective license.
+
+6. **User Data and Privacy**: MetaEdit Plus does not collect personal information. Any data shared during the support process will be handled according to the author's privacy policy.
 
 By downloading, installing, or using MetaEdit Plus, you acknowledge that you have read and understood this copyright notice and agree to abide by its terms and conditions. Failure to comply with these terms may result in legal action and the revocation of your rights to use MetaEdit Plus.
 
