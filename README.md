@@ -1,9 +1,9 @@
 # MetaEdit Plus - Smart Tag Editor
-MetaEdit Plus is an advanced tool designed to simplify the organization and updating of metadata within digital audio and video files. Metadata includes details such as the title, artist, album, creation date and thumbnail cover. With MetaEdit Plus, users can easily insert, revise or remove this metadata, making it easier to sort, search and manage extensive libraries of media files. The software also supports batch editing, allowing multiple files to be updated simultaneously, saving time and effort.
+MetaEdit Plus is an advanced tool designed to streamline the organization and updating of metadata in digital audio and video files. Metadata is information embedded within a file that provides details such as the title, artist, album, creation date and thumbnail cover. With MetaEdit Plus, users can effortlessly insert, revise or remove this metadata, simplifying the process of sorting, searching and managing large collections of media files. The software also offers batch editing capabilities, allowing multiple files to be updated at once, which saves a lot of time.
 
-MetaEdit Plus supports a wide range of file formats. In the Audio Library, it handles formats such as **MP3, WAV, WMA, OGG, FLAC, AAC, M4A and OPUS** and for videos, **MP4, AVI, MKV, MOV, WMV, FLV, WEBM and MPG**. The software's design, inspired by another project called Medio for downloading YouTube videos and extracting audio, ensures a user-friendly experience. The intuitive interface makes it accessible to users of all technical backgrounds.
+MetaEdit Plus supports a broad range of file formats. For audio, it works with formats like **MP3, WAV, WMA, OGG, FLAC, AAC, M4A, and OPUS**, while for video files, it supports **MP4, AVI, MKV, MOV, WMV, FLV, WEBM, and MPG**. Inspired by my Medio project, which is for downloading YouTube videos and extracting audio, MetaEdit Plus features a user-friendly design that ensures accessibility for users of all technical levels.
 
-Developed using Visual Studio 2022, MetaEdit Plus is compatible with the majority of `Windows` operating systems and requires the `.NET Framework 4.7.2` or higher. You can download the required .NET Framework [here](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472).
+This tool, created with Visual Studio 2022, is compatible with most Windows operating systems and requires [.NET Framework 4.7.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472) or higher.
 
 ## Table of Contents
 
