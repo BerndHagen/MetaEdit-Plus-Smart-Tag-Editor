@@ -87,7 +87,7 @@ For more details about TagLib, including its features and licensing, please refe
 If you have any questions or issues regarding the use of TagLib with MetaEdit, feel free to [open an issue](https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/issues) on GitHub.
 
 # Copyright 
-This software program, **MetaEdit Plus**, is an intellectual creation of me, Bernd Hagen, the author and copyright holder, and is protected by copyright law. This comprehensive copyright notice outlines the terms and conditions governing the use, distribution, and modification of MetaEdit Plus:
+This software is the intellectual property of the Author and is protected by international copyright laws. This copyright notice outlines the key terms governing the use, distribution, and modification of the software:
 
 1. **License**: MetaEdit Plus is made available for free download and personal, non-commercial use. You are granted a limited, non-exclusive, and non-transferable right to use the software in accordance with the terms set forth herein.
 
@@ -101,7 +101,7 @@ This software program, **MetaEdit Plus**, is an intellectual creation of me, Ber
 
 6. **User Data and Privacy**: MetaEdit Plus does not collect personal information. Any data shared during the support process will be handled according to the author's privacy policy.
 
-By downloading, installing, or using MetaEdit Plus, you acknowledge that you have read and understood this copyright notice and agree to abide by its terms and conditions. Failure to comply with these terms may result in legal action and the revocation of your rights to use MetaEdit Plus.
+By using MetaEdit Plus - Smart Tag Editor, you agree to these terms and conditions. Failure to comply may result in legal action and revocation of your rights to use the software. For full details on licensing terms and further information, please refer to the [LICENSE](https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/blob/main/LICENSE) file.
 
 # Screenshots
 If you want to see how MetaEdit Plus looks before downloading, check out the screenshots below. The images illustrate the tagging process in step by step. From the initial startup screen to adding tags for your files, these screenshots guide you through the entire process.
