@@ -22,18 +22,18 @@ This tool, created with Visual Studio 2022, is compatible with most Windows oper
 ## System Requirements
 
 ### Minimum Requirements
-- **Operating System:** Windows 10 or higher
-- **Processor:** Intel Core i3 or AMD Ryzen 3 or equivalent
-- **RAM:** 4 GB
-- **Storage:** 5 MB of free disk space for the application in `AppData\Local`
+- **Operating System:** Windows 7 or higher
+- **Processor:** Dual-core processor (e.g., Intel Pentium or AMD Athlon)
+- **RAM:** 2 GB
+- **Storage:** 10 MB of free disk space for the application
 - **Software:** .NET Framework 4.7.2 or higher
     - [Download .NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework/net472)
 
 ### Recommended Requirements
-- **Operating System:** Windows 11
-- **Processor:** Intel Core i5 or AMD Ryzen 5 or higher
-- **RAM:** 8 GB
-- **Storage:** 5 MB of free disk space for the application in `AppData\Local`
+- **Operating System:** Windows 7 or higher
+- **Processor:** Intel Core i5 or AMD Ryzen 5
+- **RAM:** 4 GB or higher
+- **Storage:** 10 MB of free disk space for the application
 - **Software:** .NET Framework 4.8 or higher
     - [Download .NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)
 
