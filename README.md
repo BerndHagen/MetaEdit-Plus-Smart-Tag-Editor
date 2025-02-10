@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">MetaEdit Plus - Smart Tag Editor</h1>
 <p align="center">
-  <b>Effortlessly manage, edit, and organize metadata for your audio and video files.</b><br>
+  <b>Effortlessly manage, edit and organize metadata for your audio and video files.</b><br>
   <b>Experience a powerful and user-friendly tag editor optimized for efficiency.</b>
 </p>
 <p align="center">
