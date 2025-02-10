@@ -48,7 +48,7 @@ This tool, created with Visual Studio 2022, is compatible with most Windows oper
 - **Software:** .NET Framework 4.8 or higher
     - [Download .NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)
 
-# Getting Started
+## Getting Started
 
 To start tagging your audio and video files, simply follow these steps:
 
@@ -97,24 +97,30 @@ For more details about TagLib, including its features and licensing, please refe
 
 If you have any questions or issues regarding the use of TagLib with MetaEdit, feel free to [open an issue](https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/issues) on GitHub.
 
-# Copyright 
-This software is the intellectual property of the Author and is protected by international copyright laws. This copyright notice outlines the key terms governing the use, distribution, and modification of the software:
+## Copyright 
+This software is the intellectual property of the Author and is protected by international copyright laws. By using MetaEdit Plus, you explicitly agree to the following terms:
 
-1. **License**: MetaEdit Plus is made available for free download and personal, non-commercial use. You are granted a limited, non-exclusive, and non-transferable right to use the software in accordance with the terms set forth herein.
+### License Terms
+- Free for personal, non-commercial use only
+- No redistribution rights except for promotional purposes
+- Non-transferable, revocable license
+- Subject to immediate termination for violations
 
-2. **Prohibited Modifications**: You are expressly prohibited from modifying, decompiling, disassembling, reverse engineering, or otherwise manipulating MetaEdit Plus in any manner. Any attempts to do so will be deemed a clear violation of this copyright.
+### Legal Protections
+1. **Intellectual Property**: All rights, including copyrights, patents, and trade secrets, remain exclusively with the Author.
+2. **Indemnification**: Users must indemnify the Author against any claims arising from their use of the software.
+3. **Data Protection**: Users are responsible for compliance with data protection laws in their jurisdiction.
+4. **Jurisdiction**: Any disputes fall under the exclusive jurisdiction of courts in the Author's jurisdiction.
 
-3. **Warranty Disclaimer**: MetaEdit Plus is provided *"as is,"* without any warranty of any kind, whether express or implied. This includes, but is not limited to, warranties of merchantability, fitness for a particular purpose, and noninfringement. The author and copyright holder make no guarantees regarding the accuracy, reliability, or performance of the software.
+### Liability and Warranties
+- Provided "AS IS" without any warranties
+- No liability for any damages or losses
+- Users assume all risks associated with use
+- Author disclaims all implied warranties
 
-4. **Limitation of Liability**: In no event shall the author or copyright holder be held liable for any claims, damages, or other liabilities, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use thereof. You expressly understand and agree that you assume all risks associated with the use of MetaEdit Plus.
+For complete terms, see the [LICENSE](https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/blob/main/LICENSE) file.
 
-5. **Third-Party Libraries**: MetaEdit Plus utilizes the Taglib library for handling metadata operations. Use of Taglib is subject to its respective license.
-
-6. **User Data and Privacy**: MetaEdit Plus does not collect personal information. Any data shared during the support process will be handled according to the author's privacy policy.
-
-By using MetaEdit Plus - Smart Tag Editor, you agree to these terms and conditions. Failure to comply may result in legal action and revocation of your rights to use the software. For full details on licensing terms and further information, please refer to the [LICENSE](https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/blob/main/LICENSE) file.
-
-# Screenshots
+## Screenshots
 If you want to see how MetaEdit Plus looks before downloading, check out the screenshots below. The images illustrate the tagging process in step by step. From the initial startup screen to adding tags for your files, these screenshots guide you through the entire process.
 
 | MetaEdit - Opening Screen | MetaEdit - Select Directory    | MetaEdit - Generating Tags  |
