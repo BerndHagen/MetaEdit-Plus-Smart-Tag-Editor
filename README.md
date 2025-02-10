@@ -1,4 +1,15 @@
-# MetaEdit Plus - Smart Tag Editor
+<p align="center">
+  <img src="https://github.com/BerndHagen/Arctisoft-Studio/raw/main/img/metaedit.png" alt="MetaEdit Plus Logo" width="128" />
+</p>
+<h1 align="center">MetaEdit Plus - Smart Tag Editor</h1>
+<p align="center">
+  <b>Effortlessly manage, edit, and organize metadata for your audio and video files.</b><br>
+  <b>Experience a powerful and user-friendly tag editor optimized for efficiency.</b>
+</p>
+<p align="center">
+  <a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/releases"><img src="https://img.shields.io/github/v/release/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor?include_prereleases&style=flat-square&color=CD853F" alt="Latest Release"></a>&nbsp;&nbsp;<a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Commercial-red?style=flat-square" alt="License"></a>&nbsp;&nbsp;<a href="https://dotnet.microsoft.com/download/dotnet-framework/net472"><img src="https://img.shields.io/badge/.NET-4.7.2-512BD4?style=flat-square" alt=".NET Version"></a>&nbsp;&nbsp;<img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square" alt="Platform">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Architecture-x64-lightgrey?style=flat-square" alt="Architecture">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" alt="Status">&nbsp;&nbsp;<a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/issues"><img src="https://img.shields.io/github/issues/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor?style=flat-square&color=orange" alt="Open Issues"></a>
+</p>
+
 MetaEdit Plus is an advanced tool designed to streamline the organization and updating of metadata in digital audio and video files. Metadata is information embedded within a file that provides details such as the title, artist, album, creation date and thumbnail cover. With MetaEdit Plus, users can effortlessly insert, revise or remove this metadata, simplifying the process of sorting, searching and managing large collections of media files. The software also offers batch editing capabilities, allowing multiple files to be updated at once, which saves a lot of time.
 
 MetaEdit Plus supports a broad range of file formats. For audio, it works with formats like **MP3, WAV, WMA, OGG, FLAC, AAC, M4A, and OPUS**, while for video files, it supports **MP4, AVI, MKV, MOV, WMV, FLV, WEBM, and MPG**. Inspired by my Medio project, which is for downloading YouTube videos and extracting audio, MetaEdit Plus features a user-friendly design that ensures accessibility for users of all technical levels.
