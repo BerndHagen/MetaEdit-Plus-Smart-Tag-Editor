@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/BerndHagen/Arctisoft-Studio/raw/main/img/metaedit.png" alt="MetaEdit Plus Logo" width="128" />
+  <img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/blob/f65dcaa1163a518506a3580ee0b87e1e4cf664b6/img/v1.0.3-metaedit.png" alt="MetaEdit Plus Logo" width="128" />
 </p>
 <h1 align="center">MetaEdit Plus - Smart Tag Editor</h1>
 <p align="center">
