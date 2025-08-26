@@ -221,8 +221,8 @@ If you'd like a preview of MetaEdit Plus before downloading, the screenshots bel
     <th>MetaEdit Plus - Tag Generation</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/img/v1.0.4-metaedit_startup.png" target="_blank" rel="noopener noreferrer"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/img/v1.0.4-metaedit_startup.png" alt="MetaEdit Main Interface" width="300"></a></td>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/img/v1.0.4-metaedit_inputs.png" target="_blank" rel="noopener noreferrer"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/img/v1.0.4-metaedit_inputs.png" alt="MetaEdit Production Details" width="300"></a></td>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/img/v1.0.4-metaedit_generate.png" target="_blank" rel="noopener noreferrer"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/img/v1.0.4-metaedit_generate.png" alt="MetaEdit Composition Details" width="300"></a></td>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/img/v1.0.4-metaedit_startup.png" target="_blank" rel="noopener noreferrer"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/img/v1.0.4-metaedit_startup.png" alt="MetaEdit Plus - Initial View" width="300"></a></td>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/img/v1.0.4-metaedit_inputs.png" target="_blank" rel="noopener noreferrer"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/img/v1.0.4-metaedit_inputs.png" alt="MetaEdit Plus - Directory Scan" width="300"></a></td>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/img/v1.0.4-metaedit_generate.png" target="_blank" rel="noopener noreferrer"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/img/v1.0.4-metaedit_generate.png" alt="MetaEdit Plus - Tag Generation" width="300"></a></td>
   </tr>
 </table>
