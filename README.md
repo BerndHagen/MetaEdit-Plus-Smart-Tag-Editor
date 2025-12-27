@@ -7,7 +7,7 @@
   <b>Experience a fast, reliable and streamlined tag editor optimized for professional workflows.</b>
 </p>
 <p align="center">
-  <a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/releases"><img src="https://img.shields.io/github/v/release/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor?include_prereleases&style=flat-square&color=CD853F" alt="Latest Release"></a>&nbsp;&nbsp;<a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Freeware-green?style=flat-square" alt="License"></a>&nbsp;&nbsp;<a href="https://dotnet.microsoft.com/download/dotnet/8.0/runtime"><img src="https://img.shields.io/badge/.NET-8.0-512BD4?style=flat-square" alt=".NET Version"></a>&nbsp;&nbsp;<img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square" alt="Platform">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Architecture-x64-lightgrey?style=flat-square" alt="Architecture">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" alt="Status">&nbsp;&nbsp;<a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/issues"><img src="https://img.shields.io/badge/Issues-0_open-orange?style=flat-square" alt="Open Issues"></a>
+  <a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/releases"><img src="https://img.shields.io/github/v/release/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor?include_prereleases&style=flat-square&color=CD853F" alt="Latest Release"></a>&nbsp;&nbsp;<a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Freeware-green?style=flat-square" alt="License"></a>&nbsp;&nbsp;<a href="https://dotnet.microsoft.com/download/dotnet/10.0/runtime"><img src="https://img.shields.io/badge/.NET-10.0-512BD4?style=flat-square" alt=".NET Version"></a>&nbsp;&nbsp;<img src="https://img.shields.io/badge/Platform-Windows%2010%2F11-0078D6?style=flat-square" alt="Platform">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Architecture-x64-lightgrey?style=flat-square" alt="Architecture">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" alt="Status">&nbsp;&nbsp;<a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/issues"><img src="https://img.shields.io/badge/Issues-0_open-orange?style=flat-square" alt="Open Issues"></a>
 </p>
 
 **MetaEdit Plus** is a straightforward metadata editing software designed for managing audio and video file information efficiently. Whether you need to organize your music library, add album artwork or process metadata for multiple files simultaneously, MetaEdit Plus provides an essential solution for all your tagging needs. Its clean, intuitive interface allows you to quickly input metadata, manage cover art, and batch process entire directories with just a few clicks.
@@ -64,19 +64,19 @@ TagLib# powers robust metadata processing, ensuring compatibility with industry 
 ## **System Requirements**
 
 ### **Minimum Requirements**
-- **Operating System:** Windows 10 (64-bit) or later
+- **Operating System:** Windows 10/11 (64-bit)
 - **Processor:** Dual-core processor, 1.5 GHz or higher
 - **RAM:** 4 GB
 - **Graphics:** DirectX 11 compatible (integrated graphics acceptable)
-- **Software:** .NET 8.0 Runtime
-  - [Download .NET 8.0 Runtime](https://dotnet.microsoft.com/download/dotnet/8.0/runtime)
+- **Software:** .NET 10.0 Runtime
+  - [Download .NET 10.0 Runtime](https://dotnet.microsoft.com/download/dotnet/10.0/runtime)
 - **Storage:** 20 MB of free disk space
 
 ### **Recommended Requirements**
 - **Operating System:** Windows 10/11 (64-bit)
 - **Processor:** Quad-core processor, 2.0 GHz or higher
 - **RAM:** 8 GB or higher
-- **Software:** .NET 8.0 Runtime
+- **Software:** .NET 10.0 Runtime
 - **Storage:** 50 MB of free disk space
 
 ## Third-Party Libraries
