@@ -1,0 +1,158 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+|                 METAEDIT PLUS - SMART TAG EDITOR                |
+|                         COPYRIGHT NOTICE                        |
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+This document constitutes the full and exclusive copyright notice for
+MetaEdit Plus - Smart Tag Editor, a software program developed and 
+authored by Bernd Julian Hagen ("Author"). MetaEdit Plus - Smart Tag Editor, 
+including its executable binaries, documentation, and associated materials 
+(collectively, "Software"), is protected under international copyright laws 
+and treaties. All rights are reserved by the Author except those explicitly 
+granted in this notice.
+
+>> USAGE RIGHTS
+------------------------------
+The Author grants users worldwide permission to:
+1. Download and install the Software
+2. Use the Software for personal or commercial purposes
+3. Share and redistribute the Software without modification
+4. Report bugs and suggest improvements
+
+>> ATTRIBUTION
+------------------------------
+Distribution and promotion of the Software requires:
+1. Clear attribution to "Bernd Julian Hagen" as the Author
+2. Inclusion of the original Software name "MetaEdit Plus"
+3. Link to the official distribution source
+4. No suggestion of official endorsement by the Author
+
+>> THIRD-PARTY LIBRARIES
+------------------------------
+The Software incorporates TagLib, licensed under the GNU Lesser General 
+Public License (LGPL). Users must comply with TagLib's license terms.
+
+>> PROHIBITED USES
+------------------------------
+The following are strictly prohibited:
+1. Selling or monetizing the Software
+2. Modifying or reverse engineering the Software
+3. Creating derivative or competing products
+4. Redistributing modified versions
+5. Using the Author's branding for commercial purposes
+
+>> DISCLAIMER OF WARRANTIES
+------------------------------
+The Software is provided "AS IS," without warranty of any kind, 
+express or implied, including but not limited to the warranties of 
+merchantability, fitness for a particular purpose, and 
+non-infringement. In no event shall the Author be liable for any 
+claim, damages, or other liability, whether in an action of contract, 
+tort, or otherwise, arising from, out of, or in connection with the 
+Software or the use or other dealings in the Software.
+
+>> LIMITATION OF LIABILITY
+------------------------------
+To the maximum extent permitted by applicable law, in no event shall 
+the Author be liable for any special, incidental, indirect, or 
+consequential damages whatsoever (including, without limitation, 
+damages for loss of business profits, business interruption, loss of 
+business information, or any other pecuniary loss) arising out of the 
+use of or inability to use the Software, even if the Author has been 
+advised of the possibility of such damages.
+
+>> USER DATA AND PRIVACY
+------------------------------
+MetaEdit Plus operates entirely offline and locally. It:
+1. Does not collect or transmit any personal information
+2. Does not require internet connection for core functions
+3. Does not track usage or create user profiles
+4. Processes all files locally on the user's device
+
+>> FILE HANDLING RESPONSIBILITY
+------------------------------
+Users assume full responsibility for:
+1. Backing up files before metadata modification
+2. Verifying changes before saving
+3. Data integrity and protection
+4. Compliance with local data regulations
+
+>> SUPPORT AND UPDATES
+------------------------------
+As this is free software:
+1. Support is provided on a best-effort basis
+2. Updates are released at the Author's discretion
+3. There is no guarantee of continued maintenance
+4. Users are encouraged to report bugs on GitHub
+
+>> GENERAL TERMS
+------------------------------
+By downloading, installing, or using the Software, you acknowledge 
+that you have read, understood, and agree to be bound by the terms 
+of this Copyright Notice. Violation of any terms of this Notice may 
+result in revocation of your right to use the Software and/or 
+penalties as deemed appropriate by the Author and under applicable 
+law.
+
+>> GOVERNING LAW
+------------------------------
+This Copyright Notice shall be governed by and construed in 
+accordance with the laws of the jurisdiction in which the Author 
+resides, without regard to its conflict of law provisions.
+
+>> AMENDMENTS
+------------------------------
+The Author reserves the right to amend or update these terms at any time 
+without notice. Your continued use of the Software after any such changes
+indicates your acceptance of the new terms. This Copyright Notice 
+constitutes the entire agreement between you and the Author regarding the 
+Software and supersedes all prior agreements and understandings, whether 
+written or oral, regarding its subject matter.
+
+>> INTELLECTUAL PROPERTY RIGHTS
+------------------------------
+All intellectual property rights, including but not limited to copyrights, 
+patents, trademarks, trade secrets, and other proprietary rights in or 
+relating to the Software are and will remain the exclusive property of 
+the Author. This includes any improvements, modifications, or derivative 
+works developed by any party.
+
+>> DATA PROTECTION AND PRIVACY
+------------------------------
+The Software operates locally and does not collect or transmit personal 
+data. However, users acknowledge that:
+1. Any data processed remains the user's responsibility
+2. The Author is not liable for any data loss or corruption
+3. Users must comply with applicable data protection laws
+4. The Software does not guarantee GDPR compliance for user operations
+
+>> INDEMNIFICATION
+------------------------------
+You agree to indemnify, defend, and hold harmless the Author from and 
+against any claims, liabilities, damages, losses, costs, expenses, or 
+fees (including reasonable attorneys' fees) arising from:
+1. Use of the Software
+2. Violation of this Copyright Notice
+3. Infringement of third-party rights
+
+>> TERMINATION
+------------------------------
+The Author reserves the right to revoke your permission to use the
+Software at any time if you fail to comply with the terms of this
+Copyright Notice. Upon such revocation, you must cease all use of the 
+Software and delete all copies from your devices.
+
+>> SEVERABILITY
+------------------------------
+If any provision of this Copyright Notice is found to be unenforceable 
+or invalid, that provision shall be limited or eliminated to the minimum 
+extent necessary so that this Copyright Notice shall otherwise remain 
+in full force and effect and enforceable.
+
+>> JURISDICTION AND DISPUTES
+------------------------------
+Any dispute arising from or relating to this Copyright Notice or the 
+Software shall be subject to the exclusive jurisdiction of the courts 
+in the Author's jurisdiction of residence. You agree to submit to the 
+jurisdiction of such courts for the purpose of litigating all such 
+disputes.
