@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/img/v1.0.6-metaedit.png" alt="MetaEdit Plus Logo" width="128" />
+  <img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/img/v1.0.7-metaedit.png" alt="MetaEdit Plus Logo" width="128" />
 </p>
 <h1 align="center">MetaEdit Plus - Smart Tag Editor</h1>
 <p align="center">
@@ -221,8 +221,8 @@ If you'd like a preview of MetaEdit Plus before downloading, the screenshots bel
     <th>MetaEdit Plus - Tag Generation</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/img/v1.0.6-metaedit_startup.png" target="_blank" rel="noopener noreferrer"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/img/v1.0.6-metaedit_startup.png" alt="MetaEdit Main Interface" width="300"></a></td>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/img/v1.0.6-metaedit_inputs.png" target="_blank" rel="noopener noreferrer"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/img/v1.0.6-metaedit_inputs.png" alt="MetaEdit Production Details" width="300"></a></td>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/img/v1.0.6-metaedit_generate.png" target="_blank" rel="noopener noreferrer"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/img/v1.0.6-metaedit_generate.png" alt="MetaEdit Composition Details" width="300"></a></td>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/img/v1.0.7-metaedit_startup.png" target="_blank" rel="noopener noreferrer"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/img/v1.0.7-metaedit_startup.png" alt="MetaEdit Main Interface" width="300"></a></td>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/img/v1.0.7-metaedit_inputs.png" target="_blank" rel="noopener noreferrer"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/img/v1.0.7-metaedit_inputs.png" alt="MetaEdit Production Details" width="300"></a></td>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/img/v1.0.7-metaedit_generate.png" target="_blank" rel="noopener noreferrer"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/img/v1.0.7-metaedit_generate.png" alt="MetaEdit Composition Details" width="300"></a></td>
   </tr>
 </table>
