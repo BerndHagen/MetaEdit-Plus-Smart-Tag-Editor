@@ -32,14 +32,9 @@ MetaEdit Plus supports a wide range of audio and video formats:
 
 MetaEdit Plus provides 18 metadata fields organized into three tabs:
 
-| Production | Technical | Composition |
-|------------|-----------|-------------|
-| Performer | Release Year | Genre |
-| Album Artist | Track Number | Description |
-| Composer | Disc Number | Grouping |
-| Conductor | Beats Per Minute | Copyright |
-| Total Tracks | Total Discs | Lyrics |
-| Publisher | Album | ISRC Code |
+- **Production:** Performer, Album Artist, Composer, Conductor, Total Tracks, Publisher
+- **Technical:** Release Year, Track Number, Disc Number, Beats Per Minute, Total Discs, Album
+- **Composition:** Genre, Description, Grouping, Copyright, Lyrics, ISRC Code
 
 Additionally, album artwork can be embedded directly into files through the thumbnail panel. The file title is automatically set to the filename during tag generation.
 
@@ -163,11 +158,6 @@ MetaEdit Plus provides keyboard shortcuts for faster workflow:
 | `Ctrl+S` | `F5` | Store Fields |
 | `Ctrl+B` | — | Browse Folder |
 | `Ctrl+Shift+R` | `F12` | New Session |
-| `Tab` | — | Next field in current tab |
-| `Shift+Tab` | — | Previous field in current tab |
-| `Escape` | — | Remove focus / Close popup |
-| `Arrow Up/Down` | — | Navigate archive history popup |
-| `Enter` | — | Select archive entry in popup |
 
 ## **Copyright**
 
