@@ -58,10 +58,9 @@ Additionally, album artwork can be embedded directly into files through the thum
    - [Step 4: Apply Changes](#step-4-apply-changes)
 5. [Action Buttons](#action-buttons)
 6. [Field Storage System](#field-storage-system)
-7. [Context Menus](#context-menus)
-8. [Keyboard Shortcuts](#keyboard-shortcuts)
-9. [Copyright](#copyright)
-10. [Screenshots](#screenshots)
+7. [Keyboard Shortcuts](#keyboard-shortcuts)
+8. [Copyright](#copyright)
+9. [Screenshots](#screenshots)
 
 ## **System Requirements**
 
@@ -150,35 +149,6 @@ The field storage system allows you to save and reuse metadata configurations:
 3. **Capacity:** Up to 20 configurations can be stored. When the limit is reached, the oldest entry is automatically removed.
 4. **Duplicate Detection:** The system uses content hashing to prevent saving identical configurations multiple times.
 5. **New Session:** Press `F12` or `Ctrl+Shift+R` to clear all fields and start fresh.
-
-## **Context Menus**
-
-MetaEdit Plus provides context menus for quick access to common functions:
-
-### TextBox Context Menu
-| Option | Description |
-|--------|-------------|
-| **Cut Content** | Cut selected text to clipboard |
-| **Copy Content** | Copy selected text to clipboard |
-| **Paste Content** | Paste text from clipboard |
-
-### Console Context Menu
-| Option | Description |
-|--------|-------------|
-| **Copy Console** | Copy entire console content to clipboard |
-| **Clear Console** | Clear all console messages |
-
-### Thumbnail Context Menu
-| Option | Description |
-|--------|-------------|
-| **Select Image** | Open file dialog to select an image |
-| **Remove Image** | Reset thumbnail to default image |
-
-### Path Context Menu
-| Option | Description |
-|--------|-------------|
-| **Open Folder** | Open selected folder in Windows Explorer |
-| **Copy Path** | Copy folder path to clipboard |
 
 ## **Keyboard Shortcuts**
 
