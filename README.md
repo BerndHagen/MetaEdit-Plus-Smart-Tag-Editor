@@ -69,7 +69,7 @@ TagLib# powers robust metadata processing, ensuring compatibility with industry 
 - **RAM:** 4 GB
 - **Graphics:** DirectX 11 compatible (integrated graphics acceptable)
 - **Software:** .NET 10.0 Runtime
-  - [Download .NET 10.0 Runtime](https://dotnet.microsoft.com/download/dotnet/10.0/runtime)
+  - [Download .NET 10.0 Runtime](https://dotnet.microsoft.com/download/dotnet/10.0/runtime)  - **Not required as application is self-contained**
 - **Storage:** 20 MB of free disk space
 
 ### **Recommended Requirements**
@@ -77,6 +77,7 @@ TagLib# powers robust metadata processing, ensuring compatibility with industry 
 - **Processor:** Quad-core processor, 2.0 GHz or higher
 - **RAM:** 8 GB or higher
 - **Software:** .NET 10.0 Runtime
+  - [Download .NET 10.0 Runtime](https://dotnet.microsoft.com/download/dotnet/10.0/runtime)  - **Not required as application is self-contained**
 - **Storage:** 50 MB of free disk space
 
 ## Third-Party Libraries
