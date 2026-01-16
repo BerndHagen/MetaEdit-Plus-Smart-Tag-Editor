@@ -64,21 +64,20 @@ TagLib# powers robust metadata processing, ensuring compatibility with industry 
 ## **System Requirements**
 
 ### **Minimum Requirements**
-- **Operating System:** Windows 10/11 (64-bit)
-- **Processor:** Dual-core processor, 1.5 GHz or higher
+- **Operating System:** Windows 10 (64-bit) version 1809 or later
+- **Processor:** Intel Core i3 or AMD Ryzen 3 with 2 cores at 1.5 GHz
 - **RAM:** 4 GB
-- **Graphics:** DirectX 11 compatible (integrated graphics acceptable)
-- **Software:** .NET 10.0 Runtime
-  - [Download .NET 10.0 Runtime](https://dotnet.microsoft.com/download/dotnet/10.0/runtime)  - **Not required as application is self-contained**
-- **Storage:** 20 MB of free disk space
+- **Storage:** 150 MB of free disk space plus additional space for processed files
+- **Software:** .NET 10.0 Runtime ([Download](https://dotnet.microsoft.com/download/dotnet/10.0/runtime)) - **Not required as application is self-contained**
 
 ### **Recommended Requirements**
-- **Operating System:** Windows 10/11 (64-bit)
-- **Processor:** Quad-core processor, 2.0 GHz or higher
+- **Operating System:** Windows 10/11 (64-bit) version 21H2 or later
+- **Processor:** Intel Core i5 or AMD Ryzen 5 with 4 cores, 2.0 GHz or higher
 - **RAM:** 8 GB or higher
-- **Software:** .NET 10.0 Runtime
-  - [Download .NET 10.0 Runtime](https://dotnet.microsoft.com/download/dotnet/10.0/runtime)  - **Not required as application is self-contained**
-- **Storage:** 50 MB of free disk space
+- **Storage:** 200 MB of free disk space on SSD plus additional space for processed files
+- **Software:** .NET 10.0 Runtime ([Download](https://dotnet.microsoft.com/download/dotnet/10.0/runtime)) - **Not required as application is self-contained**
+
+**Note:** MetaEdit Plus is designed exclusively for Windows. Linux and macOS are not supported, even through compatibility layers like Wine. The .NET 10.0 Runtime is bundled directly in the installer, allowing MetaEdit Plus to start immediately without requiring separate installation.
 
 ## Third-Party Libraries
 
