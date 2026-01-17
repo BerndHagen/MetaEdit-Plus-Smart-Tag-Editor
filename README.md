@@ -143,7 +143,7 @@ The field storage system allows you to save and reuse metadata configurations:
 2. **Loading:** Click **Restore Fields** to see a dropdown of all saved configurations. Use arrow keys to navigate and Enter to select, or click directly on an entry.
 3. **Capacity:** Up to 20 configurations can be stored. When the limit is reached, the oldest entry is automatically removed.
 4. **Duplicate Detection:** The system uses content hashing to prevent saving identical configurations multiple times.
-5. **New Session:** Press `F12` or `Ctrl+Shift+R` to clear all fields and start fresh.
+5. **New Session:** Press `F12` or `Ctrl+N` to clear all fields and start fresh.
 
 ## **Keyboard Shortcuts**
 
