@@ -156,8 +156,8 @@ MetaEdit Plus provides keyboard shortcuts for faster workflow:
 | `Ctrl+L` | `F3` | Clear Console |
 | `Ctrl+T` | `F4` | Restore Fields |
 | `Ctrl+S` | `F5` | Store Fields |
-| `Ctrl+B` | — | Browse Folder |
-| `Ctrl+Shift+R` | `F12` | New Session |
+| `Ctrl+B` | `F6` | Browse Folder |
+| `Ctrl+N` | `F12` | New Session |
 
 ## **Copyright**
 
