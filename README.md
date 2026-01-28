@@ -151,7 +151,7 @@ The Auto-Tag feature searches the following sources in order until a match is fo
 1. Select files in your folder
 2. Click the **Auto** icon in the sidebar
 3. The application generates an audio fingerprint and searches databases
-4. Found metadata is automatically populated into the fields
+4. Found metadata and album artwork are automatically populated into the fields
 5. Review and modify the results as needed
 6. Click **Write Tags** to apply the metadata
 
