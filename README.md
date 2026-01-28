@@ -15,7 +15,7 @@
 ### **Key Features**
 
 - **Batch Processing:** Apply metadata changes to all files in a folder at once, with progress tracking in the console output.
-- **Auto-Tag:** Automatically fetch metadata from MusicBrainz, VGMdb, and Discogs databases based on filenames or audio fingerprints.
+- **Auto-Tag:** Automatically fetch metadata from AcoustID, MusicBrainz, and VGMdb databases using audio fingerprinting technology.
 - **Album Artwork:** Embed cover images directly into files via drag-and-drop or file browser selection.
 - **Field Storage:** Save up to 20 field configurations with timestamps for quick reuse across different sessions.
 - **Multi-Format Support:** Edit metadata in 8 audio formats and 6 video formats with full tag support.
@@ -142,20 +142,20 @@ The Auto-Tag feature searches the following sources in order until a match is fo
 
 | Database | Description |
 |----------|-------------|
+| **AcoustID** | Audio fingerprinting service that identifies tracks by their acoustic signature |
 | **MusicBrainz** | Comprehensive open-source music database with millions of releases |
 | **VGMdb** | Specialized database for video game, anime, and soundtrack music |
-| **Discogs** | Music catalog with detailed release information and discographies |
 
 ### **How It Works**
 
 1. Select files in your folder
 2. Click the **Auto** icon in the sidebar
-3. The application searches databases using the folder name and filename
+3. The application generates an audio fingerprint and searches databases
 4. Found metadata is automatically populated into the fields
 5. Review and modify the results as needed
 6. Click **Write Tags** to apply the metadata
 
-**Note:** Auto-Tag works best with properly organized folders where the folder name contains the artist and album information. The search uses the directory name and filename to find matches.
+**Note:** Auto-Tag uses AcoustID fingerprinting technology (powered by Chromaprint) to identify audio files by their acoustic signature. This provides more accurate results than filename-based searches. VGMdb is specifically used for video game and anime soundtracks.
 
 ## **Action Buttons**
 
