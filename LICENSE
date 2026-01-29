@@ -1,36 +1,23 @@
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-|                 METAEDIT PLUS - SMART TAG EDITOR                |
-|                         COPYRIGHT NOTICE                        |
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
+MetaEdit Plus - Smart Tag Editor
 Copyright (c) 2026 Bernd Julian Hagen
 
-## Permissions
-You are free to:
-- Download and use this software
-- Use it for personal or commercial purposes
-- Share the original, unmodified binaries
+PROPRIETARY SOFTWARE LICENSE
 
-## Restrictions
-You may NOT:
-- Modify, reverse engineer, or decompile the software
-- Create derivative works
-- Sell or sublicense the software
-- Remove copyright notices
+PERMITTED USE:
+  - Free to use for personal and commercial purposes
+  - May distribute the original, unmodified executable
 
-## Attribution
-When redistributing, you must:
-- Credit "Bernd Julian Hagen" as the author
-- Keep the name "MetaEdit Plus - Smart Tag Editor"
-- Link to the official repository
+RESTRICTIONS:
+  - No modification, reverse engineering, or decompilation
+  - No removal of copyright notices
+  - No redistribution under a different name
 
-## Third-Party Components
-This software uses TagLib (LGPL). See THIRD-PARTY-LICENSES
+DISCLAIMER:
+  This software is provided "as is" without warranty of any kind.
+  The author is not liable for any damages arising from its use.
 
-## Disclaimer
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
-THE AUTHOR IS NOT LIABLE FOR ANY DAMAGES ARISING FROM ITS USE.
+THIRD-PARTY COMPONENTS:
+  This software uses TagLib (LGPL).
+  See README for details.
 
-## Support
-This is free software provided as-is. Support and updates are
-provided at the author's discretion.
+For questions and support, please use GitHub Discussions.
