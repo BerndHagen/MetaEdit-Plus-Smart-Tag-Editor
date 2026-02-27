@@ -63,13 +63,14 @@ Additionally, album artwork can be embedded directly into files through the thum
 5. [Edit Modes](#edit-modes)
 6. [Auto-Tag Feature](#auto-tag-feature)
 7. [Action Buttons](#action-buttons)
-8. [Field Storage System](#field-storage-system)
-9. [Settings](#settings)
-10. [Keyboard Shortcuts](#keyboard-shortcuts)
-11. [Sidebar](#sidebar)
-12. [Context Menus](#context-menus)
-13. [Copyright](#copyright)
-14. [Screenshots](#screenshots)
+8. [Undo and Redo](#undo-and-redo)
+9. [Field Storage System](#field-storage-system)
+10. [Settings](#settings)
+11. [Keyboard Shortcuts](#keyboard-shortcuts)
+12. [Sidebar](#sidebar)
+13. [Context Menus](#context-menus)
+14. [Copyright](#copyright)
+15. [Screenshots](#screenshots)
 
 ## **System Requirements**
 
@@ -222,6 +223,29 @@ MetaEdit Plus provides five main action buttons for managing metadata:
 | **Store Fields** | Saves the current field configuration with a timestamp for later use (fields are preserved, not cleared) |
 | **Restore Fields** | Opens a dropdown menu to select and load a previously saved configuration |
 | **Clear Console** | Clears all messages from the console output panel |
+
+## **Undo and Redo**
+
+MetaEdit Plus includes a multi-level undo and redo system that lets you reverse or reapply entire tag operations. This covers **Write Tags**, **Remove Tags**, and **Auto-Tag** — each operation takes a full snapshot of all affected files before making changes, including metadata fields and album artwork.
+
+### **How It Works**
+
+- Press `Ctrl+Z` to undo the last tag operation. All files affected by that operation are restored to their previous state.
+- Press `Ctrl+Y` to redo an undone operation, reapplying the changes that were reversed.
+- Up to **20 undo/redo levels** are supported, so you can step back through multiple operations.
+- The redo history is cleared whenever a new tag operation is performed.
+
+### **What Gets Restored**
+
+Each undo/redo snapshot captures the complete metadata state of every file involved in the operation:
+- All 18 metadata fields (title, artist, album, year, genre, etc.)
+- Embedded album artwork (including image data and picture type)
+
+This means that undoing a **Remove Tags** operation will fully restore all stripped metadata and artwork, and undoing a **Write Tags** operation will revert files to their exact state before writing.
+
+### **Console Feedback**
+
+The console displays progress for each undo/redo action, including the name of the operation being reversed, the number of files restored, and how many undo steps remain.
 
 ## **Field Storage System**
 
