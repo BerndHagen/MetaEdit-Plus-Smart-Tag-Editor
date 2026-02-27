@@ -10,7 +10,7 @@
   <a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/releases"><img src="https://img.shields.io/github/v/release/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor?include_prereleases&style=flat-square&color=CD853F" alt="Latest Release"></a>&nbsp;&nbsp;<a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Freeware-green?style=flat-square" alt="License"></a>&nbsp;&nbsp;<a href="https://dotnet.microsoft.com/download/dotnet/10.0/runtime"><img src="https://img.shields.io/badge/.NET-10.0-512BD4?style=flat-square" alt=".NET Version"></a>&nbsp;&nbsp;<img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square" alt="Platform">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Architecture-x64-lightgrey?style=flat-square" alt="Architecture">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" alt="Status">&nbsp;&nbsp;<a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/issues"><img src="https://img.shields.io/badge/Issues-0_open-orange?style=flat-square" alt="Open Issues"></a>
 </p>
 
-**MetaEdit Plus** is a metadata editor for audio and video files. It processes entire folders at once, allowing you to apply tags to all files simultaneously, or edit files individually in Per-File Mode. The application provides 18 metadata fields organized into three tabs, supports field storage with up to 50 saved configurations, features automatic metadata lookup from online databases, and includes real-time system monitoring with CPU, RAM, and disk usage graphs.
+**MetaEdit Plus** is a metadata editor for audio and video files. It processes entire folders at once, allowing you to apply tags to all files simultaneously, or edit files individually in Per-File Mode. The application provides 18 metadata fields organized into three tabs, supports field storage with up to 50 saved configurations per session, features automatic metadata lookup from online databases, and includes real-time system monitoring with CPU, RAM, and disk usage graphs.
 
 ### **Key Features**
 
@@ -18,13 +18,13 @@
 - **Per-File Mode:** Edit metadata for individual files separately, with automatic caching of unsaved changes when switching between files.
 - **Auto-Tag:** Automatically fetch metadata from AcoustID, MusicBrainz, and VGMdb databases using audio fingerprinting technology.
 - **Album Artwork:** Embed cover images directly into files via drag-and-drop, with automatic compression to 500px and JPEG 85% quality.
-- **Field Storage:** Save up to 50 field configurations with timestamps for quick reuse across different sessions.
+- **Field Storage:** Save up to 50 field configurations (including album artwork) with timestamps for quick reuse within the current session.
 - **Copy/Paste/Remove Metadata:** Copy metadata from one file and paste it to another, or remove all metadata from a selected file, via right-click context menu in Per-File Mode.
 - **Settings Dialog:** Configure ID3v2 version (2.3/2.4), text encoding (UTF-8/UTF-16/Latin1), cover image settings, tag retention options, and auto-tag scope.
 - **Auto-Update:** Check for new versions directly from the application with one-click update installation.
 - **Multi-Format Support:** Edit metadata in 7 audio formats and 6 video formats with full tag support.
 - **System Monitoring:** Real-time performance graphs showing CPU, RAM, and disk usage with numerical statistics.
-- **Context Menus:** Quick access to copy, paste, clear console, select/remove images, copy/paste/remove metadata, and open folder locations.
+- **Context Menus:** Quick access to cut/copy/paste text, copy/clear console, select/remove images, copy/paste/remove metadata, and open folder or copy path from the path bar.
 
 ### **Supported Formats**
 
@@ -34,6 +34,8 @@ MetaEdit Plus supports a wide range of audio and video formats:
 - **Video Formats:** `MP4`, `MKV`, `MOV`, `WMV`, `M4V`, `WEBM`
 
 > **Note:** Raw AAC files are not supported as they lack a proper tag container. Please use M4A (AAC in MP4 container) instead.
+
+> **Format Limitations:** Some formats have limited metadata support. WAV has limited tag support and thumbnail embedding may not work. AIFF supports basic metadata only. WebM has limited tag field support. MOV metadata support varies depending on how the file was created.
 
 ### **Available Metadata Fields**
 
@@ -64,8 +66,10 @@ Additionally, album artwork can be embedded directly into files through the thum
 8. [Field Storage System](#field-storage-system)
 9. [Settings](#settings)
 10. [Keyboard Shortcuts](#keyboard-shortcuts)
-11. [Copyright](#copyright)
-12. [Screenshots](#screenshots)
+11. [Sidebar](#sidebar)
+12. [Context Menus](#context-menus)
+13. [Copyright](#copyright)
+14. [Screenshots](#screenshots)
 
 ## **System Requirements**
 
@@ -117,13 +121,16 @@ When you open MetaEdit Plus, select either **Audio Library** or **Video Library*
 ### **Step 2: Choose Format and Select Files**
 
 1. Select the desired file format from the format dropdown (MP3, FLAC, MP4, etc.)
-2. Click **Browse** or press `Ctrl+B` to select media files for editing
+2. Click **Browse** or press `Ctrl+B` to select one or more media files for editing
 3. The application will display the number of files found in the console and list them in the file panel
+
+**Multi-Select:** You can select multiple files in the Browse dialog. When selecting files from the same directory as the existing list, new files are added (duplicates are skipped). When selecting files from a different directory, the list is replaced.
 
 **Drag & Drop:** You can also drag files or folders directly onto the file list panel:
 - **Dragging a folder:** Loads all matching files from that folder
 - **Dragging files from the same folder:** Adds them to the existing list (duplicates are skipped)
 - **Dragging files from a different folder:** Replaces the entire list with the new files
+- **Auto-Detection:** When dragging individual files, the Library Type and Format dropdowns are automatically adjusted to match the dropped file's format
 
 **Note:** All files in the list must be from the same directory. Files from different folders cannot be mixed.
 
@@ -154,6 +161,8 @@ In Batch Mode, all metadata changes are applied to every file in the folder simu
 - Auto-Tag searches once and applies to all files
 - Ideal for albums where all tracks share the same metadata
 
+> **Note:** In Batch Mode, only non-empty fields are written. Fields left blank will not overwrite existing metadata in the files, allowing you to selectively update specific tags while preserving others.
+
 ### **Per-File Mode**
 
 In Per-File Mode, each file has its own individual metadata fields:
@@ -163,6 +172,8 @@ In Per-File Mode, each file has its own individual metadata fields:
 - Write Tags only writes files that have been modified
 - Remove Tags only affects the currently selected file
 - Auto-Tag applies results only to the file where it was initiated
+
+> **Note:** In Per-File Mode, all fields are written including empty ones. Clearing a field and writing tags will remove that metadata from the file.
 
 **Context Menu:** In Per-File Mode, right-click on the file list to access:
 - **Copy Metadata:** Copies all metadata fields and thumbnail from the selected file
@@ -196,6 +207,10 @@ The Auto-Tag feature searches the following sources in order until a match is fo
 
 **Note:** Auto-Tag uses AcoustID fingerprinting technology (powered by Chromaprint) to identify audio files by their acoustic signature. This provides more accurate results than filename-based searches. VGMdb is specifically used for video game and anime soundtracks.
 
+**Cancel:** Press `Escape` at any time to cancel an active Auto-Tag search.
+
+**Auto-Tag All:** When the Auto-Tag Scope setting is set to "All Files in List" and you are in Per-File Mode, clicking Auto-Tag will process every file in the list sequentially. A 1.5-second delay is applied between files for database rate limiting. Progress is shown in the console for each file.
+
 ## **Action Buttons**
 
 MetaEdit Plus provides five main action buttons for managing metadata:
@@ -220,7 +235,7 @@ The field storage system allows you to save and reuse metadata configurations:
 
 ## **Settings**
 
-Click the **Settings** icon in the sidebar or press `Ctrl+Shift+S` to open the settings dialog:
+Click the **Settings** icon in the sidebar to open the settings dialog:
 
 ### **ID3v2 Version**
 - **ID3v2.3** (Default): Best compatibility with Windows Explorer and most media players
@@ -265,7 +280,57 @@ MetaEdit Plus provides keyboard shortcuts for faster workflow:
 | `Ctrl++` | — | Zoom In |
 | `Ctrl+-` | — | Zoom Out |
 | `Ctrl+0` | — | Reset Zoom |
-| `Escape` | — | Clear Focus |
+| `Tab` | `Shift+Tab` | Cycle Through Fields |
+| `Escape` | — | Cancel Auto-Tag / Clear Focus |
+| `↑` / `↓` | — | Navigate File List |
+| `Home` / `End` | — | Jump to First / Last File |
+| `Page Up` / `Page Down` | — | Scroll File List by Page |
+| `Enter` | — | Open Selected File |
+
+## **Sidebar**
+
+The left sidebar provides quick access to the main application functions:
+
+| Icon | Function | Description |
+|------|----------|-------------|
+| **New Session** | `Ctrl+N` / `F12` | Clears all metadata fields, resets the file list, and starts a fresh editing session |
+| **Open Files** | `Ctrl+B` / `F6` | Opens a folder browser dialog to select media files for editing |
+| **Open GitHub** | — | Opens the MetaEdit Plus GitHub repository in the default browser |
+| **Auto-Tag** | `Ctrl+A` / `F7` | Starts automatic metadata lookup using audio fingerprinting |
+| **Check Updates** | — | Checks for new application versions and downloads updates if available |
+| **App Settings** | — | Opens the settings dialog for configuring tag options and preferences |
+| **Exit App** | — | Closes the application |
+
+## **Context Menus**
+
+MetaEdit Plus provides context menus (right-click) in several areas:
+
+### **Text Fields**
+Right-click on any metadata text field to access:
+- **Cut Content** — Cut the selected text to clipboard
+- **Copy Content** — Copy the selected text to clipboard
+- **Paste Content** — Paste text from clipboard into the field
+
+### **Console Output**
+Right-click on the console area to access:
+- **Copy Console** — Copy all console output to clipboard
+- **Clear Console** — Clear all messages from the console
+
+### **Thumbnail Panel**
+Right-click on the album artwork panel to access:
+- **Select Image** — Open a file dialog to choose an image
+- **Remove Image** — Remove the currently embedded artwork
+
+### **Path Bar**
+Right-click on the folder path bar to access:
+- **Open Folder** — Open the current folder in Windows Explorer
+- **Copy Path** — Copy the folder path to clipboard
+
+### **File List** (Per-File Mode only)
+Right-click on a file in the list to access:
+- **Copy Metadata** — Copy all metadata fields and thumbnail from the selected file
+- **Paste Metadata** — Apply previously copied metadata to the selected file
+- **Remove Metadata** — Strip all metadata from the selected file
 
 ## **Copyright**
 
