@@ -207,8 +207,6 @@ MetaEdit Plus provides five main action buttons for managing metadata:
 | **Store Fields** | Saves the current field configuration with a timestamp for later use (fields are preserved, not cleared) |
 | **Restore Fields** | Opens a dropdown menu to select and load a previously saved configuration |
 | **Clear Console** | Clears all messages from the console output panel |
-| **Undo** | Reverses the last tag operation. Supports multiple undo levels for Write Tags, Remove Tags, and Auto-Tag. |
-| **Redo** | Re-applies an undone tag operation. Available after using Undo. |
 
 ## **Field Storage System**
 
