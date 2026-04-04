@@ -16,7 +16,7 @@
 
 - **Batch Processing:** Apply metadata changes to all files in a folder at once, with progress tracking in the console output.
 - **Per-File Mode:** Edit metadata for individual files separately, with automatic caching of unsaved changes when switching between files.
-- **Auto-Tag:** Automatically fetch metadata from AcoustID, MusicBrainz, and VGMdb databases using audio fingerprinting technology.
+- **Auto-Tag:** Automatically fetch metadata from AcoustID, MusicBrainz, and iTunes databases using audio fingerprinting technology.
 - **Album Artwork:** Embed cover images directly into files via drag-and-drop, with automatic compression to 500px and JPEG 85% quality.
 - **Cover Art Search:** Search for album artwork online by artist and album name, preview results, and embed directly into files.
 - **Field Storage:** Save up to 50 field configurations (including album artwork) with timestamps for quick reuse within the current session.
@@ -240,7 +240,7 @@ The Auto-Tag feature searches the following sources in order until a match is fo
 |----------|-------------|
 | **AcoustID** | Audio fingerprinting service that identifies tracks by their acoustic signature |
 | **MusicBrainz** | Comprehensive open-source music database with millions of releases |
-| **VGMdb** | Specialized database for video game, anime, and soundtrack music |
+| **iTunes** | Global music catalog used for cover art enrichment and metadata fallback |
 
 ### **How It Works**
 
@@ -251,7 +251,7 @@ The Auto-Tag feature searches the following sources in order until a match is fo
 5. Review and modify the results as needed
 6. Click **Write Tags** to apply the metadata
 
-**Note:** Auto-Tag uses AcoustID fingerprinting technology (powered by Chromaprint) to identify audio files by their acoustic signature. This provides more accurate results than filename-based searches. VGMdb is specifically used for video game and anime soundtracks.
+**Note:** Auto-Tag uses AcoustID fingerprinting technology (powered by Chromaprint) to identify audio files by their acoustic signature. This provides more accurate results than filename-based searches. iTunes is used as a fallback for cover art and metadata enrichment.
 
 **Cancel:** Press `Escape` at any time to cancel an active Auto-Tag search.
 
