@@ -1,23 +1,33 @@
 MetaEdit Plus - Smart Tag Editor
-Copyright (c) 2026 Bernd Julian Hagen
+Copyright (c) 2025-2026 Arctisoft-Studio / Bernd Julian Hagen
+All rights reserved.
 
 PROPRIETARY SOFTWARE LICENSE
 
 PERMITTED USE:
-  - Free to use for personal and commercial purposes
-  - May distribute the original, unmodified executable
+  - Free to use for personal and commercial purposes.
+  - Install on an unlimited number of devices you own or control.
+  - Make backup copies of the installer for personal archival purposes.
+  - May distribute the original, unmodified installer.
 
 RESTRICTIONS:
-  - No modification, reverse engineering, or decompilation
-  - No removal of copyright notices
-  - No redistribution under a different name
+  - No modification, reverse engineering, decompilation, or disassembly.
+  - No removal or alteration of copyright, trademark, or proprietary notices.
+  - No redistribution, sale, rental, or sublicensing without written permission.
 
 DISCLAIMER:
-  This software is provided "as is" without warranty of any kind.
-  The author is not liable for any damages arising from its use.
+  This software is provided "as is" without warranty of any kind,
+  express or implied. The author is not liable for any damages
+  arising from its use.
 
 THIRD-PARTY COMPONENTS:
-  This software uses TagLib (LGPL).
-  See README for details.
+  TagLib#          - LGPL 2.1  - Audio/video tag reading and writing
+  SharpDX          - MIT       - DirectX/Direct3D support
+  fpcalc           - MIT/LGPL  - Chromaprint audio fingerprinting
+  HtmlAgilityPack  - MIT       - HTML parsing (Cover Art Search)
 
-For questions and support, please use GitHub Discussions.
+GOVERNING LAW:
+  This license is governed by the laws of Austria.
+
+For questions and support:
+  https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/issues
