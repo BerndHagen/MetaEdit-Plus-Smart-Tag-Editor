@@ -1,0 +1,23 @@
+MetaEdit Plus - Smart Tag Editor
+Copyright (c) 2026 Bernd Julian Hagen
+
+PROPRIETARY SOFTWARE LICENSE
+
+PERMITTED USE:
+  - Free to use for personal and commercial purposes
+  - May distribute the original, unmodified executable
+
+RESTRICTIONS:
+  - No modification, reverse engineering, or decompilation
+  - No removal of copyright notices
+  - No redistribution under a different name
+
+DISCLAIMER:
+  This software is provided "as is" without warranty of any kind.
+  The author is not liable for any damages arising from its use.
+
+THIRD-PARTY COMPONENTS:
+  This software uses TagLib (LGPL).
+  See README for details.
+
+For questions and support, please use GitHub Discussions.
