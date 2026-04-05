@@ -363,7 +363,7 @@ MetaEdit Plus provides five main action buttons for managing metadata:
 
 ## **Undo and Redo**
 
-MetaEdit Plus includes a multi-level undo and redo system that lets you reverse or reapply entire tag operations. This covers **Write Tags**, **Remove Tags**, and **Auto-Tag** — each operation takes a full snapshot of all affected files before making changes, including metadata fields and album artwork.
+MetaEdit Plus includes a multi-level undo and redo system that lets you reverse or reapply entire tag operations. This covers **Write Tags**, **Remove Tags**, and **Auto-Tag** - each operation takes a full snapshot of all affected files before making changes, including metadata fields and album artwork.
 
 ### **How It Works**
 
@@ -494,30 +494,30 @@ MetaEdit Plus provides context menus (right-click) in several areas:
 
 ### **Text Fields**
 Right-click on any metadata text field to access:
-- **Cut Content** — Cut the selected text to clipboard
-- **Copy Content** — Copy the selected text to clipboard
-- **Paste Content** — Paste text from clipboard into the field
+- **Cut Content** - Cut the selected text to clipboard
+- **Copy Content** - Copy the selected text to clipboard
+- **Paste Content** - Paste text from clipboard into the field
 
 ### **Console Output**
 Right-click on the console area to access:
-- **Copy Console** — Copy all console output to clipboard
-- **Clear Console** — Clear all messages from the console
+- **Copy Console** - Copy all console output to clipboard
+- **Clear Console** - Clear all messages from the console
 
 ### **Thumbnail Panel**
 Right-click on the album artwork panel to access:
-- **Select Image** — Open a file dialog to choose an image
-- **Remove Image** — Remove the currently embedded artwork
+- **Select Image** - Open a file dialog to choose an image
+- **Remove Image** - Remove the currently embedded artwork
 
 ### **Path Bar**
 Right-click on the folder path bar to access:
-- **Open Folder** — Open the current folder in Windows Explorer
-- **Copy Path** — Copy the folder path to clipboard
+- **Open Folder** - Open the current folder in Windows Explorer
+- **Copy Path** - Copy the folder path to clipboard
 
 ### **File List** (Per-File Mode only)
 Right-click on a file in the list to access:
-- **Copy Metadata** — Copy all metadata fields and thumbnail from the selected file
-- **Paste Metadata** — Apply previously copied metadata to the selected file
-- **Remove Metadata** — Strip all metadata from the selected file
+- **Copy Metadata** - Copy all metadata fields and thumbnail from the selected file
+- **Paste Metadata** - Apply previously copied metadata to the selected file
+- **Remove Metadata** - Strip all metadata from the selected file
 
 ## **Copyright**
 
