@@ -20,7 +20,7 @@
 - **Album Artwork:** Embed cover images directly into files via drag-and-drop, with automatic compression to 500px and JPEG 85% quality.
 - **Cover Art Search:** Search for album artwork online by artist and album name, preview results, and embed directly into files.
 - **Field Storage:** Save up to 50 field configurations (including album artwork) with timestamps for quick reuse within the current session.
-- **Text Tools:** Find and replace text across metadata fields, convert case (Title Case, UPPERCASE, lowercase, Sentence case), and apply file pattern operations.
+- **Text Tools:** Find and replace text across metadata fields, convert case (Title Case, UPPERCASE, lowercase), and apply file pattern operations.
 - **File Pattern Tool:** Extract metadata from filenames using patterns like `%artist% - %album%`, or rename files based on their metadata tags.
 - **CSV Export/Import:** Export metadata from loaded files to CSV, or import metadata from a CSV file to update tags in bulk.
 - **Find & Replace:** Search and replace text across 8 metadata fields with optional case sensitivity and live preview of changes.
@@ -145,7 +145,7 @@ For more details about TagLib# including its capabilities and supported formats,
 
 ### HtmlAgilityPack
 
-**HtmlAgilityPack** is a .NET library for parsing and manipulating HTML documents. MetaEdit Plus uses it to parse search results when performing online cover art lookups.
+**HtmlAgilityPack** is a .NET library for parsing and manipulating HTML documents. MetaEdit Plus uses it to scrape metadata from online music databases when direct API results are insufficient.
 
 - **Website:** [HtmlAgilityPack](https://html-agility-pack.net/)
 - **License:** MIT License
@@ -255,7 +255,7 @@ The Auto-Tag feature searches the following sources in order until a match is fo
 
 **Cancel:** Press `Escape` at any time to cancel an active Auto-Tag search.
 
-**Auto-Tag All:** When the Auto-Tag Scope setting is set to "All Files in List" and you are in Per-File Mode, clicking Auto-Tag will process every file in the list sequentially. A 1.5-second delay is applied between files for database rate limiting. Progress is shown in the console for each file.
+**Auto-Tag All:** When the Auto-Tag Scope setting is set to "All Files in List" and you are in Per-File Mode, clicking Auto-Tag will process every file in the list sequentially. A 2-second delay is applied between files for database rate limiting. Progress is shown in the console for each file.
 
 ## **Cover Art Search**
 
@@ -267,7 +267,7 @@ The Cover Art Search window lets you find and embed album artwork by searching o
 4. Click a result to preview it at full size
 5. Click **Apply** to embed the selected artwork into your files
 
-The search uses MusicBrainz and other sources to find high-quality cover art. Results are displayed with preview thumbnails so you can compare options before applying.
+The search uses MusicBrainz to find high-quality cover art. Results are displayed with preview thumbnails so you can compare options before applying.
 
 ## **Text Tools**
 
@@ -290,7 +290,7 @@ Convert text case across metadata fields. Four modes are available:
 | **Title Case** | `hello world` becomes `Hello World` |
 | **UPPERCASE** | `hello world` becomes `HELLO WORLD` |
 | **lowercase** | `HELLO WORLD` becomes `hello world` |
-| **Sentence case** | `hello world` becomes `Hello world` |
+
 
 Select which metadata fields to convert and preview the results before applying.
 
@@ -363,7 +363,7 @@ MetaEdit Plus provides five main action buttons for managing metadata:
 
 ## **Undo and Redo**
 
-MetaEdit Plus includes a multi-level undo and redo system that lets you reverse or reapply entire tag operations. This covers **Write Tags**, **Remove Tags**, and **Auto-Tag** - each operation takes a full snapshot of all affected files before making changes, including metadata fields and album artwork.
+MetaEdit Plus includes a multi-level undo and redo system that lets you reverse or reapply entire tag operations. This covers **Write Tags**, **Remove Tags**, **Auto-Tag**, **Find & Replace**, **Case Conversion**, **File Pattern Tool**, and **Remove Metadata** - each operation takes a full snapshot of all affected files before making changes, including metadata fields and album artwork.
 
 ### **How It Works**
 
@@ -431,7 +431,7 @@ MetaEdit Plus supports cloud synchronization of tag settings through **[Arctisof
 1. Sign in to **[Arctisoft Hub](https://github.com/BerndHagen/Arctisoft-Studio-Hub)** on your computer
 2. MetaEdit Plus reads the shared authentication session automatically
 3. On launch, your cloud settings are loaded and merged with local settings
-4. When you change settings, they are saved to the cloud in the background
+4. When you save your settings, they are synced to the cloud in the background
 
 ### **Synced Settings**
 
@@ -458,7 +458,7 @@ MetaEdit Plus provides keyboard shortcuts for faster workflow:
 | `Ctrl+B` | `F6` | Browse Files |
 | `Ctrl+A` | `F7` | Auto-Tag |
 | `Ctrl+N` | `F12` | New Session |
-| `Ctrl+H` | - | Text Tools |
+| `Ctrl+H` | - | Find & Replace |
 | `Ctrl+F` | - | Search Files |
 | `Ctrl+Shift+T` | - | Tag from Filename |
 | `Ctrl+Shift+R` | - | Filename from Tags |
@@ -483,7 +483,7 @@ The left sidebar provides quick access to the main application functions:
 | **New Session** | `Ctrl+N` / `F12` | Clears all metadata fields, resets the file list, and starts a fresh editing session |
 | **Open Files** | `Ctrl+B` / `F6` | Opens a folder browser dialog to select media files for editing |
 | **Auto-Tag** | `Ctrl+A` / `F7` | Starts automatic metadata lookup using audio fingerprinting |
-| **Text Tools** | `Ctrl+H` | Opens the Text Tools window for find and replace, case conversion, and file pattern operations |
+| **Text Tools** | - | Opens the Text Tools window for find and replace, case conversion, and file pattern operations |
 | **CSV Import/Export** | - | Opens the CSV export and import window for bulk metadata management |
 | **App Settings** | - | Opens the settings dialog for configuring tag options and preferences |
 | **Exit App** | - | Closes the application |
