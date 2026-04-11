@@ -116,14 +116,14 @@ Additionally, album artwork can be embedded directly into files through the thum
 - **Operating System:** Windows 10 (64-bit) version 1809 or later
 - **Processor:** Dual-core processor at 1.5 GHz
 - **RAM:** 4 GB
-- **Storage:** 150 MB of free disk space
+- **Storage:** 300 MB of free disk space
 - **Software:** .NET 10.0 Runtime ([Download](https://dotnet.microsoft.com/download/dotnet/10.0/runtime)) - **Not required as application is self-contained**
 
 ### **Recommended Requirements**
 - **Operating System:** Windows 10/11 (64-bit) version 21H2 or later
 - **Processor:** Quad-core processor at 2.0 GHz or higher
 - **RAM:** 8 GB or higher
-- **Storage:** 200 MB of free disk space on SSD
+- **Storage:** 500 MB of free disk space on SSD
 - **Software:** .NET 10.0 Runtime ([Download](https://dotnet.microsoft.com/download/dotnet/10.0/runtime)) - **Not required as application is self-contained**
 
 **Note:** MetaEdit Plus is designed exclusively for Windows. Linux and macOS are not supported. The .NET 10.0 Runtime is bundled directly in the installer, allowing MetaEdit Plus to start immediately without requiring separate installation.
