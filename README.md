@@ -24,11 +24,11 @@
 - **File Pattern Tool:** Extract metadata from filenames using patterns like `%artist% - %album%`, or rename files based on their metadata tags.
 - **CSV Export/Import:** Export metadata from loaded files to CSV, or import metadata from a CSV file to update tags in bulk.
 - **Find & Replace:** Search and replace text across 8 metadata fields with optional case sensitivity and live preview of changes.
-- **Copy/Paste/Remove Metadata:** Copy metadata from one file and paste it to another, or remove all metadata from a selected file, via right-click context menu in Per-File Mode.
+- **Copy/Paste/Remove Metadata:** Copy metadata from one file and paste it to another, remove all metadata from a selected file, or open detailed track information via the right-click context menu in Per-File Mode.
 - **File Search:** Filter the file list by name using the built-in search bar.
 - **Settings Dialog:** Configure ID3v2 version (2.3/2.4), text encoding (UTF-8/UTF-16/Latin1), cover image settings, tag retention options, and auto-tag scope.
 - **Cloud Settings Sync:** Sync tag settings to the cloud via [Arctisoft Hub](https://github.com/BerndHagen/Arctisoft-Studio-Hub), keeping your configuration consistent across devices.
-- **Multi-Format Support:** Edit metadata in 7 audio formats and 6 video formats with full tag support.
+- **Multi-Format Support:** Edit metadata in 7 audio formats and 6 video formats with format-dependent tag support.
 - **System Monitoring:** Real-time performance graphs showing CPU, RAM, and disk usage with numerical statistics.
 - **Context Menus:** Quick access to cut/copy/paste text, copy/clear console, select/remove images, copy/paste/remove metadata, and open folder or copy path from the path bar.
 
@@ -347,7 +347,7 @@ The CSV Export/Import window allows you to manage metadata in bulk using CSV fil
 3. Preview the matched data before applying
 4. Click **Apply** to write the imported metadata to matching files
 
-**Note:** The CSV file must include a `File` or `Filename` column to match rows to the correct files.
+**Note:** The CSV file must include a full-path column (`FilePath`, `Path`, or `FullPath`) or a filename column (`Filename`, `File`, or `Name`) to match rows to the correct files.
 
 ## **Action Buttons**
 
@@ -403,8 +403,8 @@ Click the **Settings** icon in the sidebar to open the settings dialog:
 - **ID3v2.4**: Modern version with better Unicode support, recommended for international characters
 
 ### **Text Encoding**
-- **UTF-8** (Default): Universal encoding supporting all characters
-- **UTF-16**: Alternative encoding for special character sets
+- **UTF-16** (Default): Best compatibility with ID3v2.3 and Windows media tools
+- **UTF-8**: Unicode encoding for ID3v2.4 tags
 - **Latin1**: Legacy encoding for maximum compatibility with older software
 
 ### **Cover Image Settings**
@@ -467,12 +467,11 @@ MetaEdit Plus provides keyboard shortcuts for faster workflow:
 | `Ctrl++` | - | Zoom In |
 | `Ctrl+-` | - | Zoom Out |
 | `Ctrl+0` | - | Reset Zoom |
-| `Tab` | `Shift+Tab` | Cycle Through Fields |
+| `Tab` | `Shift+Tab` | Cycle Through Fields when a metadata field is focused |
 | `Escape` | - | Cancel Auto-Tag / Clear Focus |
 | `Up` / `Down` | - | Navigate File List |
 | `Home` / `End` | - | Jump to First / Last File |
 | `Page Up` / `Page Down` | - | Scroll File List by Page |
-| `Enter` | - | Open Selected File |
 
 ## **Sidebar**
 
@@ -518,6 +517,7 @@ Right-click on a file in the list to access:
 - **Copy Metadata** - Copy all metadata fields and thumbnail from the selected file
 - **Paste Metadata** - Apply previously copied metadata to the selected file
 - **Remove Metadata** - Strip all metadata from the selected file
+- **Track Info** - Open detailed file and tag information for the selected file
 
 ## **Copyright**
 
