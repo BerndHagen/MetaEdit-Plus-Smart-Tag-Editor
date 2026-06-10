@@ -16,9 +16,8 @@
 
 - **Batch Processing:** Apply metadata changes to all files in a folder at once, with progress tracking in the console output.
 - **Per-File Mode:** Edit metadata for individual files separately, with automatic caching of unsaved changes when switching between files.
-- **Auto-Tag:** Automatically fetch metadata from AcoustID, MusicBrainz, and iTunes databases using audio fingerprinting technology.
-- **Album Artwork:** Embed cover images directly into files via drag-and-drop, with automatic compression to 500px and JPEG 85% quality.
-- **Cover Art Search:** Search for album artwork online by artist and album name, preview results, and embed directly into files.
+- **Auto-Tag:** Automatically fetch metadata and album artwork from AcoustID, MusicBrainz, and iTunes databases using audio fingerprinting technology.
+- **Album Artwork:** Embed cover images directly into files via drag-and-drop, with configurable compression and quality (default 500px, JPEG 85%).
 - **Field Storage:** Save up to 50 field configurations (including album artwork) with timestamps for quick reuse within the current session.
 - **Text Tools:** Find and replace text across metadata fields, convert case (Title Case, UPPERCASE, lowercase), and apply file pattern operations.
 - **File Pattern Tool:** Extract metadata from filenames using patterns like `%artist% - %album%`, or rename files based on their metadata tags.
@@ -73,42 +72,41 @@ Additionally, album artwork can be embedded directly into files through the thum
 6. [Auto-Tag Feature](#auto-tag-feature)
    - [Supported Databases](#supported-databases)
    - [How It Works](#how-it-works)
-7. [Cover Art Search](#cover-art-search)
-8. [Text Tools](#text-tools)
+7. [Text Tools](#text-tools)
    - [Find & Replace](#find--replace)
    - [Case Conversion](#case-conversion)
    - [File Pattern (within Text Tools)](#file-pattern-within-text-tools)
-9. [File Pattern Tool](#file-pattern-tool)
+8. [File Pattern Tool](#file-pattern-tool)
    - [Tag from Filename](#tag-from-filename)
    - [Filename from Tags](#filename-from-tags)
-10. [CSV Export and Import](#csv-export-and-import)
-    - [Export](#export)
-    - [Import](#import)
-11. [Action Buttons](#action-buttons)
-12. [Undo and Redo](#undo-and-redo)
+9. [CSV Export and Import](#csv-export-and-import)
+   - [Export](#export)
+   - [Import](#import)
+10. [Action Buttons](#action-buttons)
+11. [Undo and Redo](#undo-and-redo)
     - [How It Works](#how-it-works-1)
     - [What Gets Restored](#what-gets-restored)
     - [Console Feedback](#console-feedback)
-13. [Field Storage System](#field-storage-system)
-14. [Settings](#settings)
+12. [Field Storage System](#field-storage-system)
+13. [Settings](#settings)
     - [ID3v2 Version](#id3v2-version)
     - [Text Encoding](#text-encoding)
     - [Cover Image Settings](#cover-image-settings)
     - [Tag Retention](#tag-retention)
     - [Auto-Tag Settings](#auto-tag-settings)
-15. [Cloud Settings Sync](#cloud-settings-sync)
+14. [Cloud Settings Sync](#cloud-settings-sync)
     - [How It Works](#how-it-works-2)
     - [Synced Settings](#synced-settings)
-16. [Keyboard Shortcuts](#keyboard-shortcuts)
-17. [Sidebar](#sidebar)
-18. [Context Menus](#context-menus)
+15. [Keyboard Shortcuts](#keyboard-shortcuts)
+16. [Sidebar](#sidebar)
+17. [Context Menus](#context-menus)
     - [Text Fields](#text-fields)
     - [Console Output](#console-output)
     - [Thumbnail Panel](#thumbnail-panel)
     - [Path Bar](#path-bar)
     - [File List (Per-File Mode only)](#file-list-per-file-mode-only)
-19. [Copyright](#copyright)
-20. [Screenshots](#screenshots)
+18. [Copyright](#copyright)
+19. [Screenshots](#screenshots)
 
 ## **System Requirements**
 
@@ -253,21 +251,11 @@ The Auto-Tag feature searches the following sources in order until a match is fo
 
 **Note:** Auto-Tag uses AcoustID fingerprinting technology (powered by Chromaprint) to identify audio files by their acoustic signature. This provides more accurate results than filename-based searches. iTunes is used as a fallback for cover art and metadata enrichment.
 
+**Cover Art:** During an Auto-Tag search, album artwork is fetched from the matched release and the MusicBrainz Cover Art Archive. When several covers are found, they are shown as selectable thumbnails and the first is applied automatically; click another thumbnail to choose it instead.
+
 **Cancel:** Press `Escape` at any time to cancel an active Auto-Tag search.
 
 **Auto-Tag All:** When the Auto-Tag Scope setting is set to "All Files in List" and you are in Per-File Mode, clicking Auto-Tag will process every file in the list sequentially. A 2-second delay is applied between files for database rate limiting. Progress is shown in the console for each file.
-
-## **Cover Art Search**
-
-The Cover Art Search window lets you find and embed album artwork by searching online. Open it from the sidebar or via the thumbnail panel context menu.
-
-1. Enter the **Artist** and **Album** name in the search fields
-2. Click **Search** to query cover art from online sources
-3. Browse the results displayed as thumbnail previews
-4. Click a result to preview it at full size
-5. Click **Apply** to embed the selected artwork into your files
-
-The search uses MusicBrainz to find high-quality cover art. Results are displayed with preview thumbnails so you can compare options before applying.
 
 ## **Text Tools**
 
@@ -287,6 +275,7 @@ Convert text case across metadata fields. Four modes are available:
 
 | Mode | Example |
 |------|---------|
+| **Original** | `hello world` stays `hello world` (no change) |
 | **Title Case** | `hello world` becomes `Hello World` |
 | **UPPERCASE** | `hello world` becomes `HELLO WORLD` |
 | **lowercase** | `HELLO WORLD` becomes `hello world` |
@@ -539,11 +528,17 @@ If you'd like a preview of MetaEdit Plus before downloading, the screenshots bel
   <tr>
     <th>MetaEdit Plus - Initial View</th>
     <th>MetaEdit Plus - Directory Scan</th>
-    <th>MetaEdit Plus - Tag Generation</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-startup.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-startup.png" alt="Initial View" width="300"></a></td>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-inputs.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-inputs.png" alt="Directory Scan" width="300"></a></td>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-generate.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-generate.png" alt="Tag Generation" width="300"></a></td>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-startup.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-startup.png" alt="Initial View" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-inputs.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-inputs.png" alt="Directory Scan" width="450"></a></td>
+  </tr>
+  <tr>
+    <th>MetaEdit Plus - Tag Generation</th>
+    <th>MetaEdit Plus - Settings</th>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-generate.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-generate.png" alt="Tag Generation" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-settings.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-settings.png" alt="Settings" width="450"></a></td>
   </tr>
 </table>
