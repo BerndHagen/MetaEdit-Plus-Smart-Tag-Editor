@@ -535,10 +535,10 @@ If you'd like a preview of MetaEdit Plus before downloading, the screenshots bel
   </tr>
   <tr>
     <th>MetaEdit Plus - Tag Generation</th>
-    <th>MetaEdit Plus - Settings</th>
+    <th>MetaEdit Plus - App Settings</th>
   </tr>
   <tr>
     <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-generate.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-generate.png" alt="Tag Generation" width="450"></a></td>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-settings.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-settings.png" alt="Settings" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-settings.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-settings.png" alt="App Settings" width="450"></a></td>
   </tr>
 </table>
