@@ -1,35 +1,44 @@
 <p align="center">
   <img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/metaedit-logo.png" alt="MetaEdit Plus Logo" width="128" />
 </p>
-<h1 align="center">MetaEdit Plus - Smart Tag Editor</h1>
+<h1 align="center">MetaEdit Plus - Audio &amp; Video Metadata Editor</h1>
 <p align="center">
-  <b>Edit metadata on audio and video files with batch processing and field storage.</b><br>
-  <b>Apply tags to entire folders, embed album artwork, and save configurations for reuse.</b>
+  <b>Edit, identify, review, and organize metadata across complete media libraries.</b><br>
+  <b>Work in batches or per file, reconcile online metadata, manage artwork, and preview every change.</b>
 </p>
 <p align="center">
-  <a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/releases"><img src="https://img.shields.io/github/v/release/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor?include_prereleases&style=flat-square&color=CD853F" alt="Latest Release"></a>&nbsp;&nbsp;<a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Freeware-green?style=flat-square" alt="License"></a>&nbsp;&nbsp;<a href="https://dotnet.microsoft.com/download/dotnet/10.0/runtime"><img src="https://img.shields.io/badge/.NET-10.0-512BD4?style=flat-square" alt=".NET Version"></a>&nbsp;&nbsp;<img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square" alt="Platform">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Architecture-x64-lightgrey?style=flat-square" alt="Architecture">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" alt="Status">&nbsp;&nbsp;<a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/issues"><img src="https://img.shields.io/badge/Issues-0_open-orange?style=flat-square" alt="Open Issues"></a>
+  <a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/releases"><img src="https://img.shields.io/github/v/release/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor?include_prereleases&style=flat-square&color=CD853F" alt="Latest Release"></a>&nbsp;&nbsp;<a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Freeware-green?style=flat-square" alt="License"></a>&nbsp;&nbsp;<a href="https://dotnet.microsoft.com/download/dotnet/10.0/runtime"><img src="https://img.shields.io/badge/.NET-10.0-512BD4?style=flat-square" alt=".NET Version"></a>&nbsp;&nbsp;<img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square" alt="Platform">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Architecture-x64-lightgrey?style=flat-square" alt="Architecture">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" alt="Status">&nbsp;&nbsp;<a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/issues"><img src="https://img.shields.io/github/issues/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor?style=flat-square&color=orange" alt="Open Issues"></a>
 </p>
 
-**MetaEdit Plus** is a metadata editor for audio and video files. It processes entire folders at once, allowing you to apply tags to all files simultaneously, or edit files individually in Per-File Mode. The application provides 18 metadata fields organized into three tabs, supports field storage with up to 50 saved configurations per session, features automatic metadata lookup from online databases, includes text tools for find and replace, case conversion, and file pattern operations, and provides CSV export and import for metadata management.
+**MetaEdit Plus 2.0.0** is a Windows metadata editor for audio and video files. It can load individual files or recursively discover supported media in folders, then work on the checked selection in Batch Mode or keep independent staged values in Per-File Mode. Its four metadata workspaces expose 38 editable fields, from core tags and credits to release identifiers and sort fields.
+
+The application combines direct tag editing with fingerprint-based identification, release-aware matching, configurable source reconciliation, complete artwork collections, ReplayGain analysis, lyrics lookup, video/chapter tools, extended tags, change previews, metadata interchange, reusable rules, library cleanup, and integrity analysis. Potential changes remain reviewable before they are written, while undo/redo snapshots, transaction protection, and quarantine manifests provide recovery paths for destructive-looking workflows.
 
 ### **Key Features**
 
-- **Batch Processing:** Apply metadata changes to all files in a folder at once, with progress tracking in the console output.
-- **Per-File Mode:** Edit metadata for individual files separately, with automatic caching of unsaved changes when switching between files.
-- **Auto-Tag:** Automatically fetch metadata and album artwork from AcoustID, MusicBrainz, and iTunes databases using audio fingerprinting technology.
-- **Album Artwork:** Embed cover images directly into files via drag-and-drop, with configurable compression and quality (default 500px, JPEG 85%).
-- **Field Storage:** Save up to 50 field configurations (including album artwork) with timestamps for quick reuse within the current session.
-- **Text Tools:** Find and replace text across metadata fields, convert case (Title Case, UPPERCASE, lowercase), and apply file pattern operations.
-- **File Pattern Tool:** Extract metadata from filenames using patterns like `%artist% - %album%`, or rename files based on their metadata tags.
-- **CSV Export/Import:** Export metadata from loaded files to CSV, or import metadata from a CSV file to update tags in bulk.
-- **Find & Replace:** Search and replace text across 8 metadata fields with optional case sensitivity and live preview of changes.
-- **Copy/Paste/Remove Metadata:** Copy metadata from one file and paste it to another, remove all metadata from a selected file, or open detailed track information via the right-click context menu in Per-File Mode.
-- **File Search:** Filter the file list by name using the built-in search bar.
-- **Settings Dialog:** Configure ID3v2 version (2.3/2.4), text encoding (UTF-8/UTF-16/Latin1), cover image settings, tag retention options, and auto-tag scope.
-- **Cloud Settings Sync:** Sync tag settings to the cloud via [Arctisoft Hub](https://github.com/BerndHagen/Arctisoft-Studio-Hub), keeping your configuration consistent across devices.
-- **Multi-Format Support:** Edit metadata in 7 audio formats and 6 video formats with format-dependent tag support.
-- **System Monitoring:** Real-time performance graphs showing CPU, RAM, and disk usage with numerical statistics.
-- **Context Menus:** Quick access to cut/copy/paste text, copy/clear console, select/remove images, copy/paste/remove metadata, and open folder or copy path from the path bar.
+- **Checked-File Processing:** Load files or folders recursively, filter by media format, and control scope with the file checklist.
+- **Batch and Per-File Editing:** Share staged values across a selection or maintain a separate edit state for each file.
+- **38 Metadata Fields:** Edit core metadata, credits and notes, release and rights data, MusicBrainz identifiers, and sort fields.
+- **Review Before Write:** Inspect staged field-level changes before committing them to media files.
+- **Auto Tag:** Identify audio with Chromaprint/AcoustID and reconcile configurable MusicBrainz and iTunes evidence, including confidence and conflict feedback.
+- **Release Matching:** Select an exact MusicBrainz edition and map checked files one-to-one to its tracklist before staging batch metadata.
+- **Artwork Choices:** Compare embedded or online cover choices, see meaningful release context, and select the artwork to stage.
+- **Artwork Collections:** Add, replace, remove, reorder, inspect, copy, and paste multiple embedded images without flattening picture types or descriptions.
+- **Extended Tags:** Edit ID3 user text, Xiph comments, APE text, MP4 freeform fields, and ASF text descriptors with real multi-value support.
+- **Loudness & ReplayGain:** Measure gated BS.1770/EBU R128 loudness and write non-destructive ReplayGain 2 track/album tags.
+- **Lyrics Lookup:** Rank LRCLIB candidates by identity and duration, preview plain or synchronized lyrics, stage a choice, or export a sidecar.
+- **Video Metadata & Chapters:** Edit TV/movie metadata, inspect video streams, and manage chapter markers with sidecar and container-aware workflows.
+- **Text Tools:** Find and replace exact text, convert case across selected fields, and review every proposed value.
+- **File Patterns:** Extract tags from filenames or generate sanitized filenames from metadata placeholders.
+- **Metadata Interchange:** Import CSV and export reviewed selections as CSV, structured JSON, or portable M3U8 playlists.
+- **Rule Studio:** Build reusable all/any condition sets and ordered actions, enable or reorder individual steps, exchange JSON presets, preview matches, and stage the result.
+- **Clean & Organize:** Run a resumable identification and normalization pipeline with progress, estimates, review, backup, and rollback protection.
+- **Library Integrity:** Detect exact duplicates, matching decoded audio, and related releases with cached background analysis and recoverable quarantine.
+- **Undo and Redo:** Restore complete metadata and artwork snapshots for up to 20 operations.
+- **Field Sets:** Save up to 50 field and artwork configurations for reuse during the current session.
+- **Media Inspection:** Open track and artwork information, play an audio preview, search the file list, and monitor system performance.
+- **Responsive Desktop UI:** Tool windows adapt to available space while retaining keyboard navigation and accessible interaction feedback.
+- **Optional Studio Hub Sync:** Share supported preferences through [Arctisoft Studio Hub](https://github.com/BerndHagen/Arctisoft-Studio-Hub) when a Hub session is available.
 
 ### **Supported Formats**
 
@@ -38,19 +47,22 @@ MetaEdit Plus supports a wide range of audio and video formats:
 - **Audio Formats:** `MP3`, `WAV`, `FLAC`, `OGG`, `WMA`, `M4A`, `AIFF`
 - **Video Formats:** `MP4`, `MKV`, `MOV`, `WMV`, `M4V`, `WEBM`
 
-> **Note:** Raw AAC files are not supported as they lack a proper tag container. Please use M4A (AAC in MP4 container) instead.
+> **Note:** Raw AAC is not part of the selectable format list. For AAC audio, use the supported M4A container.
 
 > **Format Limitations:** Some formats have limited metadata support. WAV has limited tag support and thumbnail embedding may not work. AIFF supports basic metadata only. WebM has limited tag field support. MOV metadata support varies depending on how the file was created.
 
+> **Chapter Tools:** Sidecar import/export is built in. Embedded Matroska/WebM chapter updates require an installed MKVToolNix; embedded MP4/M4V/MOV chapter updates require FFmpeg/ffprobe. MetaEdit detects these tools and disables unsupported write actions with an explanation.
+
 ### **Available Metadata Fields**
 
-MetaEdit Plus provides 18 metadata fields organized into three tabs:
+MetaEdit Plus provides 38 metadata fields organized into four workspaces:
 
-- **Production:** Performer, Album Artist, Composer, Conductor, Total Tracks, Publisher
-- **Technical:** Release Year, Track Number, Disc Number, Beats Per Minute, Total Discs, Album
-- **Composition:** Genre, Description, Grouping, Copyright, Lyrics, ISRC Code
+- **Core Metadata:** Title, Subtitle, Performer, Genre, BPM, Initial Key, Album, Album Artist, Track Number, Track Count, Disc Number, Disc Count
+- **Credits & Notes:** Composer, Conductor, Performer Role, Remixed By, Grouping, Description, Lyrics
+- **Release & Rights:** Year, Release Status, Release Type, Release Country, Publisher, Copyright, ISRC, Amazon ID
+- **IDs & Sorting:** MusicBrainz Track, Release, Release Group, Artist, Release Artist, and Disc IDs; Title, Album, Performer, Album Artist, and Composer sort values
 
-Additionally, album artwork can be embedded directly into files through the thumbnail panel. The file title is automatically set to the filename during tag generation.
+Artwork is managed alongside the fields and can be inspected separately through Artwork Information or the complete collection manager. Container-specific fields that do not belong in the standard 38-field workspace remain available through Extended Tags and Video Metadata. Whether every field can be represented depends on the tag capabilities of the selected media format.
 
 ## **Table of Contents**
 
@@ -59,7 +71,8 @@ Additionally, album artwork can be embedded directly into files through the thum
    - [Recommended Requirements](#recommended-requirements)
 2. [Third-Party Libraries](#third-party-libraries)
    - [TagLib#](#taglib)
-   - [HtmlAgilityPack](#htmlagilitypack)
+   - [Chromaprint and fpcalc](#chromaprint-and-fpcalc)
+   - [NAudio and LRCLIB](#naudio-and-lrclib)
 3. [Installation](#installation)
 4. [Getting Started Guide](#getting-started-guide)
    - [Step 1: Select Library Type](#step-1-select-library-type)
@@ -69,62 +82,72 @@ Additionally, album artwork can be embedded directly into files through the thum
 5. [Edit Modes](#edit-modes)
    - [Batch Mode (Default)](#batch-mode-default)
    - [Per-File Mode](#per-file-mode)
-6. [Auto-Tag Feature](#auto-tag-feature)
+6. [Change Preview and Safety](#change-preview-and-safety)
+7. [Auto-Tag Feature](#auto-tag-feature)
    - [Supported Databases](#supported-databases)
    - [How It Works](#how-it-works)
-7. [Text Tools](#text-tools)
+   - [Metadata Choices](#metadata-choices)
+   - [Artwork Choices](#artwork-choices)
+   - [Batch Release Matching](#batch-release-matching)
+8. [Text Tools](#text-tools)
    - [Find & Replace](#find--replace)
    - [Case Conversion](#case-conversion)
    - [File Pattern (within Text Tools)](#file-pattern-within-text-tools)
-8. [File Pattern Tool](#file-pattern-tool)
+9. [File Pattern Tool](#file-pattern-tool)
    - [Tag from Filename](#tag-from-filename)
    - [Filename from Tags](#filename-from-tags)
-9. [CSV Export and Import](#csv-export-and-import)
+10. [Metadata Import and Export](#metadata-import-and-export)
    - [Export](#export)
    - [Import](#import)
-10. [Action Buttons](#action-buttons)
-11. [Undo and Redo](#undo-and-redo)
+11. [Rule Studio](#rule-studio)
+12. [Clean & Organize](#clean--organize)
+13. [Library Integrity](#library-integrity)
+14. [Advanced Media Tools](#advanced-media-tools)
+    - [Artwork Collection Manager](#artwork-collection-manager)
+    - [Extended Tags](#extended-tags)
+    - [Loudness and ReplayGain](#loudness-and-replaygain)
+    - [Lyrics Lookup](#lyrics-lookup)
+    - [Video Metadata and Chapters](#video-metadata-and-chapters)
+15. [Action Buttons](#action-buttons)
+16. [Undo and Redo](#undo-and-redo)
     - [How It Works](#how-it-works-1)
     - [What Gets Restored](#what-gets-restored)
     - [Console Feedback](#console-feedback)
-12. [Field Storage System](#field-storage-system)
-13. [Settings](#settings)
+17. [Field Storage System](#field-storage-system)
+18. [Settings](#settings)
     - [ID3v2 Version](#id3v2-version)
     - [Text Encoding](#text-encoding)
     - [Cover Image Settings](#cover-image-settings)
     - [Tag Retention](#tag-retention)
     - [Auto-Tag Settings](#auto-tag-settings)
-14. [Cloud Settings Sync](#cloud-settings-sync)
+19. [Cloud Settings Sync](#cloud-settings-sync)
     - [How It Works](#how-it-works-2)
     - [Synced Settings](#synced-settings)
-15. [Keyboard Shortcuts](#keyboard-shortcuts)
-16. [Sidebar](#sidebar)
-17. [Context Menus](#context-menus)
+20. [Keyboard Shortcuts](#keyboard-shortcuts)
+21. [Sidebar](#sidebar)
+22. [Context Menus](#context-menus)
     - [Text Fields](#text-fields)
     - [Console Output](#console-output)
     - [Thumbnail Panel](#thumbnail-panel)
     - [Path Bar](#path-bar)
     - [File List (Per-File Mode only)](#file-list-per-file-mode-only)
-18. [Copyright](#copyright)
-19. [Screenshots](#screenshots)
+23. [Copyright](#copyright)
+24. [Screenshots](#screenshots)
 
 ## **System Requirements**
 
 ### **Minimum Requirements**
-- **Operating System:** Windows 10 (64-bit) version 1809 or later
-- **Processor:** Dual-core processor at 1.5 GHz
-- **RAM:** 4 GB
-- **Storage:** 300 MB of free disk space
-- **Software:** .NET 10.0 Runtime ([Download](https://dotnet.microsoft.com/download/dotnet/10.0/runtime)) - **Not required as application is self-contained**
+- **Operating System:** Windows 10 or Windows 11, 64-bit
+- **Storage:** Enough space for the installed application, temporary working data, and any backups or quarantine copies created by library workflows
+- **Software:** No separate .NET installation is required by the self-contained release
 
 ### **Recommended Requirements**
-- **Operating System:** Windows 10/11 (64-bit) version 21H2 or later
-- **Processor:** Quad-core processor at 2.0 GHz or higher
-- **RAM:** 8 GB or higher
-- **Storage:** 500 MB of free disk space on SSD
-- **Software:** .NET 10.0 Runtime ([Download](https://dotnet.microsoft.com/download/dotnet/10.0/runtime)) - **Not required as application is self-contained**
+- **Operating System:** A currently supported 64-bit version of Windows 10 or Windows 11
+- **Storage:** An SSD and sufficient free space for large-library backup or quarantine operations
+- **Network:** Internet access when using Auto Tag or optional Studio Hub synchronization
+- **Optional Tools:** MKVToolNix for no-remux Matroska chapters; FFmpeg/ffprobe for MP4-family chapter inspection and stream-copy replacement
 
-**Note:** MetaEdit Plus is designed exclusively for Windows. Linux and macOS are not supported. The .NET 10.0 Runtime is bundled directly in the installer, allowing MetaEdit Plus to start immediately without requiring separate installation.
+**Note:** MetaEdit Plus is a Windows desktop application built with WPF on .NET 10. The distributed application is self-contained; Linux and macOS builds are not provided.
 
 ## **Third-Party Libraries**
 
@@ -135,18 +158,30 @@ MetaEdit Plus uses the following third-party libraries:
 **TagLib#** is a .NET library for reading and writing metadata in media files. It provides support for various audio and video formats and handles tag formats such as ID3v1, ID3v2, APE, Xiph Comments, and more. MetaEdit Plus uses TagLib# for all metadata operations.
 
 - **Website:** [TagLib# GitHub Repository](https://github.com/mono/taglib-sharp)
-- **License:** TagLib# is licensed under the LGPL (GNU Lesser General Public License), allowing free use in both open-source and proprietary applications.
+- **Version used by MetaEdit Plus 2.0:** 2.3.0
 
 For more details about TagLib# including its capabilities and supported formats, check the official documentation:
 
 - **TagLib# Documentation:** [TagLib# API Documentation](https://github.com/mono/taglib-sharp#readme)
 
-### HtmlAgilityPack
+### Chromaprint and fpcalc
 
-**HtmlAgilityPack** is a .NET library for parsing and manipulating HTML documents. MetaEdit Plus uses it to scrape metadata from online music databases when direct API results are insufficient.
+**fpcalc**, the command-line fingerprint utility from the Chromaprint project, is bundled for acoustic identification. Auto Tag uses its fingerprint output when querying AcoustID; it does not identify tracks by filename alone.
 
-- **Website:** [HtmlAgilityPack](https://html-agility-pack.net/)
-- **License:** MIT License
+- **Website:** [AcoustID / Chromaprint](https://acoustid.org/chromaprint)
+
+The application also uses the .NET `System.Management` package for Windows performance information. Online metadata is obtained through service APIs.
+
+### NAudio and LRCLIB
+
+**NAudio 2.3.0** and **NAudio.Vorbis.Latest 1.6.0** provide floating-point sample decoding for the ReplayGain analysis workflow. MetaEdit measures the decoded signal and writes gain metadata; it does not alter or re-encode the audio stream.
+
+**LRCLIB** supplies plain and synchronized lyrics candidates through its public API. Results are reviewed before a selected value is staged, and the lookup can also export `.txt` or `.lrc` sidecars.
+
+- **NAudio:** [GitHub repository](https://github.com/naudio/NAudio)
+- **LRCLIB:** [API documentation](https://lrclib.net/docs)
+
+For chapter editing, MetaEdit detects existing installations of **MKVToolNix** and **FFmpeg/ffprobe**. These tools are optional: chapter sidecar import/export still works without them. MKVToolNix enables no-remux Matroska chapter updates; FFmpeg enables stream-copy chapter updates for MP4-family containers.
 
 If you have questions or issues related to these libraries, please [open an issue](https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/issues) on GitHub.
 
@@ -160,36 +195,31 @@ If you have questions or issues related to these libraries, please [open an issu
 
 ### **Step 1: Select Library Type**
 
-When you open MetaEdit Plus, select either **Audio Library** or **Video Library** from the dropdown at the top left. This determines which file formats are available in the format selector.
+When you open MetaEdit Plus, select **Audio Library** or **Video Library**. The adjacent format selector can show every supported format in that library or narrow discovery to one extension.
 
 ### **Step 2: Choose Format and Select Files**
 
-1. Select the desired file format from the format dropdown (MP3, FLAC, MP4, etc.)
-2. Click **Browse** or press `Ctrl+B` to select one or more media files for editing
-3. The application will display the number of files found in the console and list them in the file panel
+1. Select a library and either an all-formats option or a specific format.
+2. Click **Add Folder** or press `Ctrl+B` to choose a folder. Folder discovery includes supported files in subfolders.
+3. Alternatively, drop supported files or a folder onto the application. The detected media type updates the library and format controls.
+4. Review the discovered list and uncheck anything that must remain outside the current operation. Ctrl-click selects multiple rows; press `Space` to include or exclude the selected group together.
 
-**Multi-Select:** You can select multiple files in the Browse dialog. When selecting files from the same directory as the existing list, new files are added (duplicates are skipped). When selecting files from a different directory, the list is replaced.
-
-**Drag & Drop:** You can also drag files or folders directly onto the file list panel:
-- **Dragging a folder:** Loads all matching files from that folder
-- **Dragging files from the same folder:** Adds them to the existing list (duplicates are skipped)
-- **Dragging files from a different folder:** Replaces the entire list with the new files
-- **Auto-Detection:** When dragging individual files, the Library Type and Format dropdowns are automatically adjusted to match the dropped file's format
-
-**Note:** All files in the list must be from the same directory. Files from different folders cannot be mixed.
+The active source can be either one folder tree or an explicit set of files. Selecting a different source clears the existing source after MetaEdit Plus gives you a chance to keep any unwritten staged changes.
 
 ### **Step 3: Edit Metadata Fields**
 
-Navigate through the three tabs to fill in the metadata fields:
-- **Production:** Performer, Album Artist, Composer, Conductor, Total Tracks, Publisher
-- **Technical:** Release Year, Track Number, Disc Number, BPM, Total Discs, Album
-- **Composition:** Genre, Description, Grouping, Copyright, Lyrics, ISRC Code
+Navigate through the four workspaces to fill in the required fields:
 
-To add album artwork, click the thumbnail panel or drag an image directly onto it. Supported image formats are JPG, PNG, GIF, and BMP.
+- **Core Metadata** for the identity and sequence of a track
+- **Credits & Notes** for contributors and descriptive text
+- **Release & Rights** for release state, territory, publisher, rights, and catalog identifiers
+- **IDs & Sorting** for MusicBrainz identities and library sort values
+
+To add artwork, choose an image from the artwork panel or drag an image onto it. The artwork context menu also provides removal and detailed image information.
 
 ### **Step 4: Apply Changes**
 
-Click **Write Tags** to apply all metadata to the files in the selected folder. The console displays the progress for each file and confirms when processing is complete.
+Click **Preview Changes** to review staged differences, then **Write Tags** to commit them to the checked scope. The activity console reports progress and the final outcome. Empty fields and retained tag families are handled according to the active mode and Settings.
 
 ## **Edit Modes**
 
@@ -200,9 +230,9 @@ MetaEdit Plus offers two editing modes accessible via the dropdown at the top of
 In Batch Mode, all metadata changes are applied to every file in the folder simultaneously:
 
 - Fields are shared across all files
-- Write Tags applies changes to all files at once
-- Remove Tags removes metadata from all files
-- Auto-Tag searches once and applies to all files
+- Write Tags applies staged values to the checked files
+- Remove Tags removes metadata from the checked files
+- Shared album or release values can be entered once
 - Ideal for albums where all tracks share the same metadata
 
 > **Note:** In Batch Mode, only non-empty fields are written. Fields left blank will not overwrite existing metadata in the files, allowing you to selectively update specific tags while preserving others.
@@ -213,7 +243,7 @@ In Per-File Mode, each file has its own individual metadata fields:
 
 - Click on a file in the list to edit its specific metadata
 - Changes are cached automatically when switching between files
-- Write Tags only writes files that have been modified
+- Write Tags processes the staged files in the checked scope
 - Remove Tags only affects the currently selected file
 - Auto-Tag applies results only to the file where it was initiated
 
@@ -224,50 +254,81 @@ In Per-File Mode, each file has its own individual metadata fields:
 - **Paste Metadata:** Applies copied metadata to the currently selected file
 - **Remove Metadata:** Strips all metadata from the selected file and reloads it
 
-This allows you to quickly duplicate or remove metadata between files while still making individual adjustments.
+This allows you to duplicate or remove metadata between files while still making individual adjustments. Changing the selected file does not silently discard its staged state.
+
+## **Change Preview and Safety**
+
+MetaEdit Plus separates editing from committing. Text tools, file patterns, Rule Studio, CSV import, and the main editor present proposed changes before the final write whenever the workflow can change several files.
+
+- **Preview Changes** lists the affected file and the old and proposed field values.
+- **Reset Changes** discards staged edits without writing them.
+- **Undo/Redo** stores complete tag and artwork snapshots for supported write operations.
+- **Clean & Organize** uses preflight review, backups, transaction state, and rollback protection.
+- **Library Integrity** moves selected findings to quarantine and writes a recovery manifest; it does not delete them.
+
+Previews describe the current staged operation. They do not change the checked-file scope, and closing a preview does not write anything.
 
 ## **Auto-Tag Feature**
 
-MetaEdit Plus includes an automatic metadata lookup feature that searches online databases to find album and track information. Click the **Auto** icon in the sidebar or press `Ctrl+A` to initiate a search.
+MetaEdit Plus includes an identification and reconciliation workspace for audio metadata. Click **Auto Tag** in the sidebar or press `Ctrl+A` to fingerprint the relevant audio and inspect the result before staging it in the editor.
 
 ### **Supported Databases**
 
-The Auto-Tag feature searches the following sources in order until a match is found:
+Auto Tag combines the following sources:
 
 | Database | Description |
 |----------|-------------|
 | **AcoustID** | Audio fingerprinting service that identifies tracks by their acoustic signature |
 | **MusicBrainz** | Comprehensive open-source music database with millions of releases |
-| **iTunes** | Global music catalog used for cover art enrichment and metadata fallback |
+| **iTunes** | Music catalog used for additional metadata evidence and artwork enrichment |
+
+Open **App Settings > Metadata Sources** to enable sources and arrange their query priority. Priority influences tie-breaking, but source reliability, match confidence, and cross-source agreement remain part of reconciliation. MusicBrainz must remain enabled for the release-aware batch matcher because its edition and tracklist model comes from MusicBrainz.
 
 ### **How It Works**
 
-1. Select files in your folder
-2. Click the **Auto** icon in the sidebar
-3. The application generates an audio fingerprint and searches databases
-4. Found metadata and album artwork are automatically populated into the fields
-5. Review and modify the results as needed
-6. Click **Write Tags** to apply the metadata
+1. Check the audio files that belong to the operation.
+2. Click **Auto Tag** in the sidebar.
+3. MetaEdit Plus queries each enabled source in the configured order. AcoustID uses a Chromaprint fingerprint when it is enabled and available.
+4. Returned evidence is reconciled into a best result without treating preference as stronger than reliable identity evidence.
+5. Review confidence, source coverage, conflicts, metadata choices, and artwork choices.
+6. Apply the chosen result to the editor, adjust anything necessary, and use **Preview Changes** before writing.
 
-**Note:** Auto-Tag uses AcoustID fingerprinting technology (powered by Chromaprint) to identify audio files by their acoustic signature. This provides more accurate results than filename-based searches. iTunes is used as a fallback for cover art and metadata enrichment.
+**Note:** Fingerprinting identifies the audio content rather than trusting the filename. A successful fingerprint is evidence, not an instruction to write immediately; the result still remains reviewable.
 
-**Cover Art:** During an Auto-Tag search, album artwork is fetched from the matched release and the MusicBrainz Cover Art Archive. When several covers are found, they are shown as selectable thumbnails and the first is applied automatically; click another thumbnail to choose it instead.
+### **Metadata Choices**
 
-**Cancel:** Press `Escape` at any time to cancel an active Auto-Tag search.
+The Identification section summarizes which services contributed and whether they agree. A reconciled field with more than one source value is interactive: it shows a choice indicator, responds to hover and keyboard focus, and opens a single selector where the preferred value can be chosen. Choosing the field again closes that selector.
 
-**Auto-Tag All:** When the Auto-Tag Scope setting is set to "All Files in List" and you are in Per-File Mode, clicking Auto-Tag will process every file in the list sequentially. A 2-second delay is applied between files for database rate limiting. Progress is shown in the console for each file.
+Values are presented as metadata, source, and confidence information rather than as an undifferentiated technical string. Fields without alternatives remain ordinary read-only results.
+
+### **Artwork Choices**
+
+Auto Tag is not limited to one image. It first adds the best reconciled cover when one is available, then checks up to eight matching MusicBrainz releases for downloadable front covers. The number actually shown depends on the releases returned by the services and whether those releases expose usable cover art. A selector containing only one item therefore means that no additional downloadable choice was returned for that identification; it is not a one-artwork product limit.
+
+Each choice uses a readable label with its resolution and, when available, release date, country, or edition disambiguation. The selector states how many choices are available. Selecting a different entry updates the staged artwork but does not write it until the normal write workflow is completed.
+
+**Cancel:** During a checked-file Auto Tag queue, a visible **Stop Auto Tag** action appears beside the log tools. `Escape` is also supported while the application has keyboard focus.
+
+**Auto-Tag Workflow:** **Review Current Scope** identifies the selected file in Per-File Mode and opens release matching in Batch Mode. **Identify Checked Files** identifies every checked file independently, switches to Per-File Mode so track-specific fields cannot leak between files, reports per-file progress, and respects service rate limits.
+
+### **Batch Release Matching**
+
+Batch Mode does not assume that every checked file should receive one track's title, composer, identifiers, or artwork. Instead, release matching searches MusicBrainz releases, lets the user select the exact edition, downloads its media and tracklist, and proposes a one-to-one file mapping.
+
+Mapping evidence combines existing track numbers, titles, filenames, and duration. Every row shows its confidence and reason, and its track selector can override the proposal. Assigning a track to another file automatically removes the duplicate assignment. Unmatched files remain unchanged. Accepting the reviewed map stages independent per-file values; optional release artwork is added only to matched files that have no artwork.
 
 ## **Text Tools**
 
-The Text Tools window provides three operations for bulk-editing metadata text across your files. Open it from the sidebar or press `Ctrl+H`.
+The Text Tools window groups three bulk transformations and a shared target-field selector. Open it from the sidebar or press `Ctrl+H`. Its Change Preview presents each file, field, current value, and proposed value in one integrated report rather than applying changes immediately.
 
 ### **Find & Replace**
 
-Search and replace text across selected metadata fields:
-- Enter search text and replacement text
-- Select which fields to process (Performer, Album Artist, Album, Genre, Composer, Publisher, Description, Copyright)
-- Optional case-sensitive matching
-- Preview changes before applying
+Search and replace text across any selected editable metadata fields:
+
+- Enter the exact text to find and its replacement.
+- Choose fields through **Target Fields**; the selector covers the 38 metadata fields rather than a fixed eight-field subset.
+- Matching is ordinal and case-sensitive, so a differently capitalized value is not changed accidentally.
+- Review the proposed value for each affected file before confirming the operation. Confirmed Text Tools transformations write the affected files directly and create an undo snapshot.
 
 ### **Case Conversion**
 
@@ -275,17 +336,17 @@ Convert text case across metadata fields. Four modes are available:
 
 | Mode | Example |
 |------|---------|
-| **Original** | `hello world` stays `hello world` (no change) |
+| **Original** | Leaves the original casing unchanged |
 | **Title Case** | `hello world` becomes `Hello World` |
 | **UPPERCASE** | `hello world` becomes `HELLO WORLD` |
 | **lowercase** | `HELLO WORLD` becomes `hello world` |
 
 
-Select which metadata fields to convert and preview the results before applying.
+Select the metadata fields to convert and preview the results before applying. The same target selection is used by Find & Replace and Case Conversion.
 
 ### **File Pattern** (within Text Tools)
 
-The File Pattern section inside Text Tools provides the same functionality as the standalone File Pattern Tool window, allowing you to extract tags from filenames or rename files from tags using pattern placeholders.
+The Filename Pattern section can extract tags from filenames or generate filenames from tags using supported placeholders. Its operation and pattern are kept in a separate section because they affect file identity rather than ordinary text replacement.
 
 ## **File Pattern Tool**
 
@@ -313,46 +374,131 @@ Extract metadata from filenames using pattern placeholders:
 | `%bpm%` | Beats Per Minute |
 | `%isrc%` | ISRC Code |
 
-**Example:** The pattern `%artist% - %album% - %track% %title%` applied to a file named `Pink Floyd - The Wall - 01 In The Flesh.mp3` would extract the artist, album, and track number.
+These are the placeholders accepted by the current filename parser; fields outside this table remain editable elsewhere but are not filename-pattern variables.
+
+**Example:** The pattern `%artist% - %album% - %track% %title%` applied to `Pink Floyd - The Wall - 01 In The Flesh.mp3` extracts the performer, album, track number, and title.
 
 ### **Filename from Tags**
 
-Rename files based on their existing metadata using the same pattern placeholders. Enter a pattern and the tool generates new filenames from each file's tags. A live preview shows the original and new filenames before applying.
+Rename files based on their existing metadata using the same pattern placeholders. A preview shows the current and proposed filename and identifies missing data. Generated names are sanitized for Windows filename rules, and confirmed rename plans are preflighted and executed transactionally so swaps, chains, and case-only changes do not overwrite one another.
 
-## **CSV Export and Import**
+## **Metadata Import and Export**
 
-The CSV Export/Import window allows you to manage metadata in bulk using CSV files. Open it from the sidebar.
+The CSV Import / Export window manages the complete checked-file scope through the same metadata schema used by the editor. Choose the operation first; import also keeps the chosen CSV source in that Operation section.
 
 ### **Export**
 
-1. Select which metadata fields to include in the export
-2. Adjust the preview row count to verify the output
-3. Click **Export** to save a CSV file with metadata from all loaded files
+1. Choose the default field set, all fields, or a custom selection.
+2. Set **Rows shown in review** to 5, 10, 20, 50, 100, or All and inspect the independently scrollable report.
+3. Click **Export...** and choose CSV metadata, JSON metadata, or an M3U8 playlist.
+
+`FilePath` and `Filename` are always included in metadata exports for stable identity. The row selector changes only how much is displayed in Export Review: selecting 20 while 200 files are checked still exports all 200 checked files. CSV values use the shared encoder, including quoting and spreadsheet-formula safety. JSON preserves the selected field names in a structured array. M3U8 uses UTF-8, writes `EXTINF` duration/display entries, and prefers relative paths from the playlist location for portability.
 
 ### **Import**
 
-1. Click **Import** and select a CSV file
-2. The tool matches rows to files by filename or full path
-3. Preview the matched data before applying
-4. Click **Apply** to write the imported metadata to matching files
+1. Select **Import metadata**, browse to a CSV file, and let MetaEdit Plus parse its header.
+2. Rows are resolved by full path when available or by an unambiguous filename match.
+3. Review the full row report and the matched, skipped, and duplicate-target totals.
+4. Click **Import to Files** to write recognized metadata columns to resolved files.
 
-**Note:** The CSV file must include a full-path column (`FilePath`, `Path`, or `FullPath`) or a filename column (`Filename`, `File`, or `Name`) to match rows to the correct files.
+The CSV file must include a full-path column (`FilePath`, `Path`, or `FullPath`) or a filename column (`Filename`, `File`, or `Name`). Header aliases are accepted for compatibility. An ambiguous filename is skipped instead of being guessed, and a repeated row for the same target is disclosed in the duplicate-target count. CSV import creates an undo snapshot before it writes.
+
+## **Rule Studio**
+
+Rule Studio is intended for repeatable, conditional metadata work across checked files. It uses the same field labels as the rest of MetaEdit Plus and keeps rule structure, execution order, and dry-run evidence visible.
+
+1. Name the rule or load a saved preset.
+2. Choose **Match all conditions** or **Match any condition**.
+3. Add conditions from the section-header action. Conditions can compare Filename or any metadata field using equals, not-equals, contains, starts/ends with, empty/not-empty, regular expressions, list membership, or numeric greater/less-than checks.
+4. Add sequential actions and arrange their order. Actions can set or clear a value, copy another field, find/replace, regex replace, prepend/append, set only when empty, normalize whitespace or Unicode, change case, sort/deduplicate multi-values, or generate padded sequence numbers.
+5. Run **Dry Preview** to inspect the outcome and explanation for every checked file.
+6. Use **Stage Changes** to return matched results to the main editor, then review them before Write Tags.
+
+Each condition and action is presented as a contained editor card with an enable checkbox and anchored duplicate, reorder, or remove controls, while the section header owns the add action. Presets retain complex rule definitions locally and through optional cloud sync, and can be imported or exported as JSON.
+
+## **Clean & Organize**
+
+Clean & Organize builds a reviewed library plan before it changes tags or paths. Choose an existing destination folder and a folder/filename pattern such as `%albumartist%\%album%\%track% - %title%`.
+
+The analysis pipeline fingerprints, identifies, reconciles, normalizes, validates destinations, and preflights every checked file. Its checkpoint summary reports job state, total files, ready and remaining counts, the last checkpoint, and an estimated remaining time. A real progress bar adds current file, percentage, and active stage feedback.
+
+Analysis state is saved so an interrupted job can resume from completed checkpoints. The Review section lists source evidence, conflicts, planned tag changes, fingerprints, failures, and exact destination paths. **Atomic Commit** becomes available only after the job is ready for review; it creates transaction backups and rolls the complete job back if a commit step fails.
+
+## **Library Integrity**
+
+Library Integrity analyzes the checked selection automatically when its window opens. Evidence is cached persistently and invalidated when the relevant file changes, so reopening the workflow can reuse unchanged work instead of rescanning every byte from the beginning.
+
+It distinguishes three kinds of evidence:
+
+- **Exact duplicate:** the complete file is byte-identical according to its SHA-256 hash.
+- **Same decoded audio:** the audio content matches even when the container or tags differ.
+- **Related release/version:** release identifiers and technical properties indicate a relationship without claiming that the files are duplicates.
+
+Groups show filenames, metadata completeness, artwork presence, technical properties, concise hashes, and a recommended copy where the evidence supports one. Files are never deleted by this workflow. Only explicitly selected redundant copies can be moved to a user-chosen quarantine folder, and a recovery manifest records every original and quarantine path.
+
+## **Advanced Media Tools**
+
+The **More** menu enables advanced actions only when the current selection and media type can use them. Per-file tools require Per-File Mode; loudness analysis operates on checked audio files.
+
+### **Artwork Collection Manager**
+
+**Manage Artwork Collection** opens every embedded image in its stored order, including picture type, description, format, dimensions, and size. Add or replace an image, choose its semantic type, edit its description, reorder it, or remove it. The result remains staged until the normal Write Tags workflow.
+
+Quick Choose/Remove Artwork targets only the picture type selected in Settings and preserves all other picture types. Copy/Paste Metadata transfers the full collection rather than only the visible front cover.
+
+### **Extended Tags**
+
+**Extended Tags** exposes fields outside the standard editor without flattening the container:
+
+- ID3v2 user-text (`TXXX`) fields
+- Xiph/Vorbis comment fields
+- APEv2 text items
+- MP4 `com.apple.iTunes` freeform fields
+- ASF text descriptors
+
+Enter one value per line to preserve actual multi-value fields. Unknown or binary data is displayed as read-only and retained. Only added, edited, renamed, or removed fields are changed.
+
+### **Loudness and ReplayGain**
+
+**Loudness & ReplayGain** decodes every checked audio file and measures K-weighted integrated loudness with BS.1770/EBU R128 absolute and relative gating. Results show integrated LUFS, ReplayGain 2 track gain referenced to −18 LUFS, and sample peak. When requested, album gain is calculated by Album plus Album Artist grouping.
+
+Applying the reviewed result writes ReplayGain track gain/peak and, when applicable, album gain/peak tags. The audio samples are never normalized or re-encoded. Analysis can be stopped; partial measurements are not applied.
+
+### **Lyrics Lookup**
+
+**Lyrics Lookup** uses the selected audio file's title, performer, album, and duration to search LRCLIB. Candidates are ranked by metadata similarity and duration, disclose plain/synchronized availability, and remain selectable. Choose synchronized lyrics when available or plain text, then stage the preview in the main editor. **Export Sidecar** writes UTF-8 `.lrc` or `.txt` without staging a tag.
+
+### **Video Metadata and Chapters**
+
+**Video Metadata & Chapters** presents container, dimensions, duration, video codecs, and TV/movie fields such as show, season, episode, network, director, producer, screenwriter, content rating, and keywords. Common title, subtitle, description, genre, year, and copyright fields remain aligned with the main editor.
+
+Chapter rows contain start, optional end, title, ordering, and removal controls. Simple chapter text and FFmetadata sidecars can be imported or exported for every supported video. Embedded chapter capability is container-aware:
+
+- Matroska/WebM chapter replacement is enabled when MKVToolNix is detected and does not remux streams.
+- MP4/M4V/MOV chapter replacement is enabled when FFmpeg is detected; streams are copied to a validated temporary container before the original is atomically replaced.
+
+When the relevant tool is unavailable, MetaEdit explains the limitation and keeps sidecar workflows available instead of attempting unsafe container byte editing.
 
 ## **Action Buttons**
 
-MetaEdit Plus provides five main action buttons for managing metadata:
+The main workspace keeps frequent actions visible and moves less frequent workflows into **More** when space is limited:
 
 | Button | Description |
 |--------|-------------|
-| **Write Tags** | Applies all current metadata fields and album artwork. In Batch Mode, writes to all files. In Per-File Mode, writes only modified files. |
-| **Remove Tags** | Strips all metadata from files. In Batch Mode, removes from all files. In Per-File Mode, removes only from the selected file. |
-| **Store Fields** | Saves the current field configuration with a timestamp for later use (fields are preserved, not cleared) |
-| **Restore Fields** | Opens a dropdown menu to select and load a previously saved configuration |
-| **Clear Console** | Clears all messages from the console output panel |
+| **Auto Tag** | Opens fingerprint identification, source reconciliation, metadata choices, and artwork choices. |
+| **Text Tools** | Opens find/replace, case conversion, target fields, and filename patterns. |
+| **Preview Changes** | Reviews staged metadata and artwork differences without writing them. |
+| **Remove Tags** | Removes metadata from the selected mode and checked scope after creating recovery history. |
+| **Write Tags** | Validates and writes the staged metadata and artwork for the selected mode and checked scope. |
+| **Save Set / Restore Set** | Stores or restores a reusable field and artwork configuration. |
+| **CSV Tools** | Opens reviewed CSV import plus CSV, JSON, and M3U8 export. |
+| **More** | Opens Clear/Reset, collection-aware Copy/Paste Metadata, Extended Tags, Video Metadata & Chapters, Lyrics Lookup, Loudness & ReplayGain, field sets, interchange, Rule Studio, Clean & Organize, and Library Integrity as allowed by the current scope. |
+
+The action cards respond to the available window width. Controls that move into **More** remain the same operation; changing the window size does not change processing scope.
 
 ## **Undo and Redo**
 
-MetaEdit Plus includes a multi-level undo and redo system that lets you reverse or reapply entire tag operations. This covers **Write Tags**, **Remove Tags**, **Auto-Tag**, **Find & Replace**, **Case Conversion**, **File Pattern Tool**, and **Remove Metadata** - each operation takes a full snapshot of all affected files before making changes, including metadata fields and album artwork.
+MetaEdit Plus includes a multi-level undo and redo system that can reverse or reapply complete tag operations. Covered workflows create a full standard and extended-tag snapshot of affected files before changing them, including every embedded artwork item and ReplayGain field.
 
 ### **How It Works**
 
@@ -364,8 +510,9 @@ MetaEdit Plus includes a multi-level undo and redo system that lets you reverse 
 ### **What Gets Restored**
 
 Each undo/redo snapshot captures the complete metadata state of every file involved in the operation:
-- All 18 metadata fields (title, artist, album, year, genre, etc.)
-- Embedded album artwork (including image data and picture type)
+- All metadata represented by the editor's tag model, including its 38 exposed fields
+- Embedded artwork collections (including image data, order, picture type, and description)
+- Extended text fields in supported tag containers
 
 This means that undoing a **Remove Tags** operation will fully restore all stripped metadata and artwork, and undoing a **Write Tags** operation will revert files to their exact state before writing.
 
@@ -393,14 +540,15 @@ Click the **Settings** icon in the sidebar to open the settings dialog:
 
 ### **Text Encoding**
 - **UTF-16** (Default): Best compatibility with ID3v2.3 and Windows media tools
-- **UTF-8**: Unicode encoding for ID3v2.4 tags
-- **Latin1**: Legacy encoding for maximum compatibility with older software
+- **UTF-16 BE**: Big-endian Unicode where required by the target software
+- **UTF-8**: Available with ID3v2.4
+- **Latin1**: Legacy ISO-8859-1 encoding
 
 ### **Cover Image Settings**
-- **Max Image Size**: Maximum pixel dimension for embedded artwork (default: 500px)
-- **JPEG Quality**: Compression quality percentage for JPEG images (default: 85%)
-- **Picture Type**: Choose the tag picture type (Front Cover, Back Cover, Artist, Band, etc.)
-- **Convert PNG**: Automatically convert PNG images to JPEG to reduce file size, or keep as PNG
+- **Max Image Size:** Keep the original dimensions or constrain the longest dimension to 300, 500, 800, 1000, 1500, or 2000 pixels. The default is 500 pixels.
+- **JPEG Quality:** Choose 70, 80, 85, 90, 95, or 100 percent. The default is 85 percent.
+- **Picture Type:** Other, Front Cover, Back Cover, Artist, or Band Logo.
+- **PNG Handling:** Convert opaque PNG artwork to JPEG or keep its original PNG representation. Transparency prevents destructive JPEG conversion.
 
 ### **Tag Retention**
 Control which existing tags are preserved when writing new metadata:
@@ -408,16 +556,19 @@ Control which existing tags are preserved when writing new metadata:
 - **Keep ID3v2 Tags**: Preserve modern ID3v2 tags (recommended)
 - **Keep APE Tags**: Preserve APE tags used by some audio players
 
+At least one MP3 tag family must remain enabled. Settings validation also prevents UTF-8 from being selected with ID3v2.3.
+
 ### **Auto-Tag Settings**
-- **Auto-Tag Scope**: Choose between "Selected File Only" (applies auto-tag results only to the current file) and "All Files in List" (applies to every file in the list)
+- **Auto Tag workflow:** Choose **Review Current Scope** for an interactive selected-file or batch release review, or **Identify Checked Files** for independent track-by-track identification of the checked scope.
+- **Metadata sources:** Enable AcoustID, MusicBrainz, and iTunes and arrange their priority. At least one source must remain enabled; MusicBrainz is required for release matching.
 
 ## **Cloud Settings Sync**
 
-MetaEdit Plus supports cloud synchronization of tag settings through **[Arctisoft Hub](https://github.com/BerndHagen/Arctisoft-Studio-Hub)**. When you are signed in to Arctisoft Hub, your MetaEdit settings are automatically synced to the cloud and restored when you launch the application on any device.
+MetaEdit Plus supports optional synchronization of tag settings through **[Arctisoft Studio Hub](https://github.com/BerndHagen/Arctisoft-Studio-Hub)**. When a valid Hub session exists, supported preferences are synchronized and can be restored on another Windows device using the same account.
 
 ### **How It Works**
 
-1. Sign in to **[Arctisoft Hub](https://github.com/BerndHagen/Arctisoft-Studio-Hub)** on your computer
+1. Sign in to **[Arctisoft Studio Hub](https://github.com/BerndHagen/Arctisoft-Studio-Hub)** on your computer
 2. MetaEdit Plus reads the shared authentication session automatically
 3. On launch, your cloud settings are loaded and merged with local settings
 4. When you save your settings, they are synced to the cloud in the background
@@ -429,9 +580,10 @@ The following settings are synced:
 - Text Encoding
 - Cover Image Settings (max size, JPEG quality, picture type, PNG conversion)
 - Tag Retention Options
-- Auto-Tag Scope
+- Auto Tag workflow
+- Enabled metadata sources and their priority
 
-**Note:** Cloud sync requires an active [Arctisoft Hub](https://github.com/BerndHagen/Arctisoft-Studio-Hub) session. If no session is found, MetaEdit Plus uses local settings only.
+**Note:** Cloud sync is optional. If no active [Arctisoft Studio Hub](https://github.com/BerndHagen/Arctisoft-Studio-Hub) session is found, MetaEdit Plus continues with local settings only.
 
 ## **Keyboard Shortcuts**
 
@@ -447,20 +599,17 @@ MetaEdit Plus provides keyboard shortcuts for faster workflow:
 | `Ctrl+B` | `F6` | Browse Files |
 | `Ctrl+A` | `F7` | Auto-Tag |
 | `Ctrl+N` | `F12` | New Session |
-| `Ctrl+H` | - | Find & Replace |
+| `Ctrl+H` | - | Open Text Tools |
 | `Ctrl+F` | - | Search Files |
 | `Ctrl+Shift+T` | - | Tag from Filename |
 | `Ctrl+Shift+R` | - | Filename from Tags |
 | `Ctrl+Z` | - | Undo Last Operation |
 | `Ctrl+Y` | - | Redo Last Operation |
-| `Ctrl++` | - | Zoom In |
-| `Ctrl+-` | - | Zoom Out |
-| `Ctrl+0` | - | Reset Zoom |
+| `Space` | - | Toggle inclusion for the selected library rows |
 | `Tab` | `Shift+Tab` | Cycle Through Fields when a metadata field is focused |
 | `Escape` | - | Cancel Auto-Tag / Clear Focus |
-| `Up` / `Down` | - | Navigate File List |
-| `Home` / `End` | - | Jump to First / Last File |
-| `Page Up` / `Page Down` | - | Scroll File List by Page |
+
+Standard list and dropdown navigation also supports the expected arrow, Home, End, Enter, and Space behavior when the relevant control has keyboard focus.
 
 ## **Sidebar**
 
@@ -469,12 +618,15 @@ The left sidebar provides quick access to the main application functions:
 | Icon | Function | Description |
 |------|----------|-------------|
 | **New Session** | `Ctrl+N` / `F12` | Clears all metadata fields, resets the file list, and starts a fresh editing session |
-| **Open Files** | `Ctrl+B` / `F6` | Opens a folder browser dialog to select media files for editing |
-| **Auto-Tag** | `Ctrl+A` / `F7` | Starts automatic metadata lookup using audio fingerprinting |
-| **Text Tools** | - | Opens the Text Tools window for find and replace, case conversion, and file pattern operations |
-| **CSV Import/Export** | - | Opens the CSV export and import window for bulk metadata management |
-| **App Settings** | - | Opens the settings dialog for configuring tag options and preferences |
-| **Exit App** | - | Closes the application |
+| **Open Files** | — | Opens a multi-select file dialog for supported audio and video files |
+| **Auto Tag** | `Ctrl+A` / `F7` | Opens fingerprint identification and source reconciliation |
+| **Text Tools** | `Ctrl+H` | Opens find and replace, case conversion, target fields, and filename patterns |
+| **CSV Import / Export** | — | Opens reviewed CSV workflows for the checked scope |
+| **App Settings** | — | Configures tag containers, encoding, artwork processing, and Auto Tag scope |
+| **Arctisoft Studio Hub** | — | Opens the optional Studio Hub companion experience |
+| **Exit App** | — | Closes the application |
+
+`Ctrl+B` / `F6` activates the separate **Add Folder** workflow. The Library panel also provides **Add Files**, **Add Folder**, drag and drop, search, and the include-all checkbox.
 
 ## **Context Menus**
 
@@ -493,20 +645,23 @@ Right-click on the console area to access:
 
 ### **Thumbnail Panel**
 Right-click on the album artwork panel to access:
-- **Select Image** - Open a file dialog to choose an image
-- **Remove Image** - Remove the currently embedded artwork
+- **Choose Artwork** - Open a file dialog to choose an image
+- **Manage Artwork Collection** - Review and edit all embedded pictures, types, descriptions, and ordering
+- **Remove Artwork** - Remove the staged artwork
+- **Artwork Information** - Inspect format, dimensions, size, picture type, and processing behavior
 
 ### **Path Bar**
 Right-click on the folder path bar to access:
-- **Open Folder** - Open the current folder in Windows Explorer
-- **Copy Path** - Copy the folder path to clipboard
+- **Open Source Location** - Open the current source in Windows Explorer
+- **Copy Source** - Copy the displayed source path or source description
 
 ### **File List** (Per-File Mode only)
 Right-click on a file in the list to access:
-- **Copy Metadata** - Copy all metadata fields and thumbnail from the selected file
-- **Paste Metadata** - Apply previously copied metadata to the selected file
+- **Play Audio Preview / Stop Audio Preview** - Audition supported audio without leaving the editor
+- **Copy Metadata** - Copy all metadata fields and the complete artwork collection from the selected file
+- **Paste Metadata** - Stage the copied metadata and artwork collection on the selected file
 - **Remove Metadata** - Strip all metadata from the selected file
-- **Track Info** - Open detailed file and tag information for the selected file
+- **Track Information** - Inspect file identity, media properties, and tags for the selected file
 
 ## **Copyright**
 
