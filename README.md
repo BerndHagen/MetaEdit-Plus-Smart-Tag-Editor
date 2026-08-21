@@ -12,7 +12,7 @@
 
 **MetaEdit Plus 2.0.0** is a Windows metadata editor for audio and video files. It can load individual files or recursively discover supported media in folders, then work on the checked selection in Batch Mode or keep independent staged values in Per-File Mode. Its four metadata workspaces expose 38 editable fields, from core tags and credits to release identifiers and sort fields.
 
-The application combines direct tag editing with fingerprint-based identification, release-aware matching, configurable source reconciliation, complete artwork collections, ReplayGain analysis, lyrics lookup, video/chapter tools, extended tags, change previews, metadata interchange, reusable rules, library cleanup, and integrity analysis. Potential changes remain reviewable before they are written, while undo/redo snapshots, transaction protection, and quarantine manifests provide recovery paths for destructive-looking workflows.
+The application combines direct tag editing with fingerprint-based identification, release-aware matching, configurable source reconciliation, complete artwork collections, ReplayGain analysis, lyrics lookup, video/chapter tools, format-specific tags, change previews, metadata interchange, reusable rules, library cleanup, and integrity analysis. Potential changes remain reviewable before they are written, while undo/redo snapshots, transaction protection, and quarantine manifests provide recovery paths for destructive-looking workflows.
 
 ### **Key Features**
 
@@ -24,10 +24,10 @@ The application combines direct tag editing with fingerprint-based identificatio
 - **Release Matching:** Select an exact MusicBrainz edition and map checked files one-to-one to its tracklist before staging batch metadata.
 - **Artwork Choices:** Compare embedded or online cover choices, see meaningful release context, and select the artwork to stage.
 - **Artwork Collections:** Add, replace, remove, reorder, inspect, copy, and paste multiple embedded images without flattening picture types or descriptions.
-- **Extended Tags:** Edit ID3 user text, Xiph comments, APE text, MP4 freeform fields, and ASF text descriptors with real multi-value support.
+- **Format-Specific Tags:** Select an applied field, then edit ID3 user text, Xiph comments, APE text, MP4 freeform fields, or ASF text descriptors with real multi-value support.
 - **Loudness & ReplayGain:** Measure gated BS.1770/EBU R128 loudness and write non-destructive ReplayGain 2 track/album tags.
 - **Lyrics Lookup:** Rank LRCLIB candidates by identity and duration, preview plain or synchronized lyrics, stage a choice, or export a sidecar.
-- **Video Metadata & Chapters:** Edit TV/movie metadata, inspect video streams, and manage chapter markers with sidecar and container-aware workflows.
+- **Video Details:** Edit video-specific TV/movie tags, inspect streams, and manage chapter markers with sidecar and container-aware workflows.
 - **Text Tools:** Find and replace exact text, convert case across selected fields, and review every proposed value.
 - **File Patterns:** Extract tags from filenames or generate sanitized filenames from metadata placeholders.
 - **Metadata Interchange:** Import CSV and export reviewed selections as CSV, structured JSON, or portable M3U8 playlists.
@@ -62,7 +62,7 @@ MetaEdit Plus provides 38 metadata fields organized into four workspaces:
 - **Release & Rights:** Year, Release Status, Release Type, Release Country, Publisher, Copyright, ISRC, Amazon ID
 - **IDs & Sorting:** MusicBrainz Track, Release, Release Group, Artist, Release Artist, and Disc IDs; Title, Album, Performer, Album Artist, and Composer sort values
 
-Artwork is managed alongside the fields and can be inspected separately through Artwork Information or the complete collection manager. Container-specific fields that do not belong in the standard 38-field workspace remain available through Extended Tags and Video Metadata. Whether every field can be represented depends on the tag capabilities of the selected media format.
+Artwork is managed alongside the fields and can be inspected separately through Artwork Information or the complete collection manager. Container-specific fields that do not belong in the standard 38-field workspace remain available through Format-Specific Tags and Video Details. Whether every field can be represented depends on the tag capabilities of the selected media format.
 
 ## **Table of Contents**
 
@@ -104,10 +104,10 @@ Artwork is managed alongside the fields and can be inspected separately through 
 13. [Library Integrity](#library-integrity)
 14. [Advanced Media Tools](#advanced-media-tools)
     - [Artwork Collection Manager](#artwork-collection-manager)
-    - [Extended Tags](#extended-tags)
+    - [Format-Specific Tags](#format-specific-tags)
     - [Loudness and ReplayGain](#loudness-and-replaygain)
     - [Lyrics Lookup](#lyrics-lookup)
-    - [Video Metadata and Chapters](#video-metadata-and-chapters)
+    - [Video Details](#video-details)
 15. [Action Buttons](#action-buttons)
 16. [Undo and Redo](#undo-and-redo)
     - [How It Works](#how-it-works-1)
@@ -282,7 +282,7 @@ Auto Tag combines the following sources:
 | **MusicBrainz** | Comprehensive open-source music database with millions of releases |
 | **iTunes** | Music catalog used for additional metadata evidence and artwork enrichment |
 
-Open **App Settings > Metadata Sources** to enable sources and arrange their query priority. Priority influences tie-breaking, but source reliability, match confidence, and cross-source agreement remain part of reconciliation. MusicBrainz must remain enabled for the release-aware batch matcher because its edition and tracklist model comes from MusicBrainz.
+In **App Settings > Auto Tag Settings**, enable the desired sources directly and choose their priority from the adjacent dropdown. Priority influences tie-breaking, but source reliability, match confidence, and cross-source agreement remain part of reconciliation. MusicBrainz must remain enabled for the release-aware batch matcher because its edition and tracklist model comes from MusicBrainz.
 
 ### **How It Works**
 
@@ -392,7 +392,7 @@ The CSV Import / Export window manages the complete checked-file scope through t
 2. Set **Rows shown in review** to 5, 10, 20, 50, 100, or All and inspect the independently scrollable report.
 3. Click **Export...** and choose CSV metadata, JSON metadata, or an M3U8 playlist.
 
-`FilePath` and `Filename` are always included in metadata exports for stable identity. The row selector changes only how much is displayed in Export Review: selecting 20 while 200 files are checked still exports all 200 checked files. CSV values use the shared encoder, including quoting and spreadsheet-formula safety. JSON preserves the selected field names in a structured array. M3U8 uses UTF-8, writes `EXTINF` duration/display entries, and prefers relative paths from the playlist location for portability.
+`FilePath` and `Filename` are always included in metadata exports for stable identity. Export Review gives every selected metadata field its own aligned field/value row beneath the file identity. The row selector changes only how many files are displayed in that review: selecting 20 while 200 files are checked still exports all 200 checked files. CSV values use the shared encoder, including quoting and spreadsheet-formula safety. JSON preserves the selected field names in a structured array. M3U8 uses UTF-8, writes `EXTINF` duration/display entries, and prefers relative paths from the playlist location for portability.
 
 ### **Import**
 
@@ -446,9 +446,9 @@ The **More** menu enables advanced actions only when the current selection and m
 
 Quick Choose/Remove Artwork targets only the picture type selected in Settings and preserves all other picture types. Copy/Paste Metadata transfers the full collection rather than only the visible front cover.
 
-### **Extended Tags**
+### **Format-Specific Tags**
 
-**Extended Tags** exposes fields outside the standard editor without flattening the container:
+**Format-Specific Tags** exposes fields outside the standard editor without flattening the container. The applied-field list provides selection and removal; the adjacent editor shows only the selected field, its container, and its values:
 
 - ID3v2 user-text (`TXXX`) fields
 - Xiph/Vorbis comment fields
@@ -468,9 +468,9 @@ Applying the reviewed result writes ReplayGain track gain/peak and, when applica
 
 **Lyrics Lookup** uses the selected audio file's title, performer, album, and duration to search LRCLIB. Candidates are ranked by metadata similarity and duration, disclose plain/synchronized availability, and remain selectable. Choose synchronized lyrics when available or plain text, then stage the preview in the main editor. **Export Sidecar** writes UTF-8 `.lrc` or `.txt` without staging a tag.
 
-### **Video Metadata and Chapters**
+### **Video Details**
 
-**Video Metadata & Chapters** presents container, dimensions, duration, video codecs, and TV/movie fields such as show, season, episode, network, director, producer, screenwriter, content rating, and keywords. Common title, subtitle, description, genre, year, and copyright fields remain aligned with the main editor.
+**Video Details** presents container, dimensions, duration, video codecs, and video-specific TV/movie fields such as show, season, episode, network, director, producer, screenwriter, content rating, and keywords. Common title, subtitle, description, genre, year, and copyright fields stay exclusively in the main editor, avoiding two competing places for the same tag.
 
 Chapter rows contain start, optional end, title, ordering, and removal controls. Simple chapter text and FFmetadata sidecars can be imported or exported for every supported video. Embedded chapter capability is container-aware:
 
@@ -492,7 +492,7 @@ The main workspace keeps frequent actions visible and moves less frequent workfl
 | **Write Tags** | Validates and writes the staged metadata and artwork for the selected mode and checked scope. |
 | **Save Set / Restore Set** | Stores or restores a reusable field and artwork configuration. |
 | **CSV Tools** | Opens reviewed CSV import plus CSV, JSON, and M3U8 export. |
-| **More** | Opens Clear/Reset, collection-aware Copy/Paste Metadata, Extended Tags, Video Metadata & Chapters, Lyrics Lookup, Loudness & ReplayGain, field sets, interchange, Rule Studio, Clean & Organize, and Library Integrity as allowed by the current scope. |
+| **More** | Opens Clear/Reset, collection-aware Copy/Paste Metadata, Format-Specific Tags, Video Details, Lyrics Lookup, Loudness & ReplayGain, field sets, interchange, Rule Studio, Clean & Organize, and Library Integrity as allowed by the current scope. |
 
 The action cards respond to the available window width. Controls that move into **More** remain the same operation; changing the window size does not change processing scope.
 
@@ -622,7 +622,7 @@ The left sidebar provides quick access to the main application functions:
 | **Auto Tag** | `Ctrl+A` / `F7` | Opens fingerprint identification and source reconciliation |
 | **Text Tools** | `Ctrl+H` | Opens find and replace, case conversion, target fields, and filename patterns |
 | **CSV Import / Export** | — | Opens reviewed CSV workflows for the checked scope |
-| **App Settings** | — | Configures tag containers, encoding, artwork processing, and Auto Tag scope |
+| **App Settings** | — | Configures tag containers, encoding, artwork processing, Auto Tag scope, enabled sources, and source priority |
 | **Arctisoft Studio Hub** | — | Opens the optional Studio Hub companion experience |
 | **Exit App** | — | Closes the application |
 
