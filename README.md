@@ -677,23 +677,47 @@ See the [LICENSE](https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/b
 
 ## **Screenshots**
 
-If you'd like a preview of MetaEdit Plus before downloading, the screenshots below show the application's features. Note that future updates may introduce additional functionality.
+The screenshots below use a fictional, locally generated album named **Mystic Horizons**. They show the current MetaEdit Plus interface without third-party music or personal library data.
 
 <table>
   <tr>
-    <th>MetaEdit Plus - Initial View</th>
-    <th>MetaEdit Plus - Directory Scan</th>
+    <th>Metadata Editor and Library</th>
+    <th>Batch Auto Tag</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-startup.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-startup.png" alt="Initial View" width="450"></a></td>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-inputs.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-inputs.png" alt="Directory Scan" width="450"></a></td>
+    <td><a href="images/editor-library.png"><img src="images/editor-library.png" alt="MetaEdit Plus metadata editor with the fictional Mystic Horizons album" width="450"></a></td>
+    <td><a href="images/auto-tag-batch.png"><img src="images/auto-tag-batch.png" alt="MetaEdit Plus Batch Auto Tag workspace" width="450"></a></td>
   </tr>
   <tr>
-    <th>MetaEdit Plus - Tag Generation</th>
-    <th>MetaEdit Plus - App Settings</th>
+    <th>Text Tools Preview</th>
+    <th>Clean and Organize Conflict Review</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-generate.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-generate.png" alt="Tag Generation" width="450"></a></td>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-settings.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-settings.png" alt="App Settings" width="450"></a></td>
+    <td><a href="images/text-tools-preview.png"><img src="images/text-tools-preview.png" alt="MetaEdit Plus Text Tools transformation preview" width="450"></a></td>
+    <td><a href="images/clean-organize-conflicts.png"><img src="images/clean-organize-conflicts.png" alt="MetaEdit Plus Clean and Organize conflict review" width="450"></a></td>
+  </tr>
+  <tr>
+    <th>Library Health Review</th>
+    <th>Lyrics Lookup</th>
+  </tr>
+  <tr>
+    <td><a href="images/library-health-review.png"><img src="images/library-health-review.png" alt="MetaEdit Plus Library Health findings" width="450"></a></td>
+    <td><a href="images/lyrics-lookup.png"><img src="images/lyrics-lookup.png" alt="MetaEdit Plus Lyrics Lookup results and preview" width="450"></a></td>
+  </tr>
+  <tr>
+    <th>Transfer Tags Preview</th>
+    <th>Artwork Manager</th>
+  </tr>
+  <tr>
+    <td><a href="images/transfer-tags-preview.png"><img src="images/transfer-tags-preview.png" alt="MetaEdit Plus Transfer Tags import review" width="450"></a></td>
+    <td><a href="images/artwork-manager.png"><img src="images/artwork-manager.png" alt="MetaEdit Plus artwork collection manager" width="450"></a></td>
+  </tr>
+  <tr>
+    <th>Change Review</th>
+    <th>Command Center</th>
+  </tr>
+  <tr>
+    <td><a href="images/change-review.png"><img src="images/change-review.png" alt="MetaEdit Plus staged metadata change review" width="450"></a></td>
+    <td><a href="images/command-center.png"><img src="images/command-center.png" alt="MetaEdit Plus searchable Command Center" width="450"></a></td>
   </tr>
 </table>
