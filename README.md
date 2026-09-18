@@ -675,25 +675,49 @@ MetaEdit Plus is provided "as is" without warranty. The author is not liable for
 
 See the [LICENSE](https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/blob/main/LICENSE) file for full terms.
 
-## **Screenshots**
+## Screenshots
 
-If you'd like a preview of MetaEdit Plus before downloading, the screenshots below show the application's features. Note that future updates may introduce additional functionality.
+Preview MetaEdit Plus's interface and workflows before downloading. Note that future updates may introduce additional functionality.
 
 <table>
   <tr>
-    <th>MetaEdit Plus - Initial View</th>
-    <th>MetaEdit Plus - Directory Scan</th>
+    <th>MetaEdit Plus - Editor</th>
+    <th>MetaEdit Plus - Auto Tag</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-startup.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-startup.png" alt="Initial View" width="450"></a></td>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-inputs.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-inputs.png" alt="Directory Scan" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-01-editor.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-01-editor.png" alt="Editor" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-02-auto-tag.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-02-auto-tag.png" alt="Auto Tag" width="450"></a></td>
   </tr>
   <tr>
-    <th>MetaEdit Plus - Tag Generation</th>
-    <th>MetaEdit Plus - App Settings</th>
+    <th>MetaEdit Plus - Text Tools</th>
+    <th>MetaEdit Plus - Clean &amp; Organize</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-generate.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-generate.png" alt="Tag Generation" width="450"></a></td>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-settings.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/screenshot-settings.png" alt="App Settings" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-03-text-tools.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-03-text-tools.png" alt="Text Tools" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-04-clean-organize.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-04-clean-organize.png" alt="Clean and Organize" width="450"></a></td>
+  </tr>
+  <tr>
+    <th>MetaEdit Plus - Library Health</th>
+    <th>MetaEdit Plus - Lyrics</th>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-05-library-health.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-05-library-health.png" alt="Library Health" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-06-lyrics.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-06-lyrics.png" alt="Lyrics" width="450"></a></td>
+  </tr>
+  <tr>
+    <th>MetaEdit Plus - Transfer Tags</th>
+    <th>MetaEdit Plus - Artwork</th>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-07-transfer-tags.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-07-transfer-tags.png" alt="Transfer Tags" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-08-artwork.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-08-artwork.png" alt="Artwork" width="450"></a></td>
+  </tr>
+  <tr>
+    <th>MetaEdit Plus - Change Review</th>
+    <th>MetaEdit Plus - Command Center</th>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-09-change-review.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-09-change-review.png" alt="Change Review" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-10-command-center.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-10-command-center.png" alt="Command Center" width="450"></a></td>
   </tr>
 </table>
