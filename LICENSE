@@ -21,10 +21,15 @@ DISCLAIMER:
   arising from its use.
 
 THIRD-PARTY COMPONENTS:
-  TagLib#          - LGPL 2.1  - Audio/video tag reading and writing
-  SharpDX          - MIT       - DirectX/Direct3D support
-  fpcalc           - MIT/LGPL  - Chromaprint audio fingerprinting
-  HtmlAgilityPack  - MIT       - HTML parsing (Cover Art Search)
+  TagLib#                - LGPL 2.1  - Common audio/video metadata handling
+  ATL                    - LGPL 3.0  - Additional audio metadata formats
+  NAudio                 - MIT       - Audio decoding and playback
+  NAudio.Vorbis          - MIT       - Ogg/Vorbis decoding
+  Microsoft.Data.Sqlite  - MIT       - Local persistent-library indexes
+  fpcalc / Chromaprint   - MIT/LGPL  - Acoustic fingerprinting
+
+  Optional external FFmpeg/ffprobe and MKVToolNix installations retain their
+  own licenses and are not relicensed by this agreement.
 
 GOVERNING LAW:
   This license is governed by the laws of Austria.
