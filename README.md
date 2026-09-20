@@ -1,13 +1,13 @@
 <p align="center">
   <img src="images/metaedit-logo.png" alt="MetaEdit Plus Logo" width="128" />
 </p>
-<h1 align="center">MetaEdit Plus - Metadata Editor</h1>
+<h1 align="center">MetaEdit Plus - Advanced Tag Editor</h1>
 <p align="center">
   <b>Edit, review, organize, and automate metadata across audio and video libraries.</b><br>
   <b>Work locally with complete staging, recovery, artwork, analysis, and batch workflows.</b>
 </p>
 <p align="center">
-  <a href="https://github.com/BerndHagen/MetaEdit-Plus-Metadata-Editor/releases"><img src="https://img.shields.io/github/v/release/BerndHagen/MetaEdit-Plus-Metadata-Editor?include_prereleases&style=flat-square&color=CD853F" alt="Latest Release"></a>&nbsp;&nbsp;<a href="https://github.com/BerndHagen/MetaEdit-Plus-Metadata-Editor/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Freeware-green?style=flat-square" alt="License"></a>&nbsp;&nbsp;<a href="https://dotnet.microsoft.com/download/dotnet/10.0/runtime"><img src="https://img.shields.io/badge/.NET-10.0-512BD4?style=flat-square" alt=".NET Version"></a>&nbsp;&nbsp;<img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square" alt="Platform">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Architecture-x64-lightgrey?style=flat-square" alt="Architecture">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" alt="Status">&nbsp;&nbsp;<a href="https://github.com/BerndHagen/MetaEdit-Plus-Metadata-Editor/issues"><img src="https://img.shields.io/github/issues/BerndHagen/MetaEdit-Plus-Metadata-Editor?style=flat-square&color=orange" alt="Report Issues"></a>
+  <a href="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/releases"><img src="https://img.shields.io/github/v/release/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor?include_prereleases&style=flat-square&color=CD853F" alt="Latest Release"></a>&nbsp;&nbsp;<a href="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Freeware-green?style=flat-square" alt="License"></a>&nbsp;&nbsp;<a href="https://dotnet.microsoft.com/download/dotnet/10.0/runtime"><img src="https://img.shields.io/badge/.NET-10.0-512BD4?style=flat-square" alt=".NET Version"></a>&nbsp;&nbsp;<img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square" alt="Platform">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Architecture-x64-lightgrey?style=flat-square" alt="Architecture">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" alt="Status">&nbsp;&nbsp;<a href="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/issues"><img src="https://img.shields.io/github/issues/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor?style=flat-square&color=orange" alt="Report Issues"></a>
 </p>
 
 **MetaEdit Plus** is a professional Windows metadata editor for audio and video collections. It combines direct field editing with reviewed batch operations, complete artwork collections, filename automation, provider-assisted identification, library analysis, import and export, ReplayGain measurement, lyrics, chapters, persistent indexes, and guarded studio jobs.
@@ -147,7 +147,7 @@ When an optional tool is unavailable, MetaEdit keeps the dependent command disab
 
 ## **Installation**
 
-1. Open the [Releases](https://github.com/BerndHagen/MetaEdit-Plus-Metadata-Editor/releases) page.
+1. Open the [Releases](https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/releases) page.
 2. Download the Windows x64 installer published for the selected release.
 3. Run the installer and review the destination and optional components.
 4. Launch **MetaEdit Plus** from the Start Menu or Desktop shortcut.
@@ -507,7 +507,7 @@ Read the Process Log and keep the application open while reviewing recovery info
 
 MetaEdit can check for updates independently of Arctisoft Studio Hub. In **Settings → Application Services**, choose **Stable releases**, **Preview releases**, or **Manual checks only**. Use **Help → Check for Updates** to check at any time. A newer version appears in the main window; MetaEdit verifies the download and publisher signature before starting the installer. The optional Hub can also manage installed Arctisoft applications centrally.
 
-You can always install a newer version manually from the official [Releases](https://github.com/BerndHagen/MetaEdit-Plus-Metadata-Editor/releases) page. Keep a profile backup and an independent media backup before major upgrades.
+You can always install a newer version manually from the official [Releases](https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/releases) page. Keep a profile backup and an independent media backup before major upgrades.
 
 ## **Copyright**
 
@@ -529,7 +529,7 @@ MetaEdit Plus is proprietary freeware and is protected by international copyrigh
 
 The application is fully usable without signing in. Arctisoft Studio Hub is an optional account and application manager. By using MetaEdit Plus, you agree to the terms in the [LICENSE](LICENSE).
 
-Report defects through [GitHub Issues](https://github.com/BerndHagen/MetaEdit-Plus-Metadata-Editor/issues). Questions and workflow discussions belong in [Discussions](https://github.com/BerndHagen/MetaEdit-Plus-Metadata-Editor/discussions).
+Report defects through [GitHub Issues](https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/issues). Questions and workflow discussions belong in [Discussions](https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/discussions).
 
 ## **Screenshots**
 
@@ -537,43 +537,43 @@ Preview MetaEdit Plus's interface and features before downloading. Note that fut
 
 <table>
   <tr>
-    <th>MetaEdit Plus - Metadata Editor</th>
+    <th>MetaEdit Plus - Advanced Tag Editor</th>
     <th>MetaEdit Plus - Auto Tag</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Metadata-Editor/raw/main/images/showcase-01-editor.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Metadata-Editor/raw/main/images/showcase-01-editor.png" alt="MetaEdit Plus Metadata Editor" width="450"></a></td>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Metadata-Editor/raw/main/images/showcase-02-auto-tag.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Metadata-Editor/raw/main/images/showcase-02-auto-tag.png" alt="MetaEdit Plus Auto Tag" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-01-editor.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-01-editor.png" alt="MetaEdit Plus Metadata Editor" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-02-auto-tag.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-02-auto-tag.png" alt="MetaEdit Plus Auto Tag" width="450"></a></td>
   </tr>
   <tr>
     <th>MetaEdit Plus - Text Tools</th>
     <th>MetaEdit Plus - Clean & Organize</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Metadata-Editor/raw/main/images/showcase-03-text-tools.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Metadata-Editor/raw/main/images/showcase-03-text-tools.png" alt="MetaEdit Plus Text Tools" width="450"></a></td>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Metadata-Editor/raw/main/images/showcase-04-clean-organize.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Metadata-Editor/raw/main/images/showcase-04-clean-organize.png" alt="MetaEdit Plus Clean & Organize" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-03-text-tools.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-03-text-tools.png" alt="MetaEdit Plus Text Tools" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-04-clean-organize.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-04-clean-organize.png" alt="MetaEdit Plus Clean & Organize" width="450"></a></td>
   </tr>
   <tr>
     <th>MetaEdit Plus - Library Health</th>
     <th>MetaEdit Plus - Lyrics Lookup</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Metadata-Editor/raw/main/images/showcase-05-library-health.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Metadata-Editor/raw/main/images/showcase-05-library-health.png" alt="MetaEdit Plus Library Health" width="450"></a></td>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Metadata-Editor/raw/main/images/showcase-06-lyrics.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Metadata-Editor/raw/main/images/showcase-06-lyrics.png" alt="MetaEdit Plus Lyrics Lookup" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-05-library-health.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-05-library-health.png" alt="MetaEdit Plus Library Health" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-06-lyrics.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-06-lyrics.png" alt="MetaEdit Plus Lyrics Lookup" width="450"></a></td>
   </tr>
   <tr>
     <th>MetaEdit Plus - Transfer Tags</th>
     <th>MetaEdit Plus - ReplayGain Analysis</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Metadata-Editor/raw/main/images/showcase-07-transfer-tags.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Metadata-Editor/raw/main/images/showcase-07-transfer-tags.png" alt="MetaEdit Plus Transfer Tags" width="450"></a></td>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Metadata-Editor/raw/main/images/showcase-08-replaygain.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Metadata-Editor/raw/main/images/showcase-08-replaygain.png" alt="MetaEdit Plus ReplayGain Analysis" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-07-transfer-tags.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-07-transfer-tags.png" alt="MetaEdit Plus Transfer Tags" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-08-replaygain.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-08-replaygain.png" alt="MetaEdit Plus ReplayGain Analysis" width="450"></a></td>
   </tr>
   <tr>
     <th>MetaEdit Plus - Change Review</th>
     <th>MetaEdit Plus - Command Center</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Metadata-Editor/raw/main/images/showcase-09-change-review.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Metadata-Editor/raw/main/images/showcase-09-change-review.png" alt="MetaEdit Plus Change Review" width="450"></a></td>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Metadata-Editor/raw/main/images/showcase-10-command-center.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Metadata-Editor/raw/main/images/showcase-10-command-center.png" alt="MetaEdit Plus Command Center" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-09-change-review.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-09-change-review.png" alt="MetaEdit Plus Change Review" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-10-command-center.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-10-command-center.png" alt="MetaEdit Plus Command Center" width="450"></a></td>
   </tr>
 </table>
