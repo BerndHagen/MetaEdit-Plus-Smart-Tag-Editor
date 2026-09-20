@@ -541,7 +541,7 @@ Preview MetaEdit Plus's interface and features before downloading. Note that fut
     <th>MetaEdit Plus - Auto Tag</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-01-editor.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-01-editor.png" alt="MetaEdit Plus Metadata Editor" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-01-editor.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-01-editor.png" alt="MetaEdit Plus Advanced Tag Editor" width="450"></a></td>
     <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-02-auto-tag.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-02-auto-tag.png" alt="MetaEdit Plus Auto Tag" width="450"></a></td>
   </tr>
   <tr>
