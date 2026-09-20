@@ -36,20 +36,6 @@
 - **Audio:** `MP3`, `WAV`, `FLAC`, `OGG`, `OGA`, `OPUS`, `WV`, `WMA`, `AAC`, `M4A`, `M4B`, `AIF`, `AIFF`, `APE`, `DSF`, `MKA`, `MPC`, `MPP`, `OFR`, `OFS`, `SPX`, `TAK`, `TTA`.
 - **Video:** `MP4`, `MKV`, `MOV`, `WMV`, `M4V`, `WEBM`.
 
-Metadata, artwork, and chapter support depends on the media container. MetaEdit disables unsupported write operations instead of silently dropping data.
-
-### **Available Metadata Fields**
-
-The editor groups 56 standard fields into five configurable sections:
-
-- **Core:** title, subtitle/version, artist/performer, genre, BPM, initial key, album, album artist, track number and total, disc number and total.
-- **Credits:** composer, conductor, performer role, description, grouping/work, remixed by, comment, lyrics.
-- **Release:** release year and original release date, status, type, media type and country, publisher/label, copyright, license, ISRC, barcode, catalog number.
-- **IDs & Sorting:** MusicBrainz recording, release, release group, artist, release artist and disc IDs; title, album, artist, album artist and composer sort values; Amazon catalog ID.
-- **Technical:** date tagged, media length, language, encoded by, encoder settings, reference loudness, and ReplayGain track/album gain, peak and range.
-
-Custom Fields and Format-Specific Tags handle additional supported text keys. The transfer schema also retains legacy MusicIP PUID compatibility.
-
 ## **Table of Contents**
 
 1. [System Requirements](#system-requirements)
@@ -69,53 +55,54 @@ Custom Fields and Format-Specific Tags handle additional supported text keys. Th
    - [Batch Mode](#batch-mode)
    - [Per-File Mode](#per-file-mode)
    - [Columns and Persistent Libraries](#columns-and-persistent-libraries)
-7. [Change Preview and Safety](#change-preview-and-safety)
+7. [Metadata Fields](#metadata-fields)
+8. [Change Preview and Safety](#change-preview-and-safety)
    - [Staging and Preview](#staging-and-preview)
    - [Write Tags](#write-tags)
    - [Remove All Tags](#remove-all-tags)
    - [Process Log](#process-log)
-8. [Auto-Tag Feature](#auto-tag-feature)
+9. [Auto-Tag Feature](#auto-tag-feature)
    - [Per-File Identification](#per-file-identification)
    - [Batch Release Matching](#batch-release-matching)
    - [Providers](#providers)
-9. [Text Tools](#text-tools)
-   - [Find and Replace](#find-and-replace)
-   - [Case and Whitespace](#case-and-whitespace)
-10. [File Pattern Tool](#file-pattern-tool)
-   - [Tags from Filename](#tags-from-filename)
-   - [Filename from Tags](#filename-from-tags)
-   - [Filename from Filename](#filename-from-filename)
-11. [Metadata Import and Export](#metadata-import-and-export)
-   - [Import](#import)
-   - [Export](#export)
-12. [Rule Studio](#rule-studio)
-13. [Clean & Organize](#clean--organize)
-14. [Library Integrity](#library-integrity)
-15. [Advanced Media Tools](#advanced-media-tools)
-   - [Artwork Collection Manager](#artwork-collection-manager)
-   - [Custom and Format-Specific Fields](#custom-and-format-specific-fields)
-   - [Chapter Editor and Video Details](#chapter-editor-and-video-details)
-   - [Lyrics Lookup](#lyrics-lookup)
-   - [Loudness and ReplayGain](#loudness-and-replaygain)
-16. [Action Buttons](#action-buttons)
-17. [Undo and Redo](#undo-and-redo)
-18. [Field Storage System](#field-storage-system)
-19. [Studio Automation](#studio-automation)
-20. [Settings](#settings)
-21. [Cloud Settings Sync](#cloud-settings-sync)
-22. [Keyboard Shortcuts](#keyboard-shortcuts)
-23. [Sidebar](#sidebar)
-24. [Context Menus](#context-menus)
-25. [Current Boundaries](#current-boundaries)
-26. [Troubleshooting](#troubleshooting)
-   - [A Command Is Disabled](#a-command-is-disabled)
-   - [Search Lyrics Is Disabled](#search-lyrics-is-disabled)
-   - [Auto Tag Found No Confident Match](#auto-tag-found-no-confident-match)
-   - [Artwork or Chapters Cannot Be Written](#artwork-or-chapters-cannot-be-written)
-   - [A Write Failed](#a-write-failed)
-27. [Updating Software](#updating-software)
-28. [Copyright](#copyright)
-29. [Screenshots](#screenshots)
+10. [Text Tools](#text-tools)
+    - [Find and Replace](#find-and-replace)
+    - [Case and Whitespace](#case-and-whitespace)
+11. [File Pattern Tool](#file-pattern-tool)
+    - [Tags from Filename](#tags-from-filename)
+    - [Filename from Tags](#filename-from-tags)
+    - [Filename from Filename](#filename-from-filename)
+12. [Metadata Import and Export](#metadata-import-and-export)
+    - [Import](#import)
+    - [Export](#export)
+13. [Rule Studio](#rule-studio)
+14. [Clean & Organize](#clean--organize)
+15. [Library Integrity](#library-integrity)
+16. [Advanced Media Tools](#advanced-media-tools)
+    - [Artwork Collection Manager](#artwork-collection-manager)
+    - [Custom and Format-Specific Fields](#custom-and-format-specific-fields)
+    - [Chapter Editor and Video Details](#chapter-editor-and-video-details)
+    - [Lyrics Lookup](#lyrics-lookup)
+    - [Loudness and ReplayGain](#loudness-and-replaygain)
+17. [Action Buttons](#action-buttons)
+18. [Undo and Redo](#undo-and-redo)
+19. [Field Storage System](#field-storage-system)
+20. [Studio Automation](#studio-automation)
+21. [Settings](#settings)
+22. [Cloud Settings Sync](#cloud-settings-sync)
+23. [Keyboard Shortcuts](#keyboard-shortcuts)
+24. [Sidebar](#sidebar)
+25. [Context Menus](#context-menus)
+26. [Current Boundaries](#current-boundaries)
+27. [Troubleshooting](#troubleshooting)
+    - [A Command Is Disabled](#a-command-is-disabled)
+    - [Search Lyrics Is Disabled](#search-lyrics-is-disabled)
+    - [Auto Tag Found No Confident Match](#auto-tag-found-no-confident-match)
+    - [Artwork or Chapters Cannot Be Written](#artwork-or-chapters-cannot-be-written)
+    - [A Write Failed](#a-write-failed)
+28. [Updating Software](#updating-software)
+29. [Copyright](#copyright)
+30. [Screenshots](#screenshots)
 
 ## **System Requirements**
 
@@ -140,8 +127,10 @@ MetaEdit Plus is a native Windows WPF application. Linux, macOS, Wine, and Bottl
 
 ## **Third-Party Libraries**
 
+MetaEdit Plus uses third-party libraries for metadata access, media decoding, acoustic identification, and private local indexes. For questions about supported capabilities or licensing, consult the links below or open an issue.
+
 | Component | Version | Used For | License |
-|---|---:|---|---|
+|---|---|---|---|
 | [TagLib#](https://github.com/mono/taglib-sharp) | 2.3.0 | Common audio/video metadata, properties, and artwork | LGPL 2.1 |
 | [ATL](https://github.com/Zeugma440/atldotnet) | 7.16.0 | Additional metadata adapters, including OptimFROG, Speex, TAK, and TTA | LGPL 3.0 |
 | [NAudio](https://github.com/naudio/NAudio) | 2.3.0 | Audio decoding and playback | MIT |
@@ -219,6 +208,20 @@ Per-File Mode maintains a separate staged state for each file. Previous and Next
 ### **Columns and Persistent Libraries**
 
 Named Library layouts control visible columns, widths, order, sorting, and expression columns. Persistent Libraries register selected folders in a private local SQLite index. Rescan reads changed entries; removing a registration never removes media files.
+
+## **Metadata Fields**
+
+The editor groups 56 standard fields into five configurable sections:
+
+- **Core:** title, subtitle/version, artist/performer, genre, BPM, initial key, album, album artist, track number and total, disc number and total.
+- **Credits:** composer, conductor, performer role, description, grouping/work, remixed by, comment, lyrics.
+- **Release:** release year and original release date, status, type, media type and country, publisher/label, copyright, license, ISRC, barcode, catalog number.
+- **IDs & Sorting:** MusicBrainz recording, release, release group, artist, release artist and disc IDs; title, album, artist, album artist and composer sort values; Amazon catalog ID.
+- **Technical:** date tagged, media length, language, encoded by, encoder settings, reference loudness, and ReplayGain track/album gain, peak and range.
+
+Custom Fields and Format-Specific Tags handle additional supported text keys. The transfer schema also retains legacy MusicIP PUID compatibility.
+
+Metadata, artwork, and chapter support depends on the media container. MetaEdit disables unsupported write operations instead of silently dropping data.
 
 ## **Change Preview and Safety**
 
@@ -530,44 +533,44 @@ Report defects through [GitHub Issues](https://github.com/BerndHagen/MetaEdit-Pl
 
 ## **Screenshots**
 
-The screenshots show the application using generated audio fixtures and fictional metadata. No commercial audio is included. Click an image to view it at full size.
+Preview MetaEdit Plus's interface and features before downloading. Note that future updates may introduce additional functionality.
 
 <table>
   <tr>
-    <th align="left">MetaEdit Plus - Metadata Editor</th>
-    <th align="left">MetaEdit Plus - Auto Tag</th>
+    <th>MetaEdit Plus - Metadata Editor</th>
+    <th>MetaEdit Plus - Auto Tag</th>
   </tr>
   <tr>
     <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-01-editor.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-01-editor.png" alt="MetaEdit Plus Metadata Editor" width="450"></a></td>
     <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-02-auto-tag.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-02-auto-tag.png" alt="MetaEdit Plus Auto Tag" width="450"></a></td>
   </tr>
   <tr>
-    <th align="left">MetaEdit Plus - Text Tools</th>
-    <th align="left">MetaEdit Plus - Clean & Organize</th>
+    <th>MetaEdit Plus - Text Tools</th>
+    <th>MetaEdit Plus - Clean & Organize</th>
   </tr>
   <tr>
     <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-03-text-tools.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-03-text-tools.png" alt="MetaEdit Plus Text Tools" width="450"></a></td>
     <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-04-clean-organize.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-04-clean-organize.png" alt="MetaEdit Plus Clean & Organize" width="450"></a></td>
   </tr>
   <tr>
-    <th align="left">MetaEdit Plus - Library Health</th>
-    <th align="left">MetaEdit Plus - Lyrics Lookup</th>
+    <th>MetaEdit Plus - Library Health</th>
+    <th>MetaEdit Plus - Lyrics Lookup</th>
   </tr>
   <tr>
     <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-05-library-health.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-05-library-health.png" alt="MetaEdit Plus Library Health" width="450"></a></td>
     <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-06-lyrics.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-06-lyrics.png" alt="MetaEdit Plus Lyrics Lookup" width="450"></a></td>
   </tr>
   <tr>
-    <th align="left">MetaEdit Plus - Transfer Tags</th>
-    <th align="left">MetaEdit Plus - ReplayGain Analysis</th>
+    <th>MetaEdit Plus - Transfer Tags</th>
+    <th>MetaEdit Plus - ReplayGain Analysis</th>
   </tr>
   <tr>
     <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-07-transfer-tags.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-07-transfer-tags.png" alt="MetaEdit Plus Transfer Tags" width="450"></a></td>
     <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-08-replaygain.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-08-replaygain.png" alt="MetaEdit Plus ReplayGain Analysis" width="450"></a></td>
   </tr>
   <tr>
-    <th align="left">MetaEdit Plus - Change Review</th>
-    <th align="left">MetaEdit Plus - Command Center</th>
+    <th>MetaEdit Plus - Change Review</th>
+    <th>MetaEdit Plus - Command Center</th>
   </tr>
   <tr>
     <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-09-change-review.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/showcase-09-change-review.png" alt="MetaEdit Plus Change Review" width="450"></a></td>
