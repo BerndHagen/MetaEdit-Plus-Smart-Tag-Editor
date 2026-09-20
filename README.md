@@ -561,11 +561,11 @@ Preview MetaEdit Plus's interface and features before downloading. Note that fut
     <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-06-lyrics.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-06-lyrics.png" alt="MetaEdit Plus Lyrics Lookup" width="450"></a></td>
   </tr>
   <tr>
-    <th>MetaEdit Plus - Transfer Tags</th>
+    <th>MetaEdit Plus - Artwork Collection</th>
     <th>MetaEdit Plus - ReplayGain Analysis</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-07-transfer-tags.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-07-transfer-tags.png" alt="MetaEdit Plus Transfer Tags" width="450"></a></td>
+    <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-07-artwork-collection.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-07-artwork-collection.png" alt="MetaEdit Plus Artwork Collection" width="450"></a></td>
     <td><a href="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-08-replaygain.png"><img src="https://github.com/BerndHagen/MetaEdit-Plus-Advanced-Tag-Editor/raw/main/images/showcase-08-replaygain.png" alt="MetaEdit Plus ReplayGain Analysis" width="450"></a></td>
   </tr>
   <tr>
