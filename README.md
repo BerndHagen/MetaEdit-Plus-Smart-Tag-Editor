@@ -1,460 +1,471 @@
 <p align="center">
-  <img src="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/raw/main/images/metaedit-logo.png" alt="MetaEdit Plus logo" width="128">
+  <img src="images/metaedit-logo.png" alt="MetaEdit Plus Logo" width="128" />
 </p>
-
-<h1 align="center">MetaEdit Plus - Audio &amp; Video Metadata Editor</h1>
-
+<h1 align="center">MetaEdit Plus - Smart Tag Editor</h1>
 <p align="center">
-  Edit, identify, review, and organize metadata across individual files and complete media libraries.
+  <b>Edit, review, organize, and automate metadata across audio and video libraries.</b><br>
+  <b>Work locally with complete staging, recovery, artwork, analysis, and batch workflows.</b>
 </p>
-
 <p align="center">
-  <a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/releases"><img src="https://img.shields.io/github/v/release/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor?include_prereleases&style=flat-square&color=CD853F" alt="Latest release"></a>
-  <a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Proprietary%20Freeware-green?style=flat-square" alt="License"></a>
-  <img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square" alt="Windows">
-  <img src="https://img.shields.io/badge/Architecture-x64-lightgrey?style=flat-square" alt="x64">
+  <a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/releases"><img src="https://img.shields.io/github/v/release/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor?include_prereleases&style=flat-square&color=CD853F" alt="Latest Release"></a>&nbsp;&nbsp;<a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Freeware-green?style=flat-square" alt="License"></a>&nbsp;&nbsp;<a href="https://dotnet.microsoft.com/download/dotnet/10.0/runtime"><img src="https://img.shields.io/badge/.NET-10.0-512BD4?style=flat-square" alt=".NET Version"></a>&nbsp;&nbsp;<img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square" alt="Platform">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Architecture-x64-lightgrey?style=flat-square" alt="Architecture">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" alt="Status">&nbsp;&nbsp;<a href="https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/issues"><img src="https://img.shields.io/badge/Issues-Report-orange?style=flat-square" alt="Report Issues"></a>
 </p>
 
-MetaEdit Plus is a Windows desktop metadata editor for audio and video collections. It combines direct batch and per-file editing with reviewed writes, multi-source identification, release matching, configurable automation, complete artwork collections, chapter tools, loudness analysis, library health checks, persistent local indexes, and metadata interchange.
+**MetaEdit Plus** is a professional Windows metadata editor for audio and video collections. It combines direct field editing with reviewed batch operations, complete artwork collections, filename automation, provider-assisted identification, library analysis, import and export, ReplayGain measurement, lyrics, chapters, persistent indexes, and guarded studio jobs.
 
-The application separates analysis, staging, review, and writing. Searching a provider, running a rule, loading lyrics, or measuring loudness does not silently modify media. A file changes only when the user reaches the relevant write or transactional commit step.
+This documentation describes the **v2.0.0 release candidate**. The application package remains unpublished until the release validation gate is complete.
 
-> The screenshots at the end of this document show the currently published interface. Work for a future release remains unpublished until that release is ready.
+### **Key Features**
 
-## Contents
+- **Batch and Per-File Editing:** Apply deliberate shared values to checked files or maintain independent staged changes for each selected file.
+- **Review Before Write:** Metadata, artwork, lyrics, rules, imports, and analysis results enter one staged review path before any file is changed.
+- **Auto Tag:** Identify one recording or map an album release with AcoustID, MusicBrainz, optional Discogs, and iTunes evidence.
+- **Text and Filename Automation:** Transform fields, extract tags from filenames, build filenames from tags, or rearrange existing filename parts with collision checks.
+- **Rule Studio:** Combine guarded conditions and ordered actions, preview every result, and save reusable local rule presets.
+- **Clean & Organize:** Build resumable metadata and path plans, review conflicts, and commit through backup and rollback protection.
+- **Library Health:** Find unreadable tags, missing fields, album inconsistencies, numbering problems, artwork differences, and duplicate evidence without changing media.
+- **Complete Artwork Collections:** Add, replace, reorder, describe, inspect, export, and remove embedded pictures without flattening unrelated artwork.
+- **Transfer and Reporting:** Review CSV or text imports and export CSV, JSON, HTML, text, and playlist documents.
+- **Lyrics, Chapters, and Video Metadata:** Search and stage lyrics, edit supported chapter structures, and work with contextual video fields.
+- **Loudness and ReplayGain:** Measure decoded audio and stage ReplayGain 2 track and album values without normalizing or re-encoding it.
+- **Persistent Libraries and Layouts:** Index chosen folders locally, create reusable Library and editor layouts, and save field sets and container mappings.
+- **Studio Automation:** Run versioned dry-run, commit, watch-folder, and redacted-diagnostics jobs from `MetaEdit.Automation.exe`.
+- **Local-First Privacy:** All editing works without an account. Optional cloud sync is off by default and covers portable tag preferences only.
 
-- [Capabilities](#capabilities)
-- [Supported media](#supported-media)
-- [Metadata model](#metadata-model)
-- [Installation](#installation)
-- [First workflow](#first-workflow)
-- [Library and editing scope](#library-and-editing-scope)
-- [Review, write, and recovery](#review-write-and-recovery)
-- [Auto Tag](#auto-tag)
-- [Text and filename tools](#text-and-filename-tools)
-- [Rule Studio](#rule-studio)
-- [Clean and Organize](#clean-and-organize)
-- [Library Health](#library-health)
-- [Transfer Tags and reports](#transfer-tags-and-reports)
-- [Artwork](#artwork)
-- [Format-specific tags](#format-specific-tags)
-- [Chapters and video metadata](#chapters-and-video-metadata)
-- [Lyrics](#lyrics)
-- [Loudness and ReplayGain](#loudness-and-replaygain)
-- [Layouts and reusable data](#layouts-and-reusable-data)
-- [Command Center and keyboard](#command-center-and-keyboard)
-- [Settings, storage, and privacy](#settings-storage-and-privacy)
-- [Dependencies](#dependencies)
-- [Current limitations](#current-limitations)
-- [Troubleshooting](#troubleshooting)
-- [License and support](#license-and-support)
-- [Screenshots](#screenshots)
+> **Looking for a specific workflow?** The complete feature reference below explains scope, staging, write safety, automation, supported formats, optional tools, and current boundaries.
 
-## Capabilities
+### **Supported Formats**
 
-- Open individual files, recursive folders, or local M3U/M3U8 playlists.
-- Control every scope-based workflow with the checked Library selection.
-- Edit shared values in Batch Mode or independent values in Per-File Mode.
-- Use 56 standard editor fields across five semantic tabs.
-- Preserve and edit arbitrary supported container text fields.
-- Stage changes and review field-level before/after evidence before writing.
-- Create recoverable snapshots for supported file-changing operations.
-- Identify audio through AcoustID fingerprints and reconcile MusicBrainz, Discogs, and iTunes evidence.
-- Match a checked album to a selected MusicBrainz release and manually correct track assignment.
-- Manage multiple embedded images without flattening their order, type, or description.
-- Build reviewed transformations with Text Tools, filename patterns, Rule Studio, and Clean & Organize.
-- Measure loudness and stage ReplayGain values without changing audio samples.
-- Search plain or synchronized lyrics and export UTF-8 sidecars.
-- Audit metadata consistency, numbering, artwork, readability, and duplicate evidence.
-- Import reviewed CSV or line-pattern text and export CSV, JSON, HTML, text, M3U, and M3U8.
-- Store reusable editor layouts, Library layouts, field sets, rules, mappings, and profile backups.
-- Maintain optional local SQLite indexes for explicitly registered folders.
-- Find the complete application command catalog from the keyboard.
+| Media family | Extensions | Metadata path |
+|---|---|---|
+| **MPEG audio** | `MP3` | ID3v1, ID3v2, and APE policy |
+| **Lossless audio** | `FLAC`, `WAV`, `WV`, `APE`, `OFR`, `OFS`, `TAK`, `TTA` | Container-dependent standard and extended text tags |
+| **Ogg family** | `OGG`, `OGA`, `OPUS`, `SPX` | Vorbis/Xiph comments; Speex artwork is not written |
+| **MP4 audio** | `AAC`, `M4A`, `M4B` | MP4/iTunes metadata where supported |
+| **Other audio** | `WMA`, `AIF`, `AIFF`, `DSF`, `MKA`, `MPC`, `MPP` | Container-dependent TagLib# or ATL handling |
+| **Video** | `MP4`, `MKV`, `MOV`, `WMV`, `M4V`, `WEBM` | Common metadata plus contextual video details |
 
-## Supported media
+The declared v2.0.0 matrix contains **23 audio extensions and 6 video extensions**. A supported extension means MetaEdit has a read/write handler for applicable metadata. It does not mean every container stores every standard field, picture, or chapter structure. Unsupported operations are blocked instead of silently discarding data.
 
-MetaEdit declares the following extensions for discovery and editing.
+### **Available Metadata Fields**
 
-### Audio
+The standard editor provides **56 fields** across five configurable sections:
 
-MP3, WAV, FLAC, OGG, OGA, OPUS, WV, WMA, AAC, M4A, M4B, AIF, AIFF, APE, DSF, MKA, MPC, MPP, OFR, OFS, SPX, TAK, and TTA.
-
-### Video
-
-MP4, MKV, MOV, WMV, M4V, and WEBM.
-
-Format inclusion controls discovery. It does not mean that every container can represent every field or embedded feature. MetaEdit checks the active handler before offering artwork, chapter, or container-specific operations. Unsupported structures are kept unchanged where the underlying library can preserve them.
-
-OptimFROG, Speex, TAK, TTA, and other less common audio families use an ATL adapter behind the same application workflow. Speex is text-metadata only for artwork.
-
-## Metadata model
-
-The standard editor contains 56 configurable fields.
-
-| Tab | Fields |
-| --- | --- |
+| Section | Fields |
+|---|---|
 | **Core** | Title, Subtitle / Version, Artist / Performer, Genre, BPM, Initial Key, Album, Album Artist, Track Number, Total Tracks, Disc Number, Total Discs |
 | **Credits** | Composer, Conductor, Performer Role, Description, Grouping / Work, Remixed By, Comment, Lyrics |
 | **Release** | Release Year, Original Release Date, Release Status, Release Type, Media Type, Release Country, Publisher / Label, Copyright, License, ISRC, Barcode, Catalog Number |
 | **IDs & Sorting** | MusicBrainz Recording, Release, Release Group, Artist, Release Artist, and Disc IDs; Title, Album, Artist, Album Artist, and Composer sort values; Amazon Catalog ID |
 | **Technical** | Date Tagged, Media Length, Language, Encoded By, Encoder Settings, Reference Loudness, ReplayGain track gain/peak/range, and album gain/peak/range |
 
-The transfer schema contains 57 fields so it can preserve the legacy MusicIP PUID contract even though that field is not in the standard editor.
+The transfer schema retains the legacy MusicIP PUID field as its 57th field. Custom Fields and Format-Specific Tags cover native text keys outside the standard model without replacing unsupported or binary entries.
 
-Custom Fields works across the checked scope. It distinguishes common, mixed, and missing values, preserves untouched mixed values, supports inline editing, and requires an explicit delete or restore decision. Format-Specific Tags provides a focused selected-file view of native text keys.
+## **Table of Contents**
 
-## Installation
+1. [System Requirements](#system-requirements)
+2. [Third-Party Libraries](#third-party-libraries)
+3. [Installation](#installation)
+4. [Authentication, Cloud Sync, and Privacy](#authentication-cloud-sync-and-privacy)
+5. [Getting Started Guide](#getting-started-guide)
+6. [Library and Editing Scope](#library-and-editing-scope)
+7. [Review, Write, and Recovery](#review-write-and-recovery)
+8. [Auto Tag](#auto-tag)
+9. [Text and Filename Tools](#text-and-filename-tools)
+10. [Rule Studio](#rule-studio)
+11. [Clean and Organize](#clean-and-organize)
+12. [Library Health](#library-health)
+13. [Transfer Tags and Reports](#transfer-tags-and-reports)
+14. [Artwork](#artwork)
+15. [Custom and Format-Specific Fields](#custom-and-format-specific-fields)
+16. [Chapters and Video Metadata](#chapters-and-video-metadata)
+17. [Lyrics Lookup](#lyrics-lookup)
+18. [Loudness and ReplayGain](#loudness-and-replaygain)
+19. [Layouts and Reusable Data](#layouts-and-reusable-data)
+20. [Studio Automation](#studio-automation)
+21. [Command Center and Keyboard Shortcuts](#command-center-and-keyboard-shortcuts)
+22. [Settings](#settings)
+23. [Current Boundaries](#current-boundaries)
+24. [Troubleshooting](#troubleshooting)
+25. [Updating Software](#updating-software)
+26. [Copyright and Support](#copyright-and-support)
+27. [Screenshots](#screenshots)
 
-1. Open [Releases](https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/releases).
-2. Download the Windows x64 installer or package published for that release.
-3. Keep enough free space for temporary files and recovery snapshots when working with large batches.
-4. Launch MetaEdit Plus and open files, a folder, or a playlist.
+## **System Requirements**
 
-A self-contained distribution does not require a separate .NET installation. MetaEdit is a WPF desktop application for 64-bit Windows 10 and Windows 11. Linux and macOS builds are not provided.
+### **Minimum Requirements**
 
-Optional external tools extend specific workflows:
+- **Operating System:** Windows 10 version 1809 or later, 64-bit
+- **Processor:** Dual-core x64 processor at 1.5 GHz
+- **RAM:** 4 GB
+- **Display:** 1280 × 720 recommended; minimum window size 800 × 600 device-independent pixels
+- **Storage:** 500 MB plus temporary space for recovery snapshots and reports
+- **Software:** No separate .NET installation is required by the self-contained package
 
-- **FFmpeg/ffprobe:** stream inspection, additional decoding, and MP4-family chapter replacement by stream copy.
-- **MKVToolNix:** embedded Matroska/WebM chapter replacement without re-encoding media streams.
+### **Recommended Requirements**
 
-When an optional tool is unavailable, MetaEdit disables the dependent command and explains the prerequisite. Ordinary tag editing remains available.
+- **Operating System:** Windows 10/11 version 21H2 or later, 64-bit
+- **Processor:** Quad-core x64 processor at 2.0 GHz or higher
+- **RAM:** 8 GB or higher; 16 GB for very large libraries
+- **Display:** 1920 × 1080 or higher
+- **Storage:** SSD with free space for the largest planned batch and recovery data
 
-## First workflow
+MetaEdit Plus is a native Windows WPF application. Linux, macOS, Wine, and Bottles are not supported release targets.
 
-1. Choose **Open Media Files**, **Open Media Folder**, or **Open Playlist**.
-2. Wait for discovery and metadata loading. Source changes lock the active workspace until the new checked scope is ready.
-3. Use Library checkboxes to define which files an operation may inspect or edit.
-4. Choose **Batch Mode** for shared values or **Per-File Mode** for independent file values.
-5. Enter metadata, manage artwork, or run an analysis workflow.
-6. Open **Preview Staged Changes** and inspect the exact scope and proposed values.
-7. Choose **Write Tags** only after the preview is correct.
-8. Use **Undo** if a supported completed file operation must be restored.
+## **Third-Party Libraries**
 
-Closing a review or analysis window does not write tags.
+| Component | Version | Used For | License |
+|---|---:|---|---|
+| [TagLib#](https://github.com/mono/taglib-sharp) | 2.3.0 | Common audio/video metadata, properties, and artwork | LGPL 2.1 |
+| [ATL](https://github.com/Zeugma440/atldotnet) | 7.16.0 | Additional metadata adapters, including OptimFROG, Speex, TAK, and TTA | LGPL 3.0 |
+| [NAudio](https://github.com/naudio/NAudio) | 2.3.0 | Audio decoding and playback | MIT |
+| [NAudio.Vorbis](https://github.com/naudio/Vorbis) | 1.6.0 | Ogg/Vorbis decoding | MIT |
+| [Microsoft.Data.Sqlite](https://learn.microsoft.com/dotnet/standard/data/sqlite/) | 10.0.11 | Private local persistent-library indexes | MIT |
+| [Chromaprint](https://acoustid.org/chromaprint) | bundled `fpcalc` | Acoustic fingerprints for AcoustID lookup | MIT/LGPL |
 
-## Library and editing scope
+Optional external installations retain their own licenses:
 
-### Sources and checked files
+- **FFmpeg/ffprobe** extends decoding, stream inspection, and MP4-family chapter replacement.
+- **MKVToolNix** enables embedded chapter replacement for Matroska and WebM.
 
-MetaEdit accepts files, recursive folders, and local playlists. Duplicate paths are normalized and removed before internal maps are built. Replacing a source clears stale interaction while discovery runs, then rebuilds the active integrated workflow for the new unique checked scope.
+When an optional tool is unavailable, MetaEdit keeps the dependent command disabled and explains the prerequisite. Ordinary tag editing remains available.
 
-A checked row is eligible for scope-based work. Clearing a row excludes it without changing or deleting the file. The header checkbox reflects real loaded rows and is disabled when the Library is empty.
+## **Installation**
 
-### Batch Mode
+1. Open the [Releases](https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/releases) page.
+2. Download the Windows x64 installer published for the selected release.
+3. Run the installer and review the destination and optional components.
+4. Launch **MetaEdit Plus** from the Start Menu or Desktop shortcut.
 
-Batch Mode is for values intentionally shared by checked files. Untouched fields remain preserved. Mixed source values are represented separately so an accidental blank does not silently become a batch clear.
+The v2.0.0 package will be attached only after its release validation gate is complete. Do not use draft release records as downloadable builds.
 
-### Per-File Mode
+## **Authentication, Cloud Sync, and Privacy**
 
-Per-File Mode keeps a separate staged state for the selected file. Selecting another row changes the visible target without copying the previous file's values.
+MetaEdit is fully usable without signing in. Settings, layouts, field sets, mappings, rules, persistent indexes, recovery jobs, and workspace state are stored in the current Windows user's local application-data area.
 
-### Search, filters, and columns
+[Arctisoft Studio Hub](https://github.com/BerndHagen/Arctisoft-Studio-Hub) sign-in is optional. In v2.0.0:
 
-The Library supports filename search and metadata expressions, stable text or numeric sorting, resizable columns, and named layouts. Layouts can use standard metadata and technical columns plus saved custom-field or expression columns.
+- cloud sync is **off by default**;
+- enabling it requires a signed-in Studio account and explicit confirmation;
+- only portable tag preferences, artwork policy, and Auto Tag source order are synchronized;
+- media, artwork bytes, file paths, credentials, indexes, recovery data, field sets, layouts, mappings, and Rule Studio presets remain local;
+- disabling sync cancels pending preference uploads and leaves the local copy usable;
+- MetaEdit does not award XP or convert editing activity into engagement rewards.
 
-Persistent Libraries register folders in a private local SQLite index. Rescan reads changed entries and preserves unavailable removable roots. Removing an index registration does not remove media files.
+The application contacts online services only when a requested feature needs them, such as Auto Tag, Lyrics Lookup, optional cloud sync, account session maintenance, or support links. Provider queries can include metadata, fingerprints, or identifiers required by that provider.
 
-## Review, write, and recovery
+## **Getting Started Guide**
 
-### Staging and preview
+### **Step 1: Open Media**
 
-Editor values, provider choices, lyrics, ReplayGain results, rules, imports, and artwork choices are staged. Preview Staged Changes shows file, field, current value, and proposed value. Search and change-kind filters affect the review only. Review evidence can be exported without changing media or staging.
+Choose **Open Media Files**, **Open Media Folder**, or **Open Playlist**. Folder discovery is recursive. Loading a new source rebuilds the checked scope without allowing stale workflow results to target the new library.
 
-### Write Tags
+### **Step 2: Define the Scope**
 
-Write Tags validates the active scope and saves staged metadata and artwork to eligible checked files. The Process Log records completion, warnings, and errors. A partial batch failure is reported per file rather than presented as complete success.
+Use the Library checkboxes to include or exclude files. The header checkbox is available only when real rows exist. Select **Batch Mode** for deliberate shared edits or **Per-File Mode** for independent values.
 
-### Undo and redo
+### **Step 3: Edit or Analyze**
 
-Supported file-changing operations create snapshots of metadata structures MetaEdit can modify, including artwork collections and extended text values. Up to 20 history levels are retained. A new divergent operation clears redo history.
+Enter values directly, manage artwork, or open Auto Tag, Text Tools, Library Health, Lyrics, ReplayGain, or another workflow. Analysis commands do not write media.
+
+### **Step 4: Review Changes**
+
+Open **Preview Staged Changes** and inspect the exact file, field, current value, and proposed value. Search and change-kind filters affect only the review.
+
+### **Step 5: Write Tags**
+
+Choose **Write Tags** when the review is correct. Keep the application open until the Process Log reports completion or a per-file failure.
+
+## **Library and Editing Scope**
+
+### **Sources and Checked Files**
+
+MetaEdit accepts files, recursive folders, and local M3U/M3U8 playlists. Duplicate paths are normalized before the Library is built. Source replacement preserves committed recovery history while clearing only confirmed staged state.
+
+A checked row is eligible for scope-based work. Clearing a row excludes it without changing the file. Library search supports filenames and metadata expressions with Boolean operators, presence checks, comparisons, and guarded regular expressions.
+
+### **Batch Mode**
+
+Batch Mode applies only fields the user deliberately changes to checked files. Mixed source values are represented separately so an untouched blank does not become a batch clear.
+
+### **Per-File Mode**
+
+Per-File Mode maintains a separate staged state for each file. Previous and Next commands update both the selected editor target and the highlighted Library row.
+
+### **Columns and Persistent Libraries**
+
+Named Library layouts control visible columns, widths, order, sorting, and expression columns. Persistent Libraries register selected folders in a private local SQLite index. Rescan reads changed entries; removing a registration never removes media files.
+
+## **Review, Write, and Recovery**
+
+### **Staging and Preview**
+
+Editor values, artwork, provider choices, lyrics, ReplayGain measurements, rules, and imports are proposals until they enter the shared change set. Closing an analysis workspace does not write tags.
+
+### **Write Tags**
+
+Write Tags validates scope and file eligibility before mutation. Failures are reported per file. Writes preserve untouched standard fields, extended text values, and complete artwork collections where supported.
+
+### **Undo and Redo**
+
+Supported write operations capture recoverable metadata snapshots before mutation. Up to 20 history levels are retained. A divergent operation clears redo history; a failed snapshot prevents the operation from starting.
+
+### **Remove All Tags**
+
+Remove All Tags is a reviewed destructive operation with the same preflight and recovery boundary. It remains disabled until an eligible checked scope exists.
 
 Undo is a recovery feature, not a substitute for independent backups of valuable media.
 
-### Remove All Tags
+## **Auto Tag**
 
-Remove All Tags is a reviewed destructive operation. It remains disabled without an eligible checked scope and uses the same recovery boundary as other supported tag writes.
+Auto Tag uses one review model in both editing modes. Identification does not stage or write by itself.
 
-## Auto Tag
+### **Per-File Identification**
 
-Auto Tag is an analysis and review workflow. **Identify File** and **Identify Release** do not stage or write by themselves.
+Per-File Mode fingerprints selected audio, queries enabled sources, and shows confidence, provenance, conflicts, metadata choices, and artwork choices.
 
-### Per-file identification
+### **Batch Release Matching**
 
-Per-File Mode fingerprints the selected audio with bundled Chromaprint fpcalc, queries configured providers, reconciles candidate values, and displays confidence, provenance, conflicts, metadata choices, and artwork choices.
+Batch Mode identifies one release for the checked album scope, loads a selected MusicBrainz edition, maps files one-to-one to tracks, and allows manual reassignment. A mixed folder is not automatically split into release jobs.
 
-### Batch release matching
+### **Providers**
 
-Batch Mode identifies a release for the checked album scope, loads a selected MusicBrainz edition, maps files one-to-one to tracks, and permits manual reassignment. Use one album or release scope at a time; a mixed folder is not automatically split into release jobs.
+| Provider | Role |
+|---|---|
+| **AcoustID** | Acoustic-fingerprint lookup evidence |
+| **MusicBrainz** | Recording, release, edition, identity, and track mapping data |
+| **Discogs** | Optional catalog evidence using a personal token stored in Windows Credential Manager |
+| **iTunes** | Supplemental catalog and artwork evidence |
 
-### Providers
+Provider requests are bounded and cancellable. Online catalogs, ambiguity, and service limits can prevent a confident result. **Stage Results** transfers reviewed choices into the editor; **Write Tags** remains separate.
 
-- **AcoustID** supplies fingerprint lookup evidence.
-- **MusicBrainz** supplies recording and release identities and is required for release matching.
-- **Discogs** is optional and uses a user token stored in Windows Credential Manager.
-- **iTunes** supplies additional catalog evidence.
+## **Text and Filename Tools**
 
-MusicBrainz requests use a versioned application identity and a process-wide scheduler. Provider calls are bounded and cancellable. Network availability, provider limits, incomplete catalogs, and ambiguous releases can prevent a confident result.
+### **Text Tools**
 
-**Stage Results** transfers reviewed choices into the main editor. **Write Tags** remains a separate operation.
+Transform selected fields with literal or bounded regular-expression replacement, whole-word matching, Unicode whitespace normalization, prefixes, suffixes, and case conversion. A virtualized preview shows changed values and validation issues.
 
-## Text and filename tools
+### **Tags from Filename**
 
-### Text Tools
+Capture structured filename parts into metadata fields with a named pattern. Parsed values remain proposals until reviewed and staged.
 
-Text Tools supports literal or guarded regular-expression replacement, whole-word matching, whitespace normalization, prefixes and suffixes, and case conversion across selected fields. A virtualized preview shows every proposed value before staging.
+### **Filename from Tags**
 
-### Tags from Filename
+Build filenames with a bounded format expression. MetaEdit sanitizes invalid path characters and rejects duplicate destinations before a transactional rename.
 
-A pattern captures parts of a filename into metadata fields. The parsed result is reviewed before staging.
+### **Filename from Filename**
 
-### Filename from Tags
+Capture and rearrange up to nine existing filename parts. Swaps, chains, and case-only renames use the same collision-checked rollback plan.
 
-A format expression builds proposed filenames from metadata. MetaEdit sanitizes illegal path characters and checks duplicate destinations before a transactional rename.
+The shared expression engine supports standard fields, safe file pseudo-fields, optional sections, nested string operations, comparisons, arithmetic, Boolean logic, metadata value/count helpers, and bounded regular expressions.
 
-### Filename from Filename
+## **Rule Studio**
 
-Existing filenames can be captured and rearranged in up to nine parts. The rename plan uses the same collision and rollback checks.
+Rule Studio combines **All** or **Any** conditions with ordered actions across the checked scope. It supports text, numeric, presence, and pattern checks, then set, copy, clear, transform, format, and sequence actions.
 
-Metadata transformations stage through Change Review. File renames use a separate reviewed transaction because paths change at commit time.
+Dry Preview shows matches, proposed changes, and failures. Applying a rule stages metadata. Sequence counters can reset by folder or metadata field and advance only for matching files. Rule presets are local and exchangeable as JSON.
 
-## Rule Studio
+## **Clean and Organize**
 
-Rule Studio combines conditions with **All** or **Any** matching and runs ordered actions against the checked scope. Rules can test text, numeric, presence, and pattern conditions, then set, copy, clear, transform, or format fields.
+Clean & Organize builds a resumable plan for checked media. It can inspect evidence, normalize metadata, propose destination folders, and create rename or move work.
 
-A dry run displays matching files and proposed changes. Applying a rule stages metadata; it does not bypass Preview Staged Changes or Write Tags. Presets can be stored locally and exchanged as JSON.
+Analysis, conflict review, destination review, and commit are separate steps. Conflicts require a decision. Commit creates transaction backups and rolls back completed steps if a later operation fails.
 
-The shared expression engine supports field placeholders, optional sections, string operations, comparisons, arithmetic, Boolean logic, and metadata value/count helpers. Invalid expressions become reported failures.
+## **Library Health**
 
-## Clean and Organize
+Library Health analyzes files without changing them. Findings cover readability, required fields, album consistency, track/disc numbering and gaps, artwork consistency, moved files, exact byte duplicates, and metadata-and-duration candidates.
 
-Clean & Organize builds a resumable plan for checked media. Depending on selected options, it can inspect identity evidence, normalize metadata, propose destination folders, and build rename or move work.
+Excluding a finding changes only the review scope. It never deletes or quarantines media. Findings and exclusions can be exported.
 
-The workflow separates analysis, conflict review, destination preview, and atomic commit. Conflicts require a decision. Commit creates transaction backups and rolls back completed steps if a later step fails.
+## **Transfer Tags and Reports**
 
-Result filters are momentary commands. The active scope is disabled and explains that it is already visible.
-
-## Library Health
-
-Library Health analyzes the checked scope without changing files. Findings include tag readability, required-field issues, album consistency, track and disc numbering, artwork conditions, and duplicate evidence.
-
-Exact byte duplicates are separate from metadata and duration candidates. Excluding a result changes only the review scope; it never deletes or quarantines media. Findings and exclusions can be exported to CSV.
-
-## Transfer Tags and reports
-
-Transfer Tags uses one document-level preview for import and export, with the table header outside the row viewport.
-
-### Import
+### **Import**
 
 - reviewed CSV import using the standard transfer schema;
 - reviewed line-pattern text import;
-- explicit matched, skipped, empty, and preserved-value handling;
-- staging through the normal editor and Write Tags boundary.
+- sequential or explicit filename/path matching;
+- exact matched, skipped, empty, and preserved-value reporting;
+- staging through Change Review and Write Tags.
 
-### Export
+### **Export**
 
-- CSV;
-- JSON;
-- escaped HTML;
-- formatted text;
-- relative M3U8;
-- compatible M3U;
-- grouped M3U8 playlists.
+- CSV and structured JSON;
+- escaped HTML and tab-separated text;
+- relative M3U8, compatible M3U, and grouped M3U8 playlists;
+- formatted text through **Copy as Text**, with optional grouping and live expression preview.
 
-Exports use current staged values when the selected workflow includes them. Report output is atomic. CSV cells are protected against spreadsheet formula interpretation.
+Reports are written atomically. CSV output preserves literal apostrophes while protecting spreadsheet consumers from formula interpretation.
 
-**Copy as Text** provides live format-expression preview, optional grouping, clipboard output, and file output for the checked scope.
+## **Artwork**
 
-## Artwork
+The editor displays the selected picture type and offers quick replacement or removal. **Manage Collection** opens every embedded picture in stored order.
 
-The main editor displays the selected artwork type and provides quick choose or remove actions. **Manage Collection** opens every embedded image in stored order.
+Users can add or replace bytes, set type and description, reorder or remove images, and inspect dimensions, encoded size, format, aspect ratio, color depth, resolution, pixel format, color profile, alpha, frame count, pixel count, and orientation.
 
-Users can add or replace image bytes, set picture type and description, reorder or remove an image, and inspect dimensions, encoded size, format, aspect ratio, color depth, DPI, pixel format, color-profile presence, alpha, frame count, pixel count, and orientation.
+Artwork remains staged until Write Tags. Copy/Paste Metadata transfers the complete collection. Format support is container-dependent.
 
-Artwork changes remain staged until Write Tags. Copy/Paste Metadata transfers the complete collection rather than only the visible front cover. Format support is container-dependent.
+## **Custom and Format-Specific Fields**
 
-## Format-specific tags
+Custom Fields works across the checked scope and distinguishes common, mixed, and missing values. Inline edits stage changes; explicit deletion prevents an empty cell from becoming an accidental write.
 
-Format-Specific Tags edits text values outside the standard model for one selected file:
+Format-Specific Tags edits supported native text entries for one selected file:
 
 - ID3v2 user-text fields;
 - Xiph/Vorbis comment keys;
 - APEv2 text items;
-- MP4 com.apple.iTunes freeform fields;
+- MP4 `com.apple.iTunes` freeform fields;
 - ASF text descriptors;
-- Matroska simple tags supported by the adapter.
+- supported Matroska simple tags.
 
-Values are edited inline. The final entry row creates another empty row as needed. Delete is explicit and can be restored before commit. A dash in an empty cell is a visual placeholder, not a written metadata value.
+The final row creates another entry as needed. Empty cells display a visual dash that is never written. Unsupported binary or structured values remain preserved.
 
-Binary or structurally complex fields that MetaEdit cannot author remain read-only or preserved.
+## **Chapters and Video Metadata**
 
-## Chapters and video metadata
+Chapter Editor validates start/end order, duration, identifiers, URLs, and overlap conditions for one selected file. Sidecar import and export remain available.
 
-Chapter Editor works on one selected file and validates start/end order, duration, identifiers, URLs, and overlap conditions. Sidecar import and export remain available for supported workflows.
+- **Matroska/WebM:** embedded replacement uses MKVToolNix when available.
+- **MP4/M4V/MOV:** embedded replacement uses FFmpeg stream-copy handling when available.
 
-Embedded replacement depends on the container and installed tools:
+Video Details exposes contextual TV/movie fields and stream properties without duplicating common editor fields. Complete nested Matroska editions and generalized subsong authoring are outside the current scope.
 
-- Matroska/WebM uses MKVToolNix when available.
-- MP4/M4V/MOV uses FFmpeg stream-copy replacement when available.
+## **Lyrics Lookup**
 
-Video Details exposes video-specific TV/movie fields and stream information. Common title, description, genre, date, and rights fields stay in the standard editor.
+Lyrics Lookup requires a selected audio file and track title. Artist and album improve ranking but are optional. It searches LRCLIB, ranks candidates using metadata and duration, distinguishes plain and synchronized lyrics, and previews from the start.
 
-MetaEdit does not currently provide complete nested Matroska edition or generalized subsong authoring.
+A candidate can be staged or exported as UTF-8 TXT/LRC. Changing tracks clears stale results, and late network responses cannot overwrite the new selection.
 
-## Lyrics
+## **Loudness and ReplayGain**
 
-Lyrics Lookup requires a selected audio file and track title. Artist and album improve the query but are optional.
+Loudness & ReplayGain decodes checked audio, calculates gated integrated loudness, and derives ReplayGain 2 values referenced to -18 LUFS. It reports track gain/peak/range and album evidence.
 
-The workflow searches LRCLIB, ranks candidates by metadata and duration, distinguishes plain and synchronized content, and previews from the top of the document. A choice can be staged or exported as UTF-8 TXT or LRC.
+Applying results stages tags only. MetaEdit does not normalize or re-encode audio. This is not a certified broadcast delivery validator and does not author ADM metadata.
 
-Changing track clears stale candidates. A late network response cannot overwrite the new track state.
+## **Layouts and Reusable Data**
 
-## Loudness and ReplayGain
+- **Editor Layouts:** show, hide, and reorder fields within five standard sections.
+- **Library Layouts:** control columns, widths, order, sorting, and expression columns with bounded widths.
+- **Field Sets:** save reusable non-empty values and complete artwork collections; restore previews before staging.
+- **Container Mappings:** map fields to validated native ID3v2, Xiph, APEv2, MP4, ASF, and Matroska keys.
+- **Text Export Templates:** save Copy as Text expressions and grouping rules.
+- **Profile Backup:** export a versioned, bounded ZIP with supported preferences and reusable definitions.
 
-Loudness & ReplayGain decodes checked audio, calculates gated integrated loudness, and derives ReplayGain 2 values referenced to -18 LUFS. It reports track gain, peak, and supported album grouping evidence.
+Profile restore is validated and transactional. Credentials, account sessions, shared tools, private indexes, media, and incomplete operations are excluded.
 
-Applying reviewed results stages tags only. It does not normalize or re-encode audio. The workflow is cancellable; a failed file appears as a failure row while eligible files continue. Results can be exported to CSV.
+## **Studio Automation**
 
-This is a metadata measurement workflow. It is not a certified broadcast-delivery validator and does not author ADM metadata.
+`MetaEdit.Automation.exe` ships beside the desktop application for guarded studio-library jobs. New jobs are review-only: a write requires both `AllowCommit: true` in the reviewed job and an explicit `--commit` argument.
 
-## Layouts and reusable data
+```powershell
+MetaEdit.Automation.exe init job.json C:\Incoming C:\Delivered C:\Reports studio-library-flac-v1
+MetaEdit.Automation.exe dry-run job.json
+MetaEdit.Automation.exe run job.json --commit
+MetaEdit.Automation.exe watch job.json [--commit]
+MetaEdit.Automation.exe diagnostics support-bundle.zip
+```
 
-### Editor layouts
+Jobs are bounded to 1–500 files per transaction. Dry runs validate metadata and destinations and record source hashes without changing media. Commit mode rechecks identity, creates backups, validates output, and records source/output SHA-256 evidence. Watch mode ignores reparse points, system files, unstable files, and unchanged blocked inputs.
 
-Named Editor Layouts show, hide, and reorder fields within the five standard sections. The Standard layout remains the fallback.
+The first delivery profiles cover FLAC/Vorbis Comments and MP3/ID3 studio libraries. They do not claim broadcaster, archive, or streaming certification. Diagnostics are redacted and exclude settings values, credentials, metadata, media, and media paths.
 
-### Library layouts
+## **Command Center and Keyboard Shortcuts**
 
-Named Library layouts control visible columns, width, order, sort field, and direction. Width values are bounded so accidental extreme values cannot damage the layout.
-
-### Field sets
-
-Save Field Set stores reusable non-empty editor values and artwork locally. Restore Field Set previews stored values and supports editing, renaming, and repeated deletion without closing the window. Applying a set stages its values; it does not write media.
-
-### Container mappings
-
-Mapping profiles override how standard fields map to native ID3v2, Xiph, APEv2, MP4, ASF, and Matroska keys. Invalid native-key syntax is rejected.
-
-### Profile backup
-
-A versioned ZIP can export and restore supported settings, layouts, field sets, mappings, and rules. Restore is validated and transactional. Credentials, account sessions, local indexes, shared tools, media, and unfinished operations are excluded.
-
-## Command Center and keyboard
-
-Press **Ctrl+Shift+P** or **F1** to open Command Center. It searches the complete application command catalog, retains recent commands, and disables commands that cannot run in the current state.
+Press **Ctrl+Shift+P** or **F1** to open Command Center. It searches the complete command catalog, remembers recent commands, and explains unavailable commands.
 
 | Shortcut | Command |
-| --- | --- |
-| **Ctrl+Shift+P** or **F1** | Command Center |
-| **Ctrl+N** | Start New Session |
-| **Ctrl+O** | Open Media Files |
-| **Ctrl+Shift+O** | Open Media Folder |
-| **F5** | Refresh Loaded Source |
-| **Ctrl+F** | Focus Library search |
-| **Ctrl+S** | Write Tags |
-| **Ctrl+Shift+S** | Save Field Set |
-| **Ctrl+Z** | Undo |
-| **Ctrl+Y** or **Ctrl+Shift+Z** | Redo |
-| **Ctrl+Alt+A** | Auto Tag |
-| **Ctrl+Shift+T** | Text Tools |
-| **Ctrl+,** | Settings |
-| **Alt+F4** | Exit |
+|---|---|
+| `Ctrl+Shift+P` or `F1` | Command Center |
+| `Ctrl+N` | Start New Session |
+| `Ctrl+O` | Open Media Files |
+| `Ctrl+Shift+O` | Open Media Folder |
+| `F5` | Refresh Loaded Source |
+| `Ctrl+F` | Focus Library Search |
+| `Ctrl+S` | Write Tags |
+| `Ctrl+Shift+S` | Save Field Set |
+| `Ctrl+Z` | Undo |
+| `Ctrl+Y` or `Ctrl+Shift+Z` | Redo |
+| `Ctrl+Alt+A` | Auto Tag |
+| `Ctrl+Shift+T` | Text Tools |
+| `Ctrl+,` | Settings |
+| `Alt+F4` | Exit |
 
-Menus provide the same source, edit, metadata, workflow, view, and help commands. All ordinary text fields use MetaEdit's Cut/Copy/Paste menu, including repeated right-click placement.
+Menus expose the same source, edit, metadata, workflow, view, and help commands. Text fields use MetaEdit's custom Cut/Copy/Paste context menu with standard repeated right-click placement.
 
-## Settings, storage, and privacy
+## **Settings**
 
-Settings include:
+Settings control:
 
-- ID3v2.3 or ID3v2.4 policy;
-- compatible text encoding;
+- ID3v2.3 or ID3v2.4 policy and compatible text encoding;
 - ID3v1, ID3v2, and APE retention for MP3;
-- artwork size, JPEG quality, PNG handling, and default type;
+- artwork maximum edge, JPEG quality, PNG handling, and default type;
 - enabled Auto Tag sources and priority;
-- optional Discogs credentials;
-- optional Studio Hub synchronization.
+- optional Discogs credentials in Windows Credential Manager;
+- optional Studio Hub preference sync;
+- local persistent-library and profile behavior.
 
-Preferences, layouts, field sets, mappings, rules, recovery jobs, and persistent indexes are stored in the current Windows user's local application-data area. Profile Backup exports only its documented portable subset.
+Settings are validated and written atomically. At least one MP3 tag container and one valid Auto Tag source must remain enabled.
 
-MetaEdit contacts online services only for features that require them, such as Auto Tag, Lyrics Lookup, optional Studio Hub synchronization, guide/problem links, or account experience integration. Before online lookup with sensitive collections, review the provider's privacy policy and understand that query metadata, fingerprints, or identifiers may be sent to that provider.
+## **Current Boundaries**
 
-## Dependencies
+MetaEdit v2.0.0 does not claim:
 
-| Component | Purpose |
-| --- | --- |
-| TagLib# 2.3.0 | Common audio/video metadata and media properties |
-| ATL 7.16.0 | Additional metadata format adapters |
-| NAudio 2.3.0 | Audio decoding and playback |
-| NAudio.Vorbis.Latest 1.6.0 | Ogg/Vorbis decoding |
-| Microsoft.Data.Sqlite 10.0.11 | Persistent local library indexes |
-| Chromaprint fpcalc | Acoustic fingerprints for AcoustID |
-| FFmpeg/ffprobe, optional | Additional decoding, stream inspection, and MP4-family chapter work |
-| MKVToolNix, optional | Matroska/WebM chapter work |
+- a public plugin SDK or signed third-party extension model;
+- optical-disc TOC lookup;
+- complete BWF `bext`, iXML, ADM, PBCore, or EBUCore authoring and conformance;
+- complete nested Matroska edition or generalized subsong editing;
+- certified broadcast loudness-delivery reports;
+- multi-user project locking, approval, or facility audit trails;
+- Linux or macOS support.
 
-Online workflows may use AcoustID, MusicBrainz, Discogs, iTunes, LRCLIB, and optional Arctisoft Studio Hub services. Availability and results depend on those services. Third-party components remain subject to their own licenses.
+Online provider availability, catalog completeness, and rate limits remain outside MetaEdit's control.
 
-## Current limitations
+## **Troubleshooting**
 
-MetaEdit should be evaluated against the required workflow. Current boundaries include:
+### **A Command Is Disabled**
 
-- no public plugin SDK or signed extension model;
-- no supported headless tagging CLI or automation API;
-- no optical-disc TOC lookup;
-- no complete BWF bext, iXML, ADM, PBCore, or EBUCore authoring and conformance workflow;
-- no complete nested Matroska edition or generalized subsong editor;
-- no certified broadcast loudness-delivery report;
-- no multi-user project locking, approval, or facility audit-trail system;
-- no Linux or macOS build;
-- online provider results and limits are outside MetaEdit's control.
+Hover it. MetaEdit reports the prerequisite, such as loading files, checking a scope, selecting a file, completing analysis, choosing a destination, or installing an optional tool.
 
-A listed extension means MetaEdit has a handler path for it. It does not promise that the container can store all standard fields or every advanced metadata structure.
+### **Search Lyrics Is Disabled**
 
-## Troubleshooting
+Select an audio file and provide a track title. Artist and album are optional. Search remains disabled during an active request or source change.
 
-### A command is disabled
+### **Auto Tag Found No Confident Match**
 
-Hover it. MetaEdit reports the prerequisite, such as loading files, checking an eligible scope, selecting one file, completing analysis, choosing a destination, or installing an optional tool.
+Verify decodable audio, internet access, and enabled providers, then try a more precise query. The release may not exist in the selected catalog.
 
-### Search Lyrics is disabled
+### **Artwork or Chapters Cannot Be Written**
 
-Select an audio file and provide a track title. Artist and album are optional refinements. Search remains disabled during an active request or source change.
+The container may not support the structure, or FFmpeg/MKVToolNix may be unavailable. MetaEdit explains blocked writes and offers sidecars where applicable.
 
-### Auto Tag found no confident match
+### **A Write Failed**
 
-Verify decodable audio and internet access, review enabled providers, and try a more precise query. The selected provider may not contain the release.
+Read the Process Log and keep the application open while reviewing recovery information. Preserve original media and include a redacted log when reporting the issue.
 
-### Artwork or chapters cannot be written
+## **Updating Software**
 
-The format may not support the structure, or FFmpeg/MKVToolNix may be unavailable. MetaEdit keeps unsupported writes disabled and offers sidecars where applicable.
+1. Download the newer installer from [Releases](https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/releases).
+2. Close MetaEdit Plus.
+3. Install over the existing version unless the release notes specify a migration step.
+4. Keep profile backups and independent media backups before major upgrades.
 
-### A write failed
+Never install executable or ZIP files attached outside the official repository release page.
 
-Read the Process Log and keep the application open while reviewing recovery options. Preserve the original media and report the complete, redacted error through the issue tracker.
+## **Copyright and Support**
 
-## License and support
+MetaEdit Plus is proprietary freeware. Personal and commercial use are permitted under [LICENSE](LICENSE). Modification, reverse engineering, and unauthorized redistribution are prohibited.
 
-MetaEdit Plus is proprietary freeware. Personal and commercial use are allowed under [LICENSE](LICENSE). Modification, decompilation, reverse engineering, and unauthorized redistribution are prohibited.
+Report reproducible defects through [GitHub Issues](https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/issues). Include the MetaEdit version, Windows version, media format, operation, expected result, actual result, and a redacted Process Log. Do not upload copyrighted or confidential media without permission.
 
-Report reproducible defects through [GitHub Issues](https://github.com/BerndHagen/MetaEdit-Plus-Smart-Tag-Editor/issues). Include the application version, Windows version, media format, operation, expected result, actual result, and a redacted Process Log. Do not upload copyrighted or confidential media without permission.
+## **Screenshots**
 
-## Screenshots
+Every screenshot below was captured from the v2.0.0 interface with generated FLAC fixtures and fictional metadata. No commercial audio is included.
 
-These images document the currently published interface. The next interface refresh will be published with its corresponding application release.
-
-<table>
-  <tr>
-    <th>MetaEdit Plus - Main Workspace</th>
-    <th>MetaEdit Plus - Loaded Library</th>
-  </tr>
-  <tr>
-    <td><a href="images/screenshot-startup.png"><img src="images/screenshot-startup.png" alt="MetaEdit Plus main workspace" width="450"></a></td>
-    <td><a href="images/screenshot-inputs.png"><img src="images/screenshot-inputs.png" alt="MetaEdit Plus loaded library" width="450"></a></td>
-  </tr>
-  <tr>
-    <th>MetaEdit Plus - Batch Editing</th>
-    <th>MetaEdit Plus - App Settings</th>
-  </tr>
-  <tr>
-    <td><a href="images/screenshot-generate.png"><img src="images/screenshot-generate.png" alt="MetaEdit Plus batch editing" width="450"></a></td>
-    <td><a href="images/screenshot-settings.png"><img src="images/screenshot-settings.png" alt="MetaEdit Plus app settings" width="450"></a></td>
-  </tr>
-</table>
+| **MetaEdit Plus - Metadata Editor** | **MetaEdit Plus - Auto Tag** |
+|---|---|
+| [![MetaEdit Plus metadata editor](images/showcase-01-editor.png)](images/showcase-01-editor.png) | [![MetaEdit Plus Auto Tag](images/showcase-02-auto-tag.png)](images/showcase-02-auto-tag.png) |
+| **MetaEdit Plus - Text Tools** | **MetaEdit Plus - Clean and Organize** |
+| [![MetaEdit Plus Text Tools](images/showcase-03-text-tools.png)](images/showcase-03-text-tools.png) | [![MetaEdit Plus Clean and Organize](images/showcase-04-clean-organize.png)](images/showcase-04-clean-organize.png) |
+| **MetaEdit Plus - Library Health** | **MetaEdit Plus - Lyrics Lookup** |
+| [![MetaEdit Plus Library Health](images/showcase-05-library-health.png)](images/showcase-05-library-health.png) | [![MetaEdit Plus Lyrics Lookup](images/showcase-06-lyrics.png)](images/showcase-06-lyrics.png) |
+| **MetaEdit Plus - Transfer Tags** | **MetaEdit Plus - Artwork Manager** |
+| [![MetaEdit Plus Transfer Tags](images/showcase-07-transfer-tags.png)](images/showcase-07-transfer-tags.png) | [![MetaEdit Plus Artwork Manager](images/showcase-08-artwork.png)](images/showcase-08-artwork.png) |
+| **MetaEdit Plus - Change Review** | **MetaEdit Plus - Command Center** |
+| [![MetaEdit Plus Change Review](images/showcase-09-change-review.png)](images/showcase-09-change-review.png) | [![MetaEdit Plus Command Center](images/showcase-10-command-center.png)](images/showcase-10-command-center.png) |
