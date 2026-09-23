@@ -505,7 +505,7 @@ Read the Process Log and keep the application open while reviewing recovery info
 
 ## **Updating Software**
 
-MetaEdit can check for updates independently of Arctisoft Studio Hub. In **Settings → Application Services**, choose **Stable releases**, **Preview releases**, or **Manual checks only**. Use **Help → Check for Updates** to check at any time. A newer version appears in the main window; MetaEdit verifies the installer size and SHA-256 against the official release manifest before starting it. For publisher-signed releases, it also checks Windows trust and the installed publisher identity. The optional Hub can manage installed Arctisoft applications centrally using the release checksum sidecars.
+MetaEdit can check for updates independently of Arctisoft Studio Hub. In **Settings → Application Services**, choose **Stable releases**, **Preview releases**, or **Manual checks only**. Use **Help → Check for Updates** to check at any time. A newer version appears in the main window; MetaEdit verifies the installer size and SHA-256 against GitHub's release asset record before starting it. For publisher-signed releases, it also checks Windows trust and the installed publisher identity. Compatible Hub builds can manage installed Arctisoft applications centrally using the same release asset digest.
 
 Version 2.0.0 is not Authenticode-signed. Windows may show an unknown-publisher warning or prevent it from running under stricter application-control settings. Download installers only from this official repository.
 
